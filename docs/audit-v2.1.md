@@ -50,3 +50,5 @@ Fixture Node dùng phần trình bày giả lập tối thiểu để kiểm tra
 Lần đọc lại `https://chienhon.top/` trong lượt sửa này trả HTTP 403. Phân tích cơ chế dùng bản client công khai đã quét trước đó ngày 04/11/2026 và các bảng `docs/chienhon/`. Không thử vượt hạn chế hoặc truy cập máy chủ riêng.
 
 Dự án vẫn là bản chơi đơn tự viết. Không có mã server gốc, dữ liệu tài khoản, đồ họa/sprite/âm thanh gốc, multiplayer, chat, bang hội hoặc toàn bộ sự kiện của Chiến Hồn. Chưa chạy trọn hành trình Lv1→400 theo thời gian thực và chưa kiểm tra trên điện thoại thật. Browser/OS vẫn có thể treo tab; không bảo đảm chạy khi máy ngủ.
+
+![Bản v2.1 chạy trên GitHub Pages](kiem-vuc-v2.1-live.png)

@@ -14,4 +14,4 @@
 
 .trial-shortcut{color:#e6ce98;border:1px solid #c3a56c66;background:#5a4934b3;border-radius:5px;font-size:9px;padding:8px 12px;white-space:nowrap}.trial-shortcut:hover{background:#76603c}.top-actions .solo{margin-right:2px}@media(max-width:600px){.trial-shortcut{font-size:7px;padding:7px 8px}.top-actions{gap:5px}.topbar{padding:0 10px}.brand{font-size:19px}.brand-mark{width:28px}.icon-btn{width:28px;height:28px}}
 
-.active-status{position:fixed;left:50%;bottom:130px;transform:translateX(-50%);color:#dfd7a7;font-size:11px;max-width:72vw;text-align:center;pointer-events:none;text-shadow:0 1px 3px #09231f}@media(max-width:600px){.active-status{bottom:210px;font-size:10px}}
+.active-status{position:fixed;left:50%;bottom:185px;transform:translateX(-50%);color:#dfd7a7;font-size:11px;max-width:72vw;text-align:center;pointer-events:none;text-shadow:0 1px 3px #09231f}@media(max-width:600px){.active-status{bottom:210px;font-size:10px}}
