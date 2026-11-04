@@ -36,3 +36,9 @@ Thử khung điện thoại là kiểm tra viewport của trình duyệt, chưa 
 ![Màn tạo nhân vật đã sửa](kiem-vuc-v2.2-creation.png)
 
 ![Đồ họa pixel trong màn chơi](kiem-vuc-v2.2-pixel.png)
+
+## Xác nhận bản công khai
+
+GitHub Pages đã triển khai mã `cdaf0d1` thành công. Trên trang công khai, đã tạo **Lôi Pixel 22 / Lôi Chấn Hiệp / Lv1** bằng nút tạo nhân vật, sau đó tải lại và xác nhận tên, phái và cấp được giữ đúng.
+
+![Bản Pixel đang chạy trên GitHub Pages](kiem-vuc-v2.2-live.png)
