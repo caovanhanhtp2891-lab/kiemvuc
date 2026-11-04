@@ -6,6 +6,8 @@ Webgame kiếm hiệp chơi đơn bằng JavaScript và Canvas 2D. Bản v2 tíc
 
 Chọn **Bắt đầu từ Lv1** để chơi hành trình, hoặc **Thử toàn bộ Lv400** để kiểm tra mọi phái, kỹ năng và bản đồ. Khi đang chơi, nút **Thử Lv400** nằm trên thanh đầu trang. Chế độ thử không ghi đè hành trình chính; dùng **Đổi phái**, **Bù nhìn**, rồi **Về hành trình** để quay lại.
 
+![14 môn phái trên bản GitHub Pages](docs/kiem-vuc-v2-live.png)
+
 ## Nội dung đã tích hợp
 
 | Hệ thống | Bản v2 |
