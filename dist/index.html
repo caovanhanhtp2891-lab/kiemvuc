@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b1717">
   <meta name="description" content="Kiếm Vực — bước vào giang hồ, luyện kiếm, săn thủ lĩnh và tìm trang bị. Webgame kiếm hiệp chơi đơn lưu tự động.">
-  <title>Kiếm Vực — Giang Hồ Mở Rộng</title>
+  <title>Kiếm Vực — Giang Hồ Pixel</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230c2525'/%3E%3Cpath d='M16 48 45 12l7-1-1 7-29 36zm-1-13 16 13' stroke='%23e5c48a' stroke-width='4' fill='none'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=2.1.1">
+  <link rel="stylesheet" href="style.css?v=2.2.0">
 </head>
 <body>
   <main id="game" aria-label="Game Kiếm Vực">
     <canvas id="world" aria-label="Thế giới kiếm hiệp. Nhấp để di chuyển hoặc chọn quái, dùng WASD và phím 1 đến 8 để chiến đấu."></canvas>
     <div class="vignette" aria-hidden="true"></div>
     <header class="topbar">
-      <a class="brand" href="#" aria-label="Kiếm Vực — mở hướng dẫn" id="brandLink"><span class="brand-mark" data-icon="swords"></span><span>KIẾM VỰC<small>GIANG HỒ MỞ RỘNG</small></span></a>
+      <a class="brand" href="#" aria-label="Kiếm Vực — mở hướng dẫn" id="brandLink"><span class="brand-mark" data-icon="swords"></span><span>KIẾM VỰC<small>GIANG HỒ PIXEL</small></span></a>
       <div class="chapter"><span class="tiny-line"></span><span>CHƯƠNG I<small>14 phái · 112 chiêu · 48 bản đồ.</small></span></div>
       <div class="top-actions"><button id="trialShortcut" class="trial-shortcut" data-demo-start>Thử Lv400</button><div class="solo"><i></i> CHƠI ĐƠN <span>·</span> TỰ ĐỘNG LƯU</div><button class="icon-btn" id="soundBtn" aria-label="Bật âm thanh" title="Bật âm thanh" data-icon="soundOff"></button><button class="icon-btn" id="settingsBtn" aria-label="Cài đặt" title="Cài đặt" data-icon="settings"></button></div>
     </header>
@@ -46,8 +46,9 @@
     <footer class="experience"><div id="xpFill"></div><span id="xpLabel">Cấp 1 · 0 / 80 EXP</span></footer>
     <div id="demoBadge" class="demo-badge" hidden>THỬ LV400 · KHÔNG GHI ĐÈ HÀNH TRÌNH <button data-open="classes">Đổi phái</button><button data-spawn-dummy>Bù nhìn</button><button id="leaveDemo">Về hành trình</button></div><input id="saveImport" type="file" accept="application/json,.json" hidden><div id="modalRoot"></div>
   </main>
-  <script src="content.js?v=2.1.0"></script>
-  <script src="rules.js?v=2.1.0"></script>
-  <script src="game.js?v=2.1.0"></script>
+  <script src="content.js?v=2.2.0"></script>
+  <script src="rules.js?v=2.2.0"></script>
+  <script src="pixel-art.js?v=2.2.0"></script>
+  <script src="game.js?v=2.2.0"></script>
 </body>
 </html>

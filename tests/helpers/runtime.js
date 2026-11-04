@@ -6,10 +6,10 @@ const D=require('../../dist/content.js'),rules=require('../../dist/rules.js');
 function runtime(profile=rules.createRules(D).profile(0,'Regression',true)){
  const listeners={},elements=new Map(),saved=new Map();
  const context=new Proxy({createRadialGradient:()=>({addColorStop(){}}),createLinearGradient:()=>({addColorStop(){}}),measureText:()=>({width:10})},{get:(o,k)=>o[k]??(()=>{}),set:(o,k,v)=>(o[k]=v,true)});
- function element(id=''){if(elements.has(id))return elements.get(id);const e={id,hidden:false,value:'',innerHTML:'',textContent:'',style:{},dataset:{},classList:{contains:()=>false,add(){},remove(){}},setAttribute(k,v){this[k]=v;},getContext:()=>context,addEventListener(k,fn){(listeners[id+':'+k]??=[]).push(fn);},append(){},remove(){},focus(){},click(){},querySelector:sel=>element(id+sel),querySelectorAll:()=>[]};elements.set(id,e);return e;}
+ function element(id=''){if(elements.has(id))return elements.get(id);const e={id,hidden:false,value:'',innerHTML:'',textContent:'',style:{},dataset:{},classList:{contains:()=>false,add(){},remove(){},toggle(){}},setAttribute(k,v){this[k]=v;},toDataURL:()=>"data:image/png;base64,fixture",getContext:()=>context,addEventListener(k,fn){(listeners[id+':'+k]??=[]).push(fn);},append(){},remove(){},focus(){},click(){},querySelector:sel=>element(id+sel),querySelectorAll:()=>[]};elements.set(id,e);return e;}
  const document={hidden:false,activeElement:null,querySelector:element,querySelectorAll:()=>[],createElement:()=>element('temp'+elements.size),addEventListener:(key,fn)=>(listeners[key]??=[]).push(fn)};
  saved.set('kiem-vuc-save-v2',JSON.stringify({...profile,started:true}));
- const window={KV_CONTENT:D,KV_RULES:rules,addEventListener(){}};
+ const window={KV_CONTENT:D,KV_RULES:rules,KV_PIXEL:require('../../dist/pixel-art.js'),addEventListener(){}};
  let seed=1234567;const randomMath=Object.create(Math);randomMath.random=()=>((seed=(seed*1664525+1013904223)>>>0)/4294967296);
  const env={document,window,innerWidth:1360,innerHeight:900,devicePixelRatio:1,localStorage:{getItem:k=>saved.get(k)||null,setItem:(k,v)=>saved.set(k,v)},requestAnimationFrame(){},setTimeout(){},clearTimeout(){},setInterval(){},Date,Math:randomMath,console,Blob,URL,performance:{now:()=>0}};
  const source=fs.readFileSync(path.join(__dirname,'../../dist/game.js'),'utf8'),marker='const away=';
