@@ -1,0 +1,11 @@
+# Trạng thái triển khai và thiết lập cục bộ
+.openai/
+.env
+.env.*
+!.env.example
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+__pycache__/
