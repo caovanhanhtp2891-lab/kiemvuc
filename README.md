@@ -1,12 +1,14 @@
 # Kiếm Vực — Giang Hồ Mở Rộng
 
-Webgame kiếm hiệp chơi đơn bằng JavaScript và Canvas 2D. Bản v2 tích hợp thông số tham chiếu vào engine viết độc lập, kèm hình vẽ, biểu tượng, địa hình và hiệu ứng mới.
+Webgame kiếm hiệp chơi đơn bằng JavaScript và Canvas 2D. Bản v2.1 tích hợp thông số tham chiếu vào engine viết độc lập, kèm hình vẽ, biểu tượng, địa hình và hiệu ứng mới.
 
 **Chơi ngay:** https://caovanhanhtp2891-lab.github.io/kiemvuc/
 
 Chọn **Bắt đầu từ Lv1** để chơi hành trình, hoặc **Thử toàn bộ Lv400** để kiểm tra mọi phái, kỹ năng và bản đồ. Khi đang chơi, nút **Thử Lv400** nằm trên thanh đầu trang. Chế độ thử không ghi đè hành trình chính; dùng **Đổi phái**, **Bù nhìn**, rồi **Về hành trình** để quay lại.
 
 ![14 môn phái trên bản GitHub Pages](docs/kiem-vuc-v2-live.png)
+
+Bản **v2.1** sửa đường lướt/đạn, tác dụng và cấp kỹ năng, auto, thú cưng, thuốc x2, truy nã và thưởng hoạt động. Xem [báo cáo lỗi và kiểm tra](docs/audit-v2.1.md). Số phiên bản hiện ở góc trên màn chơi.
 
 ## Nội dung đã tích hợp
 
@@ -76,10 +78,10 @@ docs/
 node --check dist/content.js
 node --check dist/rules.js
 node --check dist/game.js
-node --test tests/rules.test.js
+node --test tests/*.test.js
 ```
 
-12 bài kiểm tra tự động bao phủ đủ 86 điều kiện và phần thưởng nhiệm vụ, tham chiếu bản đồ/quái, sát thương, EXP, trang bị/ngọc, rèn, chuyển bản lưu và túi đầy. Đã thử trực tiếp thi triển đủ 112 chiêu qua 14 phái, đi bản đồ cuối Lv400, tự đánh, nhiệm vụ boss, trả thưởng, cường hóa, đục lỗ và khảm ngọc. GitHub Actions kiểm tra cú pháp và luật chơi trước khi triển khai thư mục `dist/` lên Pages.
+34 bài kiểm tra tự động bao phủ đủ 86 điều kiện và phần thưởng nhiệm vụ, tham chiếu bản đồ/quái, sát thương, EXP, trang bị/ngọc, rèn, chuyển bản lưu và túi đầy. Có thêm mô phỏng tác dụng thật của từng chiêu trong đủ 112 chiêu, tự đánh 120 giây ở cấp 1 cho 14 phái, 86 luồng dẫn đường, phó bản, đấu trường và tự hồi sinh. Đã thử trực tiếp thi triển đủ 112 chiêu qua 14 phái, đi bản đồ cuối Lv400, tự đánh, nhiệm vụ boss, trả thưởng, cường hóa, đục lỗ và khảm ngọc. GitHub Actions kiểm tra cú pháp và luật chơi trước khi triển khai thư mục `dist/` lên Pages.
 
 ## Phạm vi
 

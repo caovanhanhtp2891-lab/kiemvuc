@@ -1,4 +1,6 @@
-# Bản triển khai v2 — 04/11/2026
+# Bản triển khai v2 / cập nhật v2.1 — 04/11/2026
+
+Bản v2.1 bổ sung kiểm tra tác dụng thật của 112 chiêu, hành trình cấp 1 cho 14 phái, 86 luồng dẫn đường và sửa các lỗi ghi trong [báo cáo kiểm tra](audit-v2.1.md).
 
 Địa chỉ chạy: https://caovanhanhtp2891-lab.github.io/kiemvuc/
 
@@ -23,7 +25,7 @@
 
 ## Bằng chứng kiểm tra
 
-- Node: 12 bài kiểm tra qua; có mô phỏng toàn bộ 86 nhiệm vụ và kiểm tra từng phần thưởng.
+- Node: 34 bài kiểm tra qua; có mô phỏng toàn bộ 86 nhiệm vụ và kiểm tra từng phần thưởng.
 - Trình duyệt: đã đổi đủ 14 phái và thi triển đủ 112 kỹ năng trên bù nhìn; cả 112 lần đều xuất hiện hồi chiêu, không có lỗi JavaScript từ ứng dụng trong lượt thử.
 - Đã đi map cuối **Vĩnh Kiếp Tận Thế**, thấy boss cấp 400; đã thử tự đánh và nhận tiến độ nhiệm vụ trong hành trình cấp thấp.
 - Đã hạ **Vua Lợn Rừng**, nhận thưởng **Áo bậc 2**, cường hóa +1 (đá 300→299), đục 1 lỗ và khảm Hỏa Ngọc cấp 1; đồ tăng chỉ số Công +6.
