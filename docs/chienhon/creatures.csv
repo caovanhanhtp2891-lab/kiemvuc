@@ -1,0 +1,147 @@
+﻿creature_id,name,level,boss,ai_mode,movement_speed,magic_damage_flag,guard_mechanic_flag,flying_flag,hp_coefficient,attack_coefficient,exp_coefficient,client_calculated_base_hp,client_calculated_base_attack,client_calculated_base_physical_defense,client_calculated_base_magic_defense,client_calculated_base_exp,client_calculated_base_gold
+slime,Nhầy Xanh,1,False,passive,40,False,False,False,1,1,1,57,9,1,1,16,4
+boar,Lợn Rừng,3,False,aggro,60,False,False,False,1,1,1,109,16,4,3,33,7
+ong,Ong Độc,5,False,aggro,75,True,False,True,1,1,1,185,22,7,6,67,11
+namma,Nấm Ma,7,False,aggro,35,True,False,False,1,1,1,285,28,9,8,117,15
+soi,Sói Rừng,9,False,aggro,90,False,False,False,1,1,1,409,35,12,10,184,18
+sontac,Sơn Tặc,11,False,aggro,80,False,False,False,1,1,1,557,41,14,12,268,22
+doida,Dơi Đá,13,False,aggro,95,False,False,True,1,1,1,729,48,17,14,369,25
+thachnhan,Thạch Nhân,15,False,aggro,40,False,False,False,1,1,1,925,54,20,17,487,29
+hacphong,Hắc Phong Tặc,17,False,ranged,85,False,False,False,1,1,1,1145,60,22,19,621,33
+bocap,Bò Cạp Cát,19,False,aggro,70,False,False,False,1,1,1,1389,67,25,21,772,36
+sahon,Sa Hồn,21,False,aggro,65,True,False,True,1,1,1,1657,73,27,23,940,40
+sathach,Sa Thạch Thú,23,False,aggro,45,False,False,False,1,1,1,1949,80,30,25,1125,43
+bangnhan,Băng Nhân,26,False,aggro,45,False,False,False,1,1,1,2432,89,34,29,1434,49
+tuyetlang,Tuyết Lang,28,False,aggro,100,False,False,False,1,1,1,2784,96,36,31,1660,52
+banghon,Băng Hồn,30,False,ranged,70,True,False,True,1,1,1,3160,102,39,33,1904,56
+huyetxa,Huyết Xà,32,False,aggro,70,False,False,False,1,1,1,3560,108,42,35,2164,60
+doccoc,Độc Cóc,34,False,ranged,50,True,False,False,1,1,1,3984,115,44,37,2442,63
+thienmave,Thiên Ma Vệ,37,False,aggro,95,False,False,False,1,1,1,4665,124,48,41,2889,69
+huyetbuc,Huyết Bức,39,False,aggro,110,True,False,True,1,1,1,5149,131,51,43,3208,72
+maanh,Ma Ảnh,42,False,aggro,80,True,False,True,1,1,1,5920,140,55,46,3718,78
+thachma,Thạch Ma,44,False,aggro,45,False,False,False,1,1,1,6464,147,57,48,4080,81
+hacky,Hắc Kỵ Binh,46,False,ranged,95,False,False,False,1,1,1,7032,153,60,51,4458,85
+mocyeu,Mộc Yêu,50,False,aggro,45,True,False,False,1,1,1,8240,166,65,55,5264,92
+dochat,Độc Hạt Đen,52,False,aggro,80,False,False,False,1,1,1,8880,172,68,57,5692,96
+hacho,Hắc Hổ,54,False,aggro,110,False,False,False,1,1,1,9544,179,70,59,6138,99
+honthu,Hỗn Độn Thú,57,False,aggro,60,True,False,False,1,1,1,10585,188,74,63,6837,105
+loima,Lôi Ma,59,False,ranged,100,True,False,True,1,1,1,11309,195,77,65,7324,108
+vucxa,Vực Xà,61,False,aggro,80,False,False,False,1,1,1,12057,201,79,67,7828,112
+thanve,Thần Điện Vệ,64,False,aggro,100,False,False,False,1,1,1,13224,211,83,70,8616,117
+codaithu,Cổ Đại Thạch Thú,66,False,aggro,50,False,False,False,1,1,1,14032,217,86,73,9162,121
+vanthu,Vân Thú,69,False,aggro,60,True,False,False,1,1,1,15289,227,90,76,10012,126
+tienhac,Tiên Hạc Ma,71,False,ranged,105,True,False,True,1,1,1,16157,233,92,78,10600,130
+thienbinh,Thiên Binh Sa Đọa,73,False,aggro,100,False,False,False,1,1,1,17049,240,95,80,11205,133
+loithu,Lôi Thú,77,False,aggro,115,False,False,False,1,1,1,18905,252,100,85,12465,141
+loixa,Lôi Xà,79,False,aggro,85,True,False,False,1,1,1,19869,259,103,87,13120,144
+loinhan,Lôi Nhân,81,False,ranged,50,True,False,False,1,1,1,20857,265,105,89,13792,148
+quyhon,Quỷ Hồn,85,False,aggro,80,True,False,True,1,1,1,22905,278,111,94,15187,155
+amlang,Âm Lang,87,False,aggro,120,False,False,False,1,1,1,23965,284,113,96,15909,159
+hoangtuyenve,Hoàng Tuyền Vệ,89,False,ranged,105,False,False,False,1,1,1,25049,291,116,98,16648,162
+nguyenma,Nguyên Ma,93,False,aggro,120,True,False,True,1,1,1,27289,304,121,102,18177,169
+honnguyen,Hỗn Nguyên Cự Thú,95,False,aggro,55,False,False,False,1,1,1,28445,310,124,105,18967,173
+tinhquai,Tinh Quái,99,False,aggro,65,True,False,False,1,1,1,30829,323,129,109,20596,180
+hukhongdieu,Hư Không Điểu,102,False,ranged,115,True,False,True,1,1,1,32680,332,133,112,21862,186
+tinhthiet,Tinh Thiết Nhân,105,False,aggro,55,False,False,False,1,1,1,34585,342,137,116,23167,191
+huyetlang,Huyết Nguyệt Lang,110,False,aggro,125,False,False,False,1,1,1,37880,358,143,121,25424,200
+tama,Tà Ma Thích Khách,114,False,ranged,115,False,False,False,1,1,1,40624,371,148,125,27306,207
+huyetma,Huyết Ma Bức,118,False,aggro,125,True,False,True,1,1,1,43464,384,153,130,29254,214
+hukhongxa,Hư Không Xà,124,False,aggro,95,True,False,False,1,1,1,47904,403,161,136,32304,225
+hukhongthu,Hư Không Cự Thú,128,False,aggro,60,False,False,False,1,1,1,50984,416,166,141,34420,232
+hukhongma,Hư Không Ma Ảnh,132,False,ranged,95,True,False,True,1,1,1,54160,428,172,145,36604,240
+tathanve,Tà Thần Hộ Vệ,138,False,aggro,120,False,False,False,1,1,1,59104,448,179,152,40006,250
+tathanthu,Tà Thần Ma Khuyển,142,False,aggro,130,False,False,False,1,1,1,62520,460,185,156,42358,258
+b_lon,Vua Lợn Rừng,7,True,aggro,70,False,False,False,9,1.5,12,2565,43,9,8,1403,117
+b_soi,Lang Vương,13,True,aggro,110,False,False,False,10,1.6,14,7290,76,17,14,5165,203
+b_trai,Trại Chủ Sơn Tặc,18,True,aggro,90,False,False,False,11,1.7,15,13904,108,23,20,10416,275
+b_bocap,Bò Cạp Chúa,25,True,aggro,80,False,False,False,12,1.8,16,27180,155,33,28,21224,376
+b_bang,Băng Vương,31,True,aggro,55,True,False,False,13,1.9,17,43641,200,40,34,34546,462
+b_xa,Xà Hậu,36,True,aggro,80,False,False,False,14,2,18,62048,242,47,40,49241,534
+b_ky,Ma Tướng Hắc Kỵ,48,True,aggro,110,False,False,False,15,2,20,114360,319,62,53,97048,707
+b_moc,Hắc Mộc Thụ Vương,56,True,aggro,50,True,False,False,16,2.1,22,163712,389,73,62,145191,822
+b_long,Hỗn Độn Ma Long,63,True,aggro,90,True,False,False,18,2.2,24,230922,457,82,69,200374,923
+b_thaico,Thái Cổ Ma Thần,70,True,aggro,120,True,False,False,28,2.5,40,440160,575,91,77,412160,1024
+b_thientuong,Sa Đọa Thiên Tướng,76,True,aggro,115,False,False,False,18,2.3,26,331776,573,99,84,315734,1110
+b_loi,Lôi Đế,84,True,aggro,60,True,False,False,20,2.4,28,447680,660,109,92,415285,1226
+b_diem,Diêm Quân,92,True,aggro,120,True,False,False,22,2.5,30,587840,751,120,101,533652,1341
+b_nguyen,Hỗn Nguyên Ma Tổ,100,True,aggro,100,True,False,False,32,2.8,45,1006080,913,130,110,945630,1456
+b_tinh,Tinh Thần Thú Vương,108,True,aggro,65,True,False,False,24,2.6,32,877056,914,140,119,784269,1571
+b_nguyet,Huyết Nguyệt Ma Hậu,122,True,aggro,100,True,False,False,26,2.7,34,1206400,1070,159,134,1063194,1773
+b_hukhong,Hư Không Long Đế,136,True,aggro,105,True,False,False,28,2.8,36,1608096,1235,177,150,1398802,1974
+b_tathan,Thiên Ngoại Tà Thần,150,True,aggro,130,True,False,False,40,3,55,2785600,1458,195,165,2599520,2176
+hoangthu,Hồng Hoang Cự Thú,150,False,aggro,80,False,False,False,1,1,1,69640,486,195,165,47264,272
+codaimang,Cổ Đại Mãng Xà,154,False,aggro,95,True,False,False,1,1,1,73344,499,200,169,49818,279
+thachquy,Thạch Cốt Quỷ,157,False,aggro,58,False,False,False,1,1,1,76185,508,204,173,51777,285
+thanmabinh,Thần Ma Chiến Binh,162,False,aggro,120,False,False,False,1,1,1,81040,524,211,178,55126,294
+maky,Ma Kỵ Xạ Thủ,166,False,ranged,115,False,False,False,1,1,1,85032,537,216,183,57882,301
+chienhon,Chiến Hồn Oán Linh,169,False,ranged,95,True,False,True,1,1,1,88089,547,220,186,59992,306
+thienlong,Thiên Long Ấu Tử,175,False,aggro,105,True,False,False,1,1,1,94365,566,228,193,64327,317
+huyendieu,Cửu Thiên Huyền Điểu,178,False,ranged,125,True,False,True,1,1,1,97584,576,231,196,66550,322
+kimgiap,Thiên Binh Kim Giáp,182,False,aggro,60,False,False,False,1,1,1,101960,588,237,200,69574,330
+honmangthu,Hỗn Mang Ma Thú,190,False,aggro,135,False,False,False,1,1,1,111000,614,247,209,75824,344
+honmangvu,Hỗn Mang Vu Sư,194,False,ranged,110,True,False,False,1,1,1,115664,627,252,213,79050,351
+madeve,Ma Đế Cận Vệ,198,False,aggro,65,False,False,False,1,1,1,120424,640,257,218,82342,358
+thienngoaima,Thiên Ngoại Ma Tướng,203,False,aggro,120,False,False,False,1,1,1,130684,691,280,237,91746,367
+tinhhonthu,Tinh Hồn Thú,206,False,aggro,140,False,False,False,1,1,1,138827,737,300,254,99825,373
+thienngoaidieu,Thiên Ngoại Huyễn Điểu,209,False,ranged,130,True,False,True,1,1,1,147276,784,321,271,108258,378
+luanhoiquy,Luân Hồi Oán Quỷ,214,False,aggro,110,True,False,True,1,1,1,162049,865,356,301,123118,387
+hailong,Hải Long Thú,218,False,aggro,115,False,False,False,1,1,1,174505,932,385,326,135748,394
+thuyma,Thâm Hải Thủy Ma,221,False,aggro,70,True,False,False,1,1,1,184228,983,408,345,145664,400
+thoikhongthu,Thời Không Dị Thú,228,False,aggro,150,False,False,False,1,1,1,208213,1106,462,391,170321,412
+hukhongkiem,Hư Không Kiếm Linh,232,False,ranged,125,True,False,False,1,1,1,222756,1179,495,419,185393,420
+thoikhongma,Thời Không Huyết Bức,235,False,aggro,150,False,False,True,1,1,1,234072,1236,519,439,197177,425
+khoinguyenve,Khởi Nguyên Thần Vệ,240,False,aggro,70,False,False,False,1,1,1,253728,1331,562,475,217753,434
+thanhthu,Khởi Nguyên Thánh Thú,244,False,aggro,110,False,False,False,1,1,1,270183,1410,596,505,235074,441
+khoinguyenvu,Khởi Nguyên Thiên Sư,247,False,ranged,120,True,False,False,1,1,1,282958,1470,623,527,248578,447
+dietthema,Diệt Thế Ma Binh,254,False,aggro,135,False,False,False,1,1,1,325309,1743,742,628,304382,459
+dietthelang,Diệt Thế Huyết Lang,258,False,aggro,160,False,False,False,1,1,1,356526,1969,840,711,350279,466
+dietthevu,Diệt Thế Vu Ma,262,False,ranged,120,True,False,True,1,1,1,389851,2211,946,801,400437,474
+hoangcothu,Hoang Cổ Cự Thú,268,False,aggro,115,False,False,False,1,1,1,443984,2605,1118,946,484150,484
+hoangcoxa,Hoang Cổ Độc Mãng,272,False,aggro,130,False,False,False,1,1,1,482971,2889,1242,1051,545945,492
+hoangcoma,Hoang Cổ Thạch Ma,276,False,aggro,75,True,False,False,1,1,1,524384,3190,1374,1163,612801,499
+chungyenbuc,Chung Yên Huyết Bức,282,False,aggro,170,False,False,True,1,1,1,591265,3674,1587,1343,723106,510
+chungyenkiem,Chung Yên Kiếm Hồn,286,False,ranged,140,True,False,False,1,1,1,639168,4020,1739,1472,803682,517
+chungyenve,Chung Yên Thần Vệ,290,False,aggro,80,False,False,False,1,1,1,689839,4385,1900,1608,890185,524
+hukhongtho,Hư Vô Thôn Thiên Thú,294,False,aggro,165,False,False,False,1,1,1,743381,4769,2069,1751,982874,531
+huvoma,Hư Vô Ma Tôn,297,False,ranged,130,True,False,True,1,1,1,785483,5070,2202,1863,1056608,537
+thiendaove,Thiên Đạo Vệ Sĩ,303,False,aggro,140,False,False,False,1,1,1,921076,5860,2632,2227,1317510,547
+thiendaoung,Thiên Đạo Kim Ưng,307,False,aggro,170,False,False,True,1,1,1,1054096,6544,3057,2587,1590748,555
+thiendaotuong,Thiên Đạo Thạch Tượng,311,False,aggro,80,True,False,False,1,1,1,1200035,7283,3526,2983,1899270,562
+huyethaixa,Huyết Hải Long Xà,318,False,aggro,140,False,False,False,1,1,1,1489067,8719,4458,3772,2532802,574
+huyethaihon,Huyết Hải Oan Hồn,322,False,ranged,130,True,False,True,1,1,1,1674976,9625,5060,4281,2953579,582
+huyethaithiem,Huyết Hải Độc Thiềm,326,False,aggro,120,False,False,False,1,1,1,1877137,10598,5714,4835,3421123,589
+tichdietlang,Tịch Diệt Băng Lang,333,False,aggro,170,False,False,False,1,1,1,2272966,12469,6996,5920,4362161,601
+tichdietbuc,Tịch Diệt Hàn Bức,337,False,aggro,180,False,False,True,1,1,1,2524936,13641,7812,6610,4976277,609
+tichdietve,Tịch Diệt Băng Vệ,341,False,aggro,80,True,False,False,1,1,1,2796987,14890,8691,7354,5650667,616
+cuuusu,Cửu U Minh Sư,348,False,ranged,140,True,False,False,1,1,1,3324755,17273,10394,8795,6987892,628
+cuuuquy,Cửu U Quỷ Hồn,352,False,aggro,140,False,False,True,1,1,1,3657866,18753,11465,9701,7848945,636
+cuuuhat,Cửu U Độc Hạt,356,False,aggro,130,False,False,False,1,1,1,4015418,20324,12612,10672,8785955,643
+loikiepthu,Lôi Kiếp Cuồng Thú,363,False,aggro,125,False,False,False,1,1,1,4703749,23302,14811,12532,10622329,655
+loikiepung,Lôi Kiếp Thần Ưng,367,False,ranged,175,True,False,True,1,1,1,5135116,25140,16183,13693,11792286,663
+loikiepkiem,Lôi Kiếp Kiếm Tiên,371,False,aggro,150,False,False,False,1,1,1,5595848,27082,17643,14929,13056210,670
+nguyensothe,Nguyên Sơ Hỗn Độn Thể,378,False,aggro,110,True,False,False,1,1,1,6477061,30742,20422,17280,15509974,682
+nguyensomang,Nguyên Sơ Cự Mãng,382,False,aggro,140,False,False,False,1,1,1,7025959,32989,22143,18736,17059741,690
+nguyensoma,Nguyên Sơ Ma Thần,386,False,aggro,85,True,False,False,1,1,1,7609741,35354,23965,20278,18723967,697
+vinhkiepve,Vĩnh Kiếp Thần Vệ,393,False,aggro,150,False,False,False,1,1,1,8720072,39790,27411,23194,21929640,709
+vinhkiephon,Vĩnh Kiếp Tàn Hồn,397,False,ranged,140,True,False,True,1,1,1,9408057,42501,29533,24989,23939637,717
+b_hoang,Hồng Hoang Thú Tổ,162,True,aggro,85,False,False,False,30,2.9,40,2431200,1521,211,178,2205056,2349
+b_thanma,Thần Ma Chiến Tướng,175,True,aggro,125,True,False,False,32,3,42,3019680,1698,228,193,2701713,2536
+b_cuuthien,Cửu Thiên Huyền Nữ,188,True,aggro,105,True,False,False,34,3.1,45,3695936,1884,244,207,3340638,2723
+b_hongmong,Hồng Mông Tổ Ma,200,True,aggro,130,True,True,False,50,3.3,80,6142000,2132,260,220,6721120,2896
+b_thienngoai,Thiên Ngoại Ma Hoàng,212,True,aggro,130,True,False,False,36,3.2,50,5617256,2663,342,289,5852577,3069
+b_luanhoi,Luân Hồi Hải Đế,225,True,aggro,110,False,False,False,38,3.3,55,7512899,3474,439,371,8771936,3256
+b_thoikhong,Thời Không Ma Chủ,238,True,aggro,120,True,False,False,40,3.4,60,9829803,4395,545,461,12562852,3443
+b_khoinguyen,Khởi Nguyên Thiên Đế,250,True,aggro,135,False,True,False,60,3.6,120,17766720,5513,650,550,31503360,3616
+b_dietthe,Diệt Thế Ma Quân,264,True,aggro,140,False,False,False,45,3.6,70,18329888,8418,1002,848,29902779,3818
+b_hoangco,Hoang Cổ Thú Hoàng,278,True,aggro,110,False,False,False,50,3.7,80,27301561,12383,1443,1221,51856225,4019
+b_chungyen,Chung Yên Tử Thần,290,True,aggro,130,True,False,False,55,3.9,90,37941149,17102,1900,1608,80116646,4192
+b_huvo,Hư Vô Chi Chủ,300,True,aggro,85,True,True,False,80,4.2,200,66344141,22607,2340,1980,226816800,4336
+b_thiendao,Thiên Đạo Phán Quan,315,True,aggro,150,False,False,False,60,4,90,81584139,32322,4041,3419,202135322,4552
+b_huyethai,Huyết Hải Ma Long,330,True,aggro,140,False,False,False,65,4.1,100,136273891,47726,6425,5436,393883177,4768
+b_tichdiet,Tịch Diệt Băng Đế,345,True,aggro,85,True,False,False,70,4.2,110,216316011,68124,9638,8155,702822309,4984
+b_cuuu,Cửu U Minh Vương,360,True,aggro,135,True,False,False,75,4.3,120,329900124,94555,13838,11709,1176418769,5200
+b_loikiep,Thiên Kiếp Lôi Tổ,375,True,aggro,155,True,False,False,80,4.4,130,486988604,128179,19195,16242,1874511127,5416
+b_nguyenso,Nguyên Sơ Thôn Thiên Lang,390,True,aggro,165,False,False,False,85,4.5,140,699548828,170287,25894,21910,2871197565,5632
+b_vinhkiep,Vĩnh Kiếp Thiên Tôn,400,True,aggro,90,True,True,False,120,4.8,300,1194105618,214183,31200,26400,7661119200,5776
+b_world,Thái Hư Ma Đế,210,True,aggro,70,True,True,False,85,3.6,200,12763668,2880,328,277,22229760,3040
+b_ma,Thiên Ma Vương,43,True,aggro,110,True,False,False,22,2.2,30,136158,316,56,47,116907,635

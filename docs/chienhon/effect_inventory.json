@@ -1,0 +1,28 @@
+{
+  "skill_mechanic_type_counts": {
+    "cone": 16,
+    "dash": 8,
+    "buff": 12,
+    "circle": 24,
+    "ult": 14,
+    "proj": 18,
+    "rain": 7,
+    "chain": 5,
+    "shield": 5,
+    "heal": 2,
+    "summon": 1
+  },
+  "direct_effect_tags_observed": [
+    "arc",
+    "bolt",
+    "boom",
+    "excl",
+    "flash",
+    "pillar",
+    "ring",
+    "rune",
+    "warnc",
+    "wbw"
+  ],
+  "scope": "These are identifiers of observed effect categories, not the source of the visual renderer, animation frames or a guarantee of a complete effect inventory."
+}

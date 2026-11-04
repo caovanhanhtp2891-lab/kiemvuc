@@ -1,0 +1,42 @@
+{
+  "original_asset_bytes_included": false,
+  "url_checks": [
+    {
+      "asset_path": "icon-192.png",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "asset_path": "icon-512.png",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "asset_path": "og.jpg",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "asset_path": "donate.jpg",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "asset_path": "spr/kiem_m.webp?v=1",
+      "error": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "declared_optional_sprite_sheets": [
+    {
+      "class_id": "kiem",
+      "variant": "male",
+      "declared_frames": 20,
+      "url": "https://chienhon.top/spr/kiem_m.webp?v=1",
+      "condition": "Optional sprite mode must be enabled; only this sheet has a concrete frame declaration in the observed bundle."
+    }
+  ],
+  "generated_assets": {
+    "characters_npcs_monsters": "Most are constructed by Canvas drawing routines. No standalone image file is guaranteed for each entity.",
+    "skill_effects": "Canvas primitives, particles, rings, beams, projectiles and animated drawing routines.",
+    "item_icons": "Emoji and programmatically generated Canvas icons.",
+    "music_and_combat_audio": "Web Audio synthesis is present. A separate online story-audio feature references a server service; no audio stream was retrieved.",
+    "share_card": "The filename chien-hon.png is a generated share-card output, not an observed downloadable static file."
+  },
+  "verification_limit": "HEAD requests for the listed image resources returned 403. Resource existence and GET-download availability were not confirmed; no alternative access or bypass was attempted."
+}

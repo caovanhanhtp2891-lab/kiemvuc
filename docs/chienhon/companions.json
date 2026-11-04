@@ -1,0 +1,153 @@
+{
+  "pets": [
+    {
+      "id": "soi",
+      "name": "Sói Con",
+      "stat_bonuses": {
+        "atkP": 4
+      },
+      "flying": false
+    },
+    {
+      "id": "hac",
+      "name": "Bạch Hạc",
+      "stat_bonuses": {
+        "hpP": 6
+      },
+      "flying": true
+    },
+    {
+      "id": "ho",
+      "name": "Hổ Con",
+      "stat_bonuses": {
+        "crit": 4
+      },
+      "flying": false
+    },
+    {
+      "id": "linhho",
+      "name": "Linh Hồ",
+      "stat_bonuses": {},
+      "flying": false
+    },
+    {
+      "id": "kylan",
+      "name": "Hoả Kỳ Lân",
+      "stat_bonuses": {
+        "atkP": 7,
+        "crit": 5
+      },
+      "flying": false
+    },
+    {
+      "id": "phuong",
+      "name": "Phượng Hoàng",
+      "stat_bonuses": {
+        "hpP": 10,
+        "regen": 6
+      },
+      "flying": true
+    },
+    {
+      "id": "rua",
+      "name": "Rùa Thần",
+      "stat_bonuses": {
+        "hpP": 7,
+        "regen": 5
+      },
+      "flying": false
+    },
+    {
+      "id": "thanhlong",
+      "name": "Thanh Long",
+      "stat_bonuses": {
+        "atkP": 5,
+        "hpP": 5,
+        "critD": 12
+      },
+      "flying": true
+    }
+  ],
+  "mounts": [
+    {
+      "id": "ngua1",
+      "name": "Ngựa Nâu",
+      "movement_speed_bonus_percent": 30
+    },
+    {
+      "id": "ngua2",
+      "name": "Bạch Mã",
+      "movement_speed_bonus_percent": 45
+    },
+    {
+      "id": "ngua3",
+      "name": "Huyết Hãn Mã",
+      "movement_speed_bonus_percent": 60
+    },
+    {
+      "id": "heo",
+      "name": "Heo Rừng",
+      "movement_speed_bonus_percent": 35
+    },
+    {
+      "id": "bo",
+      "name": "Hoàng Ngưu",
+      "movement_speed_bonus_percent": 40
+    },
+    {
+      "id": "trau",
+      "name": "Thanh Thuỷ Ngưu",
+      "movement_speed_bonus_percent": 50
+    },
+    {
+      "id": "ho",
+      "name": "Bạch Hổ",
+      "movement_speed_bonus_percent": 65
+    },
+    {
+      "id": "kimquy",
+      "name": "Kim Quy",
+      "movement_speed_bonus_percent": 70
+    },
+    {
+      "id": "phuong",
+      "name": "Phượng Hoàng",
+      "movement_speed_bonus_percent": 75
+    },
+    {
+      "id": "rong",
+      "name": "Kim Long",
+      "movement_speed_bonus_percent": 85
+    }
+  ],
+  "factions": [
+    {
+      "id": "long",
+      "name": "Thanh Long",
+      "stat_bonuses": {
+        "defP": 6
+      }
+    },
+    {
+      "id": "ho",
+      "name": "Bạch Hổ",
+      "stat_bonuses": {
+        "atkP": 6
+      }
+    },
+    {
+      "id": "tuoc",
+      "name": "Chu Tước",
+      "stat_bonuses": {
+        "crit": 4
+      }
+    },
+    {
+      "id": "vu",
+      "name": "Huyền Vũ",
+      "stat_bonuses": {
+        "hpP": 8
+      }
+    }
+  ]
+}

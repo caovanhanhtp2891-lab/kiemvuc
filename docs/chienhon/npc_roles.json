@@ -1,0 +1,472 @@
+[
+  {
+    "role_id": "truong",
+    "function_summary": "Giao nhiệm vụ khởi đầu",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 0,
+        "map_name": "Trấn Bạch Vân",
+        "display_name": "Trưởng Trấn Lý"
+      }
+    ]
+  },
+  {
+    "role_id": "thutuong",
+    "function_summary": "Giao nhiệm vụ tuyến biên ải",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 4,
+        "map_name": "Thành Biên Ải",
+        "display_name": "Thủ Tướng Triệu"
+      }
+    ]
+  },
+  {
+    "role_id": "taphoa",
+    "function_summary": "Bán vật tư và thuốc",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 0,
+        "map_name": "Trấn Bạch Vân",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "map_index": 4,
+        "map_name": "Thành Biên Ải",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "map_index": 10,
+        "map_name": "Doanh Trại Tây Vực",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "map_index": 15,
+        "map_name": "Thiên Cung Ngoại Thành",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "map_index": 20,
+        "map_name": "Tinh Hà Tiên Thành",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "map_index": 25,
+        "map_name": "Thần Hoang Thánh Thành",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "map_index": 31,
+        "map_name": "Vĩnh Hằng Thánh Vực",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "map_index": 36,
+        "map_name": "Tận Thế Cô Thành",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "map_index": 41,
+        "map_name": "Vạn Kiếp Thành",
+        "display_name": "Tạp Hóa"
+      }
+    ]
+  },
+  {
+    "role_id": "thoren",
+    "function_summary": "Rèn, khảm và xử lý trang bị",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 0,
+        "map_name": "Trấn Bạch Vân",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "map_index": 4,
+        "map_name": "Thành Biên Ải",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "map_index": 10,
+        "map_name": "Doanh Trại Tây Vực",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "map_index": 15,
+        "map_name": "Thiên Cung Ngoại Thành",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "map_index": 20,
+        "map_name": "Tinh Hà Tiên Thành",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "map_index": 25,
+        "map_name": "Thần Hoang Thánh Thành",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "map_index": 31,
+        "map_name": "Vĩnh Hằng Thánh Vực",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "map_index": 36,
+        "map_name": "Tận Thế Cô Thành",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "map_index": 41,
+        "map_name": "Vạn Kiếp Thành",
+        "display_name": "Thợ Rèn"
+      }
+    ]
+  },
+  {
+    "role_id": "vosu",
+    "function_summary": "Học và nâng võ học",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 0,
+        "map_name": "Trấn Bạch Vân",
+        "display_name": "Võ Sư"
+      },
+      {
+        "map_index": 4,
+        "map_name": "Thành Biên Ải",
+        "display_name": "Võ Sư"
+      },
+      {
+        "map_index": 10,
+        "map_name": "Doanh Trại Tây Vực",
+        "display_name": "Võ Sư"
+      },
+      {
+        "map_index": 15,
+        "map_name": "Thiên Cung Ngoại Thành",
+        "display_name": "Võ Sư"
+      },
+      {
+        "map_index": 20,
+        "map_name": "Tinh Hà Tiên Thành",
+        "display_name": "Võ Sư"
+      },
+      {
+        "map_index": 25,
+        "map_name": "Thần Hoang Thánh Thành",
+        "display_name": "Võ Sư"
+      },
+      {
+        "map_index": 31,
+        "map_name": "Vĩnh Hằng Thánh Vực",
+        "display_name": "Võ Sư"
+      },
+      {
+        "map_index": 36,
+        "map_name": "Tận Thế Cô Thành",
+        "display_name": "Võ Sư"
+      },
+      {
+        "map_index": 41,
+        "map_name": "Vạn Kiếp Thành",
+        "display_name": "Võ Sư"
+      }
+    ]
+  },
+  {
+    "role_id": "kho",
+    "function_summary": "Gửi và lấy vật phẩm",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 0,
+        "map_name": "Trấn Bạch Vân",
+        "display_name": "Quản Kho"
+      },
+      {
+        "map_index": 4,
+        "map_name": "Thành Biên Ải",
+        "display_name": "Quản Kho"
+      },
+      {
+        "map_index": 10,
+        "map_name": "Doanh Trại Tây Vực",
+        "display_name": "Quản Kho"
+      },
+      {
+        "map_index": 15,
+        "map_name": "Thiên Cung Ngoại Thành",
+        "display_name": "Quản Kho"
+      },
+      {
+        "map_index": 20,
+        "map_name": "Tinh Hà Tiên Thành",
+        "display_name": "Quản Kho"
+      },
+      {
+        "map_index": 25,
+        "map_name": "Thần Hoang Thánh Thành",
+        "display_name": "Quản Kho"
+      },
+      {
+        "map_index": 31,
+        "map_name": "Vĩnh Hằng Thánh Vực",
+        "display_name": "Quản Kho"
+      },
+      {
+        "map_index": 36,
+        "map_name": "Tận Thế Cô Thành",
+        "display_name": "Quản Kho"
+      },
+      {
+        "map_index": 41,
+        "map_name": "Vạn Kiếp Thành",
+        "display_name": "Quản Kho"
+      }
+    ]
+  },
+  {
+    "role_id": "maphu",
+    "function_summary": "Dịch vụ thú và thú cưỡi",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 0,
+        "map_name": "Trấn Bạch Vân",
+        "display_name": "Mã Phu"
+      },
+      {
+        "map_index": 4,
+        "map_name": "Thành Biên Ải",
+        "display_name": "Mã Phu"
+      },
+      {
+        "map_index": 10,
+        "map_name": "Doanh Trại Tây Vực",
+        "display_name": "Mã Phu"
+      },
+      {
+        "map_index": 15,
+        "map_name": "Thiên Cung Ngoại Thành",
+        "display_name": "Mã Phu"
+      },
+      {
+        "map_index": 20,
+        "map_name": "Tinh Hà Tiên Thành",
+        "display_name": "Mã Phu"
+      },
+      {
+        "map_index": 25,
+        "map_name": "Thần Hoang Thánh Thành",
+        "display_name": "Mã Phu"
+      },
+      {
+        "map_index": 31,
+        "map_name": "Vĩnh Hằng Thánh Vực",
+        "display_name": "Mã Phu"
+      },
+      {
+        "map_index": 36,
+        "map_name": "Tận Thế Cô Thành",
+        "display_name": "Mã Phu"
+      },
+      {
+        "map_index": 41,
+        "map_name": "Vạn Kiếp Thành",
+        "display_name": "Mã Phu"
+      }
+    ]
+  },
+  {
+    "role_id": "dautruong",
+    "function_summary": "Tham gia đấu trường và đổi thưởng",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 0,
+        "map_name": "Trấn Bạch Vân",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "map_index": 4,
+        "map_name": "Thành Biên Ải",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "map_index": 10,
+        "map_name": "Doanh Trại Tây Vực",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "map_index": 15,
+        "map_name": "Thiên Cung Ngoại Thành",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "map_index": 20,
+        "map_name": "Tinh Hà Tiên Thành",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "map_index": 31,
+        "map_name": "Vĩnh Hằng Thánh Vực",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "map_index": 36,
+        "map_name": "Tận Thế Cô Thành",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "map_index": 41,
+        "map_name": "Vạn Kiếp Thành",
+        "display_name": "Quan Đấu Trường"
+      }
+    ]
+  },
+  {
+    "role_id": "truyna",
+    "function_summary": "Nhận hoạt động truy nã",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 0,
+        "map_name": "Trấn Bạch Vân",
+        "display_name": "Bảng Truy Nã"
+      }
+    ]
+  },
+  {
+    "role_id": "quansu",
+    "function_summary": "Giao nhiệm vụ giai đoạn tiếp theo",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 10,
+        "map_name": "Doanh Trại Tây Vực",
+        "display_name": "Quân Sư Mạc Vân"
+      }
+    ]
+  },
+  {
+    "role_id": "phoban",
+    "function_summary": "Vào phó bản",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 0,
+        "map_name": "Trấn Bạch Vân",
+        "display_name": "Sứ Giả Phó Bản"
+      },
+      {
+        "map_index": 4,
+        "map_name": "Thành Biên Ải",
+        "display_name": "Sứ Giả Phó Bản"
+      },
+      {
+        "map_index": 10,
+        "map_name": "Doanh Trại Tây Vực",
+        "display_name": "Sứ Giả Phó Bản"
+      },
+      {
+        "map_index": 15,
+        "map_name": "Thiên Cung Ngoại Thành",
+        "display_name": "Sứ Giả Phó Bản"
+      },
+      {
+        "map_index": 20,
+        "map_name": "Tinh Hà Tiên Thành",
+        "display_name": "Sứ Giả Phó Bản"
+      },
+      {
+        "map_index": 25,
+        "map_name": "Thần Hoang Thánh Thành",
+        "display_name": "Sứ Giả Phó Bản"
+      },
+      {
+        "map_index": 31,
+        "map_name": "Vĩnh Hằng Thánh Vực",
+        "display_name": "Sứ Giả Phó Bản"
+      },
+      {
+        "map_index": 36,
+        "map_name": "Tận Thế Cô Thành",
+        "display_name": "Sứ Giả Phó Bản"
+      },
+      {
+        "map_index": 41,
+        "map_name": "Vạn Kiếp Thành",
+        "display_name": "Sứ Giả Phó Bản"
+      }
+    ]
+  },
+  {
+    "role_id": "tiennhan",
+    "function_summary": "Giao nhiệm vụ giai đoạn cao",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 15,
+        "map_name": "Thiên Cung Ngoại Thành",
+        "display_name": "Tiên Nhân Huyền Cơ"
+      }
+    ]
+  },
+  {
+    "role_id": "tinhquan",
+    "function_summary": "Giao nhiệm vụ vùng thiên ngoại",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 20,
+        "map_name": "Tinh Hà Tiên Thành",
+        "display_name": "Tinh Quân Bắc Đẩu"
+      }
+    ]
+  },
+  {
+    "role_id": "thanhto",
+    "function_summary": "Giao nhiệm vụ giai đoạn cao",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 25,
+        "map_name": "Thần Hoang Thánh Thành",
+        "display_name": "Thánh Tổ Nguyên Thủy"
+      },
+      {
+        "map_index": 31,
+        "map_name": "Vĩnh Hằng Thánh Vực",
+        "display_name": "Thánh Tổ Nguyên Thủy"
+      },
+      {
+        "map_index": 36,
+        "map_name": "Tận Thế Cô Thành",
+        "display_name": "Thánh Tổ Nguyên Thủy"
+      },
+      {
+        "map_index": 41,
+        "map_name": "Vạn Kiếp Thành",
+        "display_name": "Thánh Tổ Nguyên Thủy"
+      }
+    ]
+  },
+  {
+    "role_id": "minhchu",
+    "function_summary": "Dịch vụ tổ đội",
+    "observed_town_roster_locations": [
+      {
+        "map_index": 25,
+        "map_name": "Thần Hoang Thánh Thành",
+        "display_name": "Minh Chủ Võ Lâm"
+      },
+      {
+        "map_index": 31,
+        "map_name": "Vĩnh Hằng Thánh Vực",
+        "display_name": "Minh Chủ Võ Lâm"
+      },
+      {
+        "map_index": 36,
+        "map_name": "Tận Thế Cô Thành",
+        "display_name": "Minh Chủ Võ Lâm"
+      },
+      {
+        "map_index": 41,
+        "map_name": "Vạn Kiếp Thành",
+        "display_name": "Minh Chủ Võ Lâm"
+      }
+    ]
+  }
+]

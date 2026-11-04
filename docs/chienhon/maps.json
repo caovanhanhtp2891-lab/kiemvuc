@@ -1,0 +1,1462 @@
+[
+  {
+    "map_index": 0,
+    "map_name": "Trấn Bạch Vân",
+    "level_label": "An toàn",
+    "safe_town": true,
+    "theme_id": "town",
+    "width_tiles": 52,
+    "height_tiles": 30,
+    "tile_size_world_units": 32,
+    "npc_roster": [
+      {
+        "role_id": "truong",
+        "display_name": "Trưởng Trấn Lý"
+      },
+      {
+        "role_id": "taphoa",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "role_id": "thoren",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "role_id": "vosu",
+        "display_name": "Võ Sư"
+      },
+      {
+        "role_id": "kho",
+        "display_name": "Quản Kho"
+      },
+      {
+        "role_id": "maphu",
+        "display_name": "Mã Phu"
+      },
+      {
+        "role_id": "truyna",
+        "display_name": "Bảng Truy Nã"
+      },
+      {
+        "role_id": "dautruong",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "role_id": "phoban",
+        "display_name": "Sứ Giả Phó Bản"
+      }
+    ],
+    "nominal_creature_spawns": [],
+    "boss_id": null,
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 1,
+    "map_name": "Đồng Cỏ Lộc Mã",
+    "level_label": "Lv 1–7",
+    "safe_town": false,
+    "theme_id": "meadow",
+    "width_tiles": 64,
+    "height_tiles": 44,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "slime",
+        "count": 10
+      },
+      {
+        "creature_id": "boar",
+        "count": 9
+      },
+      {
+        "creature_id": "ong",
+        "count": 6
+      }
+    ],
+    "boss_id": "b_lon",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 2,
+    "map_name": "Rừng Trúc U Tịch",
+    "level_label": "Lv 6–13",
+    "safe_town": false,
+    "theme_id": "bamboo",
+    "width_tiles": 66,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "namma",
+        "count": 8
+      },
+      {
+        "creature_id": "soi",
+        "count": 9
+      },
+      {
+        "creature_id": "sontac",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_soi",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 3,
+    "map_name": "Hẻm Núi Hắc Phong",
+    "level_label": "Lv 12–18",
+    "safe_town": false,
+    "theme_id": "canyon",
+    "width_tiles": 66,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "doida",
+        "count": 8
+      },
+      {
+        "creature_id": "thachnhan",
+        "count": 10
+      },
+      {
+        "creature_id": "hacphong",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_trai",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 4,
+    "map_name": "Thành Biên Ải",
+    "level_label": "An toàn",
+    "safe_town": true,
+    "theme_id": "town2",
+    "width_tiles": 52,
+    "height_tiles": 30,
+    "tile_size_world_units": 32,
+    "npc_roster": [
+      {
+        "role_id": "thutuong",
+        "display_name": "Thủ Tướng Triệu"
+      },
+      {
+        "role_id": "taphoa",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "role_id": "thoren",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "role_id": "vosu",
+        "display_name": "Võ Sư"
+      },
+      {
+        "role_id": "kho",
+        "display_name": "Quản Kho"
+      },
+      {
+        "role_id": "maphu",
+        "display_name": "Mã Phu"
+      },
+      {
+        "role_id": "dautruong",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "role_id": "phoban",
+        "display_name": "Sứ Giả Phó Bản"
+      }
+    ],
+    "nominal_creature_spawns": [],
+    "boss_id": null,
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 5,
+    "map_name": "Sa Mạc Hoàng Thổ",
+    "level_label": "Lv 18–25",
+    "safe_town": false,
+    "theme_id": "desert",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "bocap",
+        "count": 10
+      },
+      {
+        "creature_id": "sahon",
+        "count": 8
+      },
+      {
+        "creature_id": "sathach",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_bocap",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 6,
+    "map_name": "Động Băng Hàn",
+    "level_label": "Lv 25–31",
+    "safe_town": false,
+    "theme_id": "ice",
+    "width_tiles": 64,
+    "height_tiles": 44,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "bangnhan",
+        "count": 10
+      },
+      {
+        "creature_id": "tuyetlang",
+        "count": 9
+      },
+      {
+        "creature_id": "banghon",
+        "count": 7
+      }
+    ],
+    "boss_id": "b_bang",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 7,
+    "map_name": "Đầm Huyết Xà",
+    "level_label": "Lv 31–36",
+    "safe_town": false,
+    "theme_id": "swamp",
+    "width_tiles": 66,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "huyetxa",
+        "count": 11
+      },
+      {
+        "creature_id": "doccoc",
+        "count": 10
+      }
+    ],
+    "boss_id": "b_xa",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 8,
+    "map_name": "Đỉnh Thiên Ma",
+    "level_label": "Lv 36–44",
+    "safe_town": false,
+    "theme_id": "peak",
+    "width_tiles": 60,
+    "height_tiles": 42,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "thienmave",
+        "count": 11
+      },
+      {
+        "creature_id": "huyetbuc",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_ma",
+    "boss_always_flag": true
+  },
+  {
+    "map_index": 9,
+    "map_name": "Phế Tích Ma Thành",
+    "level_label": "Lv 42–50",
+    "safe_town": false,
+    "theme_id": "ruin",
+    "width_tiles": 66,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "maanh",
+        "count": 9
+      },
+      {
+        "creature_id": "thachma",
+        "count": 10
+      },
+      {
+        "creature_id": "hacky",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_ky",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 10,
+    "map_name": "Doanh Trại Tây Vực",
+    "level_label": "An toàn",
+    "safe_town": true,
+    "theme_id": "town2",
+    "width_tiles": 52,
+    "height_tiles": 30,
+    "tile_size_world_units": 32,
+    "npc_roster": [
+      {
+        "role_id": "quansu",
+        "display_name": "Quân Sư Mạc Vân"
+      },
+      {
+        "role_id": "taphoa",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "role_id": "thoren",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "role_id": "vosu",
+        "display_name": "Võ Sư"
+      },
+      {
+        "role_id": "kho",
+        "display_name": "Quản Kho"
+      },
+      {
+        "role_id": "maphu",
+        "display_name": "Mã Phu"
+      },
+      {
+        "role_id": "dautruong",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "role_id": "phoban",
+        "display_name": "Sứ Giả Phó Bản"
+      }
+    ],
+    "nominal_creature_spawns": [],
+    "boss_id": null,
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 11,
+    "map_name": "Rừng Hắc Mộc",
+    "level_label": "Lv 50–57",
+    "safe_town": false,
+    "theme_id": "darkwood",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "mocyeu",
+        "count": 10
+      },
+      {
+        "creature_id": "dochat",
+        "count": 9
+      },
+      {
+        "creature_id": "hacho",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_moc",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 12,
+    "map_name": "Vực Hỗn Độn",
+    "level_label": "Lv 56–63",
+    "safe_town": false,
+    "theme_id": "chaos",
+    "width_tiles": 66,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "honthu",
+        "count": 10
+      },
+      {
+        "creature_id": "loima",
+        "count": 8
+      },
+      {
+        "creature_id": "vucxa",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_long",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 13,
+    "map_name": "Thần Điện Thái Cổ",
+    "level_label": "Lv 63–70",
+    "safe_town": false,
+    "theme_id": "temple",
+    "width_tiles": 60,
+    "height_tiles": 42,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "thanve",
+        "count": 11
+      },
+      {
+        "creature_id": "codaithu",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_thaico",
+    "boss_always_flag": true
+  },
+  {
+    "map_index": 14,
+    "map_name": "Thiên Lộ Vân Hải",
+    "level_label": "Lv 68–76",
+    "safe_town": false,
+    "theme_id": "cloud",
+    "width_tiles": 66,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "vanthu",
+        "count": 10
+      },
+      {
+        "creature_id": "tienhac",
+        "count": 8
+      },
+      {
+        "creature_id": "thienbinh",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_thientuong",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 15,
+    "map_name": "Thiên Cung Ngoại Thành",
+    "level_label": "An toàn",
+    "safe_town": true,
+    "theme_id": "town2",
+    "width_tiles": 52,
+    "height_tiles": 30,
+    "tile_size_world_units": 32,
+    "npc_roster": [
+      {
+        "role_id": "tiennhan",
+        "display_name": "Tiên Nhân Huyền Cơ"
+      },
+      {
+        "role_id": "taphoa",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "role_id": "thoren",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "role_id": "vosu",
+        "display_name": "Võ Sư"
+      },
+      {
+        "role_id": "kho",
+        "display_name": "Quản Kho"
+      },
+      {
+        "role_id": "maphu",
+        "display_name": "Mã Phu"
+      },
+      {
+        "role_id": "dautruong",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "role_id": "phoban",
+        "display_name": "Sứ Giả Phó Bản"
+      }
+    ],
+    "nominal_creature_spawns": [],
+    "boss_id": null,
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 16,
+    "map_name": "Lôi Trạch",
+    "level_label": "Lv 76–84",
+    "safe_town": false,
+    "theme_id": "storm",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "loithu",
+        "count": 10
+      },
+      {
+        "creature_id": "loixa",
+        "count": 9
+      },
+      {
+        "creature_id": "loinhan",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_loi",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 17,
+    "map_name": "Hoàng Tuyền Lộ",
+    "level_label": "Lv 84–92",
+    "safe_town": false,
+    "theme_id": "underworld",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "quyhon",
+        "count": 10
+      },
+      {
+        "creature_id": "amlang",
+        "count": 9
+      },
+      {
+        "creature_id": "hoangtuyenve",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_diem",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 18,
+    "map_name": "Hỗn Nguyên Thiên Đỉnh",
+    "level_label": "Lv 92–100",
+    "safe_town": false,
+    "theme_id": "origin",
+    "width_tiles": 60,
+    "height_tiles": 42,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "nguyenma",
+        "count": 11
+      },
+      {
+        "creature_id": "honnguyen",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_nguyen",
+    "boss_always_flag": true
+  },
+  {
+    "map_index": 19,
+    "map_name": "Tinh Hà Thiên Ngoại",
+    "level_label": "Lv 98–108",
+    "safe_town": false,
+    "theme_id": "starry",
+    "width_tiles": 66,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "tinhquai",
+        "count": 10
+      },
+      {
+        "creature_id": "hukhongdieu",
+        "count": 8
+      },
+      {
+        "creature_id": "tinhthiet",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_tinh",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 20,
+    "map_name": "Tinh Hà Tiên Thành",
+    "level_label": "An toàn",
+    "safe_town": true,
+    "theme_id": "town2",
+    "width_tiles": 52,
+    "height_tiles": 30,
+    "tile_size_world_units": 32,
+    "npc_roster": [
+      {
+        "role_id": "tinhquan",
+        "display_name": "Tinh Quân Bắc Đẩu"
+      },
+      {
+        "role_id": "taphoa",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "role_id": "thoren",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "role_id": "vosu",
+        "display_name": "Võ Sư"
+      },
+      {
+        "role_id": "kho",
+        "display_name": "Quản Kho"
+      },
+      {
+        "role_id": "maphu",
+        "display_name": "Mã Phu"
+      },
+      {
+        "role_id": "dautruong",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "role_id": "phoban",
+        "display_name": "Sứ Giả Phó Bản"
+      }
+    ],
+    "nominal_creature_spawns": [],
+    "boss_id": null,
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 21,
+    "map_name": "Huyết Nguyệt Ma Vực",
+    "level_label": "Lv 108–122",
+    "safe_town": false,
+    "theme_id": "bloodmoon",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "huyetlang",
+        "count": 10
+      },
+      {
+        "creature_id": "tama",
+        "count": 8
+      },
+      {
+        "creature_id": "huyetma",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_nguyet",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 22,
+    "map_name": "Vô Tận Hư Không",
+    "level_label": "Lv 122–136",
+    "safe_town": false,
+    "theme_id": "void",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "hukhongxa",
+        "count": 10
+      },
+      {
+        "creature_id": "hukhongthu",
+        "count": 8
+      },
+      {
+        "creature_id": "hukhongma",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_hukhong",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 23,
+    "map_name": "Tà Thần Điện",
+    "level_label": "Lv 136+",
+    "safe_town": false,
+    "theme_id": "evil",
+    "width_tiles": 60,
+    "height_tiles": 42,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "tathanve",
+        "count": 11
+      },
+      {
+        "creature_id": "tathanthu",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_tathan",
+    "boss_always_flag": true
+  },
+  {
+    "map_index": 24,
+    "map_name": "Hồng Hoang Cổ Lâm",
+    "level_label": "Lv 148–160",
+    "safe_town": false,
+    "theme_id": "primal",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "hoangthu",
+        "count": 10
+      },
+      {
+        "creature_id": "codaimang",
+        "count": 8
+      },
+      {
+        "creature_id": "thachquy",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_hoang",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 25,
+    "map_name": "Thần Hoang Thánh Thành",
+    "level_label": "An toàn",
+    "safe_town": true,
+    "theme_id": "town2",
+    "width_tiles": 52,
+    "height_tiles": 30,
+    "tile_size_world_units": 32,
+    "npc_roster": [
+      {
+        "role_id": "thanhto",
+        "display_name": "Thánh Tổ Nguyên Thủy"
+      },
+      {
+        "role_id": "minhchu",
+        "display_name": "Minh Chủ Võ Lâm"
+      },
+      {
+        "role_id": "taphoa",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "role_id": "thoren",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "role_id": "vosu",
+        "display_name": "Võ Sư"
+      },
+      {
+        "role_id": "kho",
+        "display_name": "Quản Kho"
+      },
+      {
+        "role_id": "maphu",
+        "display_name": "Mã Phu"
+      },
+      {
+        "role_id": "phoban",
+        "display_name": "Sứ Giả Phó Bản"
+      }
+    ],
+    "nominal_creature_spawns": [],
+    "boss_id": null,
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 26,
+    "map_name": "Thần Ma Chiến Trường",
+    "level_label": "Lv 160–172",
+    "safe_town": false,
+    "theme_id": "battle",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "thanmabinh",
+        "count": 11
+      },
+      {
+        "creature_id": "maky",
+        "count": 8
+      },
+      {
+        "creature_id": "chienhon",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_thanma",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 27,
+    "map_name": "Cửu Thiên Thần Giới",
+    "level_label": "Lv 172–186",
+    "safe_town": false,
+    "theme_id": "heaven",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "thienlong",
+        "count": 10
+      },
+      {
+        "creature_id": "huyendieu",
+        "count": 8
+      },
+      {
+        "creature_id": "kimgiap",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_cuuthien",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 28,
+    "map_name": "Hỗn Mang Chi Địa",
+    "level_label": "Lv 186–200",
+    "safe_town": false,
+    "theme_id": "chaosend",
+    "width_tiles": 62,
+    "height_tiles": 42,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "honmangthu",
+        "count": 11
+      },
+      {
+        "creature_id": "honmangvu",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_hongmong",
+    "boss_always_flag": true
+  },
+  {
+    "map_index": 29,
+    "map_name": "Thái Hư Ma Uyên",
+    "level_label": "Boss ẩn thế",
+    "safe_town": false,
+    "theme_id": "abyss",
+    "width_tiles": 50,
+    "height_tiles": 34,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "madeve",
+        "count": 7
+      }
+    ],
+    "boss_id": "b_world",
+    "boss_always_flag": true
+  },
+  {
+    "map_index": 30,
+    "map_name": "Thiên Ngoại Thiên",
+    "level_label": "Lv 200–212",
+    "safe_town": false,
+    "theme_id": "tnt",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "thienngoaima",
+        "count": 10
+      },
+      {
+        "creature_id": "tinhhonthu",
+        "count": 8
+      },
+      {
+        "creature_id": "thienngoaidieu",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_thienngoai",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 31,
+    "map_name": "Vĩnh Hằng Thánh Vực",
+    "level_label": "An toàn",
+    "safe_town": true,
+    "theme_id": "town2",
+    "width_tiles": 52,
+    "height_tiles": 30,
+    "tile_size_world_units": 32,
+    "npc_roster": [
+      {
+        "role_id": "thanhto",
+        "display_name": "Thánh Tổ Nguyên Thủy"
+      },
+      {
+        "role_id": "minhchu",
+        "display_name": "Minh Chủ Võ Lâm"
+      },
+      {
+        "role_id": "taphoa",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "role_id": "thoren",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "role_id": "vosu",
+        "display_name": "Võ Sư"
+      },
+      {
+        "role_id": "kho",
+        "display_name": "Quản Kho"
+      },
+      {
+        "role_id": "maphu",
+        "display_name": "Mã Phu"
+      },
+      {
+        "role_id": "dautruong",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "role_id": "phoban",
+        "display_name": "Sứ Giả Phó Bản"
+      }
+    ],
+    "nominal_creature_spawns": [],
+    "boss_id": null,
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 32,
+    "map_name": "Luân Hồi Hải",
+    "level_label": "Lv 212–225",
+    "safe_town": false,
+    "theme_id": "luanhoi",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "luanhoiquy",
+        "count": 10
+      },
+      {
+        "creature_id": "hailong",
+        "count": 8
+      },
+      {
+        "creature_id": "thuyma",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_luanhoi",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 33,
+    "map_name": "Thời Không Loạn Lưu",
+    "level_label": "Lv 225–238",
+    "safe_town": false,
+    "theme_id": "thoikhong",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "thoikhongthu",
+        "count": 10
+      },
+      {
+        "creature_id": "hukhongkiem",
+        "count": 8
+      },
+      {
+        "creature_id": "thoikhongma",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_thoikhong",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 34,
+    "map_name": "Khởi Nguyên Thần Điện",
+    "level_label": "Lv 238–250",
+    "safe_town": false,
+    "theme_id": "khoinguyen",
+    "width_tiles": 62,
+    "height_tiles": 42,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "khoinguyenve",
+        "count": 9
+      },
+      {
+        "creature_id": "thanhthu",
+        "count": 9
+      },
+      {
+        "creature_id": "khoinguyenvu",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_khoinguyen",
+    "boss_always_flag": true
+  },
+  {
+    "map_index": 35,
+    "map_name": "Diệt Thế Huyết Nguyên",
+    "level_label": "Lv 250–264",
+    "safe_town": false,
+    "theme_id": "dietthe",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "dietthema",
+        "count": 11
+      },
+      {
+        "creature_id": "dietthelang",
+        "count": 9
+      },
+      {
+        "creature_id": "dietthevu",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_dietthe",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 36,
+    "map_name": "Tận Thế Cô Thành",
+    "level_label": "An toàn",
+    "safe_town": true,
+    "theme_id": "town2",
+    "width_tiles": 52,
+    "height_tiles": 30,
+    "tile_size_world_units": 32,
+    "npc_roster": [
+      {
+        "role_id": "thanhto",
+        "display_name": "Thánh Tổ Nguyên Thủy"
+      },
+      {
+        "role_id": "minhchu",
+        "display_name": "Minh Chủ Võ Lâm"
+      },
+      {
+        "role_id": "taphoa",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "role_id": "thoren",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "role_id": "vosu",
+        "display_name": "Võ Sư"
+      },
+      {
+        "role_id": "kho",
+        "display_name": "Quản Kho"
+      },
+      {
+        "role_id": "maphu",
+        "display_name": "Mã Phu"
+      },
+      {
+        "role_id": "dautruong",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "role_id": "phoban",
+        "display_name": "Sứ Giả Phó Bản"
+      }
+    ],
+    "nominal_creature_spawns": [],
+    "boss_id": null,
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 37,
+    "map_name": "Hoang Cổ Cấm Địa",
+    "level_label": "Lv 264–278",
+    "safe_town": false,
+    "theme_id": "hoangco",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "hoangcothu",
+        "count": 10
+      },
+      {
+        "creature_id": "hoangcoxa",
+        "count": 9
+      },
+      {
+        "creature_id": "hoangcoma",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_hoangco",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 38,
+    "map_name": "Chung Yên Chi Hải",
+    "level_label": "Lv 278–290",
+    "safe_town": false,
+    "theme_id": "chungyen",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "chungyenbuc",
+        "count": 10
+      },
+      {
+        "creature_id": "chungyenkiem",
+        "count": 9
+      },
+      {
+        "creature_id": "chungyenve",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_chungyen",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 39,
+    "map_name": "Hư Vô Tận Cùng",
+    "level_label": "Lv 290–300",
+    "safe_town": false,
+    "theme_id": "void",
+    "width_tiles": 62,
+    "height_tiles": 42,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "hukhongtho",
+        "count": 10
+      },
+      {
+        "creature_id": "huvoma",
+        "count": 9
+      },
+      {
+        "creature_id": "chungyenve",
+        "count": 6
+      }
+    ],
+    "boss_id": "b_huvo",
+    "boss_always_flag": true
+  },
+  {
+    "map_index": 40,
+    "map_name": "Thiên Đạo Phế Khư",
+    "level_label": "Lv 300–315",
+    "safe_town": false,
+    "theme_id": "thiendao",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "thiendaove",
+        "count": 11
+      },
+      {
+        "creature_id": "thiendaoung",
+        "count": 9
+      },
+      {
+        "creature_id": "thiendaotuong",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_thiendao",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 41,
+    "map_name": "Vạn Kiếp Thành",
+    "level_label": "An toàn",
+    "safe_town": true,
+    "theme_id": "town2",
+    "width_tiles": 52,
+    "height_tiles": 30,
+    "tile_size_world_units": 32,
+    "npc_roster": [
+      {
+        "role_id": "thanhto",
+        "display_name": "Thánh Tổ Nguyên Thủy"
+      },
+      {
+        "role_id": "minhchu",
+        "display_name": "Minh Chủ Võ Lâm"
+      },
+      {
+        "role_id": "taphoa",
+        "display_name": "Tạp Hóa"
+      },
+      {
+        "role_id": "thoren",
+        "display_name": "Thợ Rèn"
+      },
+      {
+        "role_id": "vosu",
+        "display_name": "Võ Sư"
+      },
+      {
+        "role_id": "kho",
+        "display_name": "Quản Kho"
+      },
+      {
+        "role_id": "maphu",
+        "display_name": "Mã Phu"
+      },
+      {
+        "role_id": "dautruong",
+        "display_name": "Quan Đấu Trường"
+      },
+      {
+        "role_id": "phoban",
+        "display_name": "Sứ Giả Phó Bản"
+      }
+    ],
+    "nominal_creature_spawns": [],
+    "boss_id": null,
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 42,
+    "map_name": "Huyết Hải Thâm Uyên",
+    "level_label": "Lv 315–330",
+    "safe_town": false,
+    "theme_id": "huyethai",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "huyethaixa",
+        "count": 10
+      },
+      {
+        "creature_id": "huyethaihon",
+        "count": 9
+      },
+      {
+        "creature_id": "huyethaithiem",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_huyethai",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 43,
+    "map_name": "Tịch Diệt Băng Nguyên",
+    "level_label": "Lv 330–345",
+    "safe_town": false,
+    "theme_id": "tichdiet",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "tichdietlang",
+        "count": 10
+      },
+      {
+        "creature_id": "tichdietbuc",
+        "count": 9
+      },
+      {
+        "creature_id": "tichdietve",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_tichdiet",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 44,
+    "map_name": "Cửu U Minh Giới",
+    "level_label": "Lv 345–360",
+    "safe_town": false,
+    "theme_id": "cuuu",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "cuuusu",
+        "count": 10
+      },
+      {
+        "creature_id": "cuuuquy",
+        "count": 9
+      },
+      {
+        "creature_id": "cuuuhat",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_cuuu",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 45,
+    "map_name": "Thiên Kiếp Lôi Đài",
+    "level_label": "Lv 360–375",
+    "safe_town": false,
+    "theme_id": "loikiep",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "loikiepthu",
+        "count": 10
+      },
+      {
+        "creature_id": "loikiepung",
+        "count": 9
+      },
+      {
+        "creature_id": "loikiepkiem",
+        "count": 9
+      }
+    ],
+    "boss_id": "b_loikiep",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 46,
+    "map_name": "Hỗn Độn Nguyên Sơ",
+    "level_label": "Lv 375–390",
+    "safe_town": false,
+    "theme_id": "nguyenso",
+    "width_tiles": 68,
+    "height_tiles": 46,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "nguyensothe",
+        "count": 10
+      },
+      {
+        "creature_id": "nguyensomang",
+        "count": 9
+      },
+      {
+        "creature_id": "nguyensoma",
+        "count": 8
+      }
+    ],
+    "boss_id": "b_nguyenso",
+    "boss_always_flag": false
+  },
+  {
+    "map_index": 47,
+    "map_name": "Vĩnh Kiếp Tận Thế",
+    "level_label": "Lv 390–400",
+    "safe_town": false,
+    "theme_id": "vinhkiep",
+    "width_tiles": 62,
+    "height_tiles": 42,
+    "tile_size_world_units": 32,
+    "npc_roster": [],
+    "nominal_creature_spawns": [
+      {
+        "creature_id": "vinhkiepve",
+        "count": 10
+      },
+      {
+        "creature_id": "vinhkiephon",
+        "count": 9
+      },
+      {
+        "creature_id": "nguyensoma",
+        "count": 6
+      }
+    ],
+    "boss_id": "b_vinhkiep",
+    "boss_always_flag": true
+  }
+]

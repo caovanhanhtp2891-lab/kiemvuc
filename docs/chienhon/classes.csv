@@ -1,0 +1,15 @@
+﻿class_id,class_name,primary_stat,damage_type,basic_attack_range_world_units,basic_attack_cooldown_seconds,ranged_basic_attack,weapon_family,starting_strength,starting_agility,starting_intelligence,starting_vitality
+kiem,Kiếm Khách,str,phys,58,0.55,False,sword,7,6,2,6
+dao,Bá Đao,str,phys,62,0.75,False,blade,8,3,1,9
+cung,Thần Xạ,agi,phys,240,0.6,True,bow,3,9,3,5
+phap,Pháp Sư,int,magic,215,0.7,True,staff,1,4,10,5
+bua,Đạo Sĩ,int,magic,205,0.7,True,fan,2,4,8,7
+thich,Thích Khách,agi,phys,48,0.42,False,dagger,5,10,1,5
+loi,Lôi Chấn Hiệp,str,magic,66,0.62,False,rod,7,4,5,6
+coquan,Cơ Quan Sư,int,phys,220,0.68,True,cannon,3,5,9,5
+anha,Ảnh Nha Khách,agi,phys,64,0.5,False,claw,5,9,2,5
+thuan,Huyền Thuẫn Tướng,str,phys,56,0.7,False,shield,7,3,2,10
+camy,Cẩm Y Vệ,agi,phys,230,0.55,True,xbow,4,9,3,5
+thuong,Long Thương Tướng,str,phys,84,0.65,False,spear,8,5,1,7
+cam,Thiên Âm Cầm Sư,int,magic,210,0.7,True,pipa,1,5,9,6
+liem,U Minh Liêm Sư,agi,magic,70,0.6,False,scythe,5,8,4,6

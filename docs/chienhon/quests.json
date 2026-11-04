@@ -1,0 +1,1995 @@
+[
+  {
+    "sequence_index": 0,
+    "title": "Tân Binh",
+    "giver_role_id": "truong",
+    "required_character_level": 1,
+    "objective_type": "kill",
+    "target_creature_id": "slime",
+    "target_item_id": null,
+    "target_count": 8,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 150,
+      "gold": 80,
+      "item_quantities": [
+        [
+          "hp1",
+          10
+        ],
+        [
+          "mp1",
+          8
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 1,
+    "title": "Nanh Lợn Rừng",
+    "giver_role_id": "truong",
+    "required_character_level": 3,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "nanhlon",
+    "target_count": 6,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 400,
+      "gold": 120,
+      "item_quantities": [
+        [
+          "luyen1",
+          3
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 2,
+    "title": "Bái Sư Học Võ",
+    "giver_role_id": "truong",
+    "required_character_level": 5,
+    "objective_type": "learn",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": null,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 500,
+      "gold": 200,
+      "item_quantities": [
+        [
+          "thucan",
+          5
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 3,
+    "title": "Vua Lợn Rừng",
+    "giver_role_id": "truong",
+    "required_character_level": 6,
+    "objective_type": "boss",
+    "target_creature_id": "b_lon",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 1200,
+      "gold": 300,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "armor",
+        "tier": 1,
+        "r": 2
+      }
+    }
+  },
+  {
+    "sequence_index": 4,
+    "title": "Bầy Sói Rừng Trúc",
+    "giver_role_id": "truong",
+    "required_character_level": 8,
+    "objective_type": "kill",
+    "target_creature_id": "soi",
+    "target_item_id": null,
+    "target_count": 12,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 2000.0,
+      "gold": 350,
+      "item_quantities": [
+        [
+          "luyen1",
+          4
+        ],
+        [
+          "khoan",
+          1
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 5,
+    "title": "Khăn Sơn Tặc",
+    "giver_role_id": "truong",
+    "required_character_level": 10,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "musontac",
+    "target_count": 8,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 3000.0,
+      "gold": 500,
+      "item_quantities": [
+        [
+          "gem_hoa_1",
+          2
+        ],
+        [
+          "gem_moc_1",
+          2
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 6,
+    "title": "Lang Vương",
+    "giver_role_id": "truong",
+    "required_character_level": 12,
+    "objective_type": "boss",
+    "target_creature_id": "b_soi",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 5000.0,
+      "gold": 800,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 2,
+        "r": 2
+      }
+    }
+  },
+  {
+    "sequence_index": 7,
+    "title": "Đá Sống Hẻm Núi",
+    "giver_role_id": "truong",
+    "required_character_level": 13,
+    "objective_type": "kill",
+    "target_creature_id": "thachnhan",
+    "target_item_id": null,
+    "target_count": 15,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 7000.0,
+      "gold": 900,
+      "item_quantities": [
+        [
+          "luyen2",
+          2
+        ],
+        [
+          "kimduoc",
+          1
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 8,
+    "title": "Trại Chủ Sơn Tặc",
+    "giver_role_id": "truong",
+    "required_character_level": 16,
+    "objective_type": "boss",
+    "target_creature_id": "b_trai",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 10000.0,
+      "gold": 1200,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "hat",
+        "tier": 3,
+        "r": 2
+      }
+    }
+  },
+  {
+    "sequence_index": 9,
+    "title": "Lên Biên Ải",
+    "giver_role_id": "truong",
+    "required_character_level": 17,
+    "objective_type": "talk",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": null,
+    "mechanical_requirements": {
+      "npc": "thutuong"
+    },
+    "rewards": {
+      "exp": 5000.0,
+      "gold": 600,
+      "item_quantities": [
+        [
+          "hoithanh",
+          3
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 10,
+    "title": "Rèn Binh Khí",
+    "giver_role_id": "thutuong",
+    "required_character_level": 17,
+    "objective_type": "forge",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": 3,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 6000.0,
+      "gold": 800,
+      "item_quantities": [
+        [
+          "luyen2",
+          3
+        ],
+        [
+          "baohiem",
+          1
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 11,
+    "title": "Bò Cạp Sa Mạc",
+    "giver_role_id": "thutuong",
+    "required_character_level": 19,
+    "objective_type": "kill",
+    "target_creature_id": "bocap",
+    "target_item_id": null,
+    "target_count": 20,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 16000.0,
+      "gold": 1500,
+      "item_quantities": [
+        [
+          "gem_kim_2",
+          1
+        ],
+        [
+          "gem_thuy_2",
+          1
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 12,
+    "title": "Bò Cạp Chúa",
+    "giver_role_id": "thutuong",
+    "required_character_level": 23,
+    "objective_type": "boss",
+    "target_creature_id": "b_bocap",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 26000.0,
+      "gold": 2200,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "armor",
+        "tier": 4,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 13,
+    "title": "Băng Tinh",
+    "giver_role_id": "thutuong",
+    "required_character_level": 26,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "bangtinh",
+    "target_count": 10,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 34000.0,
+      "gold": 2600,
+      "item_quantities": [
+        [
+          "luyen3",
+          2
+        ],
+        [
+          "baohiem",
+          2
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 14,
+    "title": "Băng Vương",
+    "giver_role_id": "thutuong",
+    "required_character_level": 29,
+    "objective_type": "boss",
+    "target_creature_id": "b_bang",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 46000.0,
+      "gold": 3500,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 6,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 15,
+    "title": "Xà Hậu",
+    "giver_role_id": "thutuong",
+    "required_character_level": 33,
+    "objective_type": "boss",
+    "target_creature_id": "b_xa",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 70000.0,
+      "gold": 5000.0,
+      "item_quantities": [
+        [
+          "gem_hoa_3",
+          1
+        ],
+        [
+          "gem_moc_3",
+          1
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 16,
+    "title": "Thiên Ma Vương",
+    "giver_role_id": "thutuong",
+    "required_character_level": 38,
+    "objective_type": "boss",
+    "target_creature_id": "b_ma",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {
+      "title": 1
+    },
+    "rewards": {
+      "exp": 150000.0,
+      "gold": 20000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 9,
+        "r": 4
+      }
+    }
+  },
+  {
+    "sequence_index": 17,
+    "title": "Dư Âm Thiên Ma",
+    "giver_role_id": "thutuong",
+    "required_character_level": 40,
+    "objective_type": "talk",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": null,
+    "mechanical_requirements": {
+      "npc": "quansu"
+    },
+    "rewards": {
+      "exp": 20000.0,
+      "gold": 3000.0,
+      "item_quantities": [
+        [
+          "hoithanh",
+          5
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 18,
+    "title": "Ma Tinh Phế Tích",
+    "giver_role_id": "quansu",
+    "required_character_level": 42,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "matinh",
+    "target_count": 10,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 30000.0,
+      "gold": 5000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          3
+        ],
+        [
+          "baohiem",
+          2
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 19,
+    "title": "Ma Tướng Hắc Kỵ",
+    "giver_role_id": "quansu",
+    "required_character_level": 45,
+    "objective_type": "boss",
+    "target_creature_id": "b_ky",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 45000.0,
+      "gold": 7000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "armor",
+        "tier": 9,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 20,
+    "title": "Rèn Thần Binh",
+    "giver_role_id": "quansu",
+    "required_character_level": 48,
+    "objective_type": "forge",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": 10,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 35000.0,
+      "gold": 8000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          4
+        ],
+        [
+          "kimduoc",
+          3
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 21,
+    "title": "Mộc Tâm Hắc Mộc",
+    "giver_role_id": "quansu",
+    "required_character_level": 50,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "moctam",
+    "target_count": 12,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 55000.0,
+      "gold": 9000.0,
+      "item_quantities": [
+        [
+          "gem_moc_3",
+          2
+        ],
+        [
+          "gem_hoa_3",
+          1
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 22,
+    "title": "Hắc Hổ Tuần Rừng",
+    "giver_role_id": "quansu",
+    "required_character_level": 52,
+    "objective_type": "kill",
+    "target_creature_id": "hacho",
+    "target_item_id": null,
+    "target_count": 25,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 65000.0,
+      "gold": 10000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          4
+        ],
+        [
+          "khoan",
+          2
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 23,
+    "title": "Hắc Mộc Thụ Vương",
+    "giver_role_id": "quansu",
+    "required_character_level": 54,
+    "objective_type": "boss",
+    "target_creature_id": "b_moc",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 85000.0,
+      "gold": 14000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 10,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 24,
+    "title": "Lôi Ma Vực Sâu",
+    "giver_role_id": "quansu",
+    "required_character_level": 57,
+    "objective_type": "kill",
+    "target_creature_id": "loima",
+    "target_item_id": null,
+    "target_count": 25,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 95000.0,
+      "gold": 15000.0,
+      "item_quantities": [
+        [
+          "gem_kim_3",
+          1
+        ],
+        [
+          "gem_thuy_3",
+          1
+        ],
+        [
+          "baohiem",
+          3
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 25,
+    "title": "Hỗn Độn Ma Long",
+    "giver_role_id": "quansu",
+    "required_character_level": 60,
+    "objective_type": "boss",
+    "target_creature_id": "b_long",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 120000.0,
+      "gold": 20000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "armor",
+        "tier": 11,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 26,
+    "title": "Thánh Thạch Thần Điện",
+    "giver_role_id": "quansu",
+    "required_character_level": 63,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "thanhthach",
+    "target_count": 10,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 130000.0,
+      "gold": 22000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          6
+        ],
+        [
+          "kimduoc",
+          3
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 27,
+    "title": "Thái Cổ Ma Thần",
+    "giver_role_id": "quansu",
+    "required_character_level": 66,
+    "objective_type": "boss",
+    "target_creature_id": "b_thaico",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {
+      "title": 2
+    },
+    "rewards": {
+      "exp": 250000.0,
+      "gold": 60000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 11,
+        "r": 4
+      }
+    }
+  },
+  {
+    "sequence_index": 28,
+    "title": "Thiên Lộ Khai Mở",
+    "giver_role_id": "quansu",
+    "required_character_level": 68,
+    "objective_type": "talk",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": null,
+    "mechanical_requirements": {
+      "npc": "tiennhan"
+    },
+    "rewards": {
+      "exp": 60000.0,
+      "gold": 20000.0,
+      "item_quantities": [
+        [
+          "hoithanh",
+          5
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 29,
+    "title": "Thiên Lệnh Thất Lạc",
+    "giver_role_id": "tiennhan",
+    "required_character_level": 70,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "thienlenh",
+    "target_count": 12,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 110000.0,
+      "gold": 25000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          6
+        ],
+        [
+          "baohiem",
+          3
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 30,
+    "title": "Sa Đọa Thiên Tướng",
+    "giver_role_id": "tiennhan",
+    "required_character_level": 73,
+    "objective_type": "boss",
+    "target_creature_id": "b_thientuong",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 160000.0,
+      "gold": 30000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "armor",
+        "tier": 12,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 31,
+    "title": "Rèn Thiên Binh",
+    "giver_role_id": "tiennhan",
+    "required_character_level": 75,
+    "objective_type": "forge",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": 12,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 120000.0,
+      "gold": 30000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          6
+        ],
+        [
+          "kimduoc",
+          4
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 32,
+    "title": "Lôi Thú Cuồng Bạo",
+    "giver_role_id": "tiennhan",
+    "required_character_level": 78,
+    "objective_type": "kill",
+    "target_creature_id": "loithu",
+    "target_item_id": null,
+    "target_count": 30,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 220000.0,
+      "gold": 35000.0,
+      "item_quantities": [
+        [
+          "gem_kim_4",
+          1
+        ],
+        [
+          "gem_hoa_4",
+          1
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 33,
+    "title": "Lôi Đế",
+    "giver_role_id": "tiennhan",
+    "required_character_level": 81,
+    "objective_type": "boss",
+    "target_creature_id": "b_loi",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 300000.0,
+      "gold": 45000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 13,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 34,
+    "title": "Hồn Thạch Hoàng Tuyền",
+    "giver_role_id": "tiennhan",
+    "required_character_level": 85,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "honthach",
+    "target_count": 12,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 340000.0,
+      "gold": 50000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          8
+        ],
+        [
+          "baohiem",
+          4
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 35,
+    "title": "Diêm Quân",
+    "giver_role_id": "tiennhan",
+    "required_character_level": 89,
+    "objective_type": "boss",
+    "target_creature_id": "b_diem",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 420000.0,
+      "gold": 60000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "armor",
+        "tier": 14,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 36,
+    "title": "Hỗn Nguyên Ma Tổ",
+    "giver_role_id": "tiennhan",
+    "required_character_level": 94,
+    "objective_type": "boss",
+    "target_creature_id": "b_nguyen",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {
+      "title": 3
+    },
+    "rewards": {
+      "exp": 800000.0,
+      "gold": 150000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 14,
+        "r": 4
+      }
+    }
+  },
+  {
+    "sequence_index": 37,
+    "title": "Thiên Ngoại Dị Tượng",
+    "giver_role_id": "tiennhan",
+    "required_character_level": 98,
+    "objective_type": "talk",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": null,
+    "mechanical_requirements": {
+      "npc": "tinhquan"
+    },
+    "rewards": {
+      "exp": 300000.0,
+      "gold": 80000.0,
+      "item_quantities": [
+        [
+          "hoithanh",
+          5
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 38,
+    "title": "Tinh Thạch Vỡ Vụn",
+    "giver_role_id": "tinhquan",
+    "required_character_level": 100,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "tinhthach",
+    "target_count": 12,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 500000.0,
+      "gold": 90000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          10
+        ],
+        [
+          "baohiem",
+          5
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 39,
+    "title": "Tinh Thần Thú Vương",
+    "giver_role_id": "tinhquan",
+    "required_character_level": 104,
+    "objective_type": "boss",
+    "target_creature_id": "b_tinh",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 800000.0,
+      "gold": 100000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "armor",
+        "tier": 15,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 40,
+    "title": "Rèn Tinh Binh",
+    "giver_role_id": "tinhquan",
+    "required_character_level": 107,
+    "objective_type": "forge",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": 14,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 600000.0,
+      "gold": 100000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          10
+        ],
+        [
+          "kimduoc",
+          5
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 41,
+    "title": "Huyết Nguyệt Lang",
+    "giver_role_id": "tinhquan",
+    "required_character_level": 111,
+    "objective_type": "kill",
+    "target_creature_id": "huyetlang",
+    "target_item_id": null,
+    "target_count": 35,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 900000.0,
+      "gold": 120000.0,
+      "item_quantities": [
+        [
+          "gem_moc_5",
+          1
+        ],
+        [
+          "gem_thuy_5",
+          1
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 42,
+    "title": "Huyết Nguyệt Ma Hậu",
+    "giver_role_id": "tinhquan",
+    "required_character_level": 118,
+    "objective_type": "boss",
+    "target_creature_id": "b_nguyet",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 1100000.0,
+      "gold": 140000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 16,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 43,
+    "title": "Hư Không Tinh",
+    "giver_role_id": "tinhquan",
+    "required_character_level": 127,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "hukhongtinh",
+    "target_count": 12,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 1200000.0,
+      "gold": 160000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          12
+        ],
+        [
+          "baohiem",
+          6
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 44,
+    "title": "Hư Không Long Đế",
+    "giver_role_id": "tinhquan",
+    "required_character_level": 132,
+    "objective_type": "boss",
+    "target_creature_id": "b_hukhong",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 1400000.0,
+      "gold": 180000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "armor",
+        "tier": 17,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 45,
+    "title": "Thiên Ngoại Tà Thần",
+    "giver_role_id": "tinhquan",
+    "required_character_level": 140,
+    "objective_type": "boss",
+    "target_creature_id": "b_tathan",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {
+      "title": 4
+    },
+    "rewards": {
+      "exp": 1600000.0,
+      "gold": 400000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 17,
+        "r": 4
+      }
+    }
+  },
+  {
+    "sequence_index": 46,
+    "title": "Hồng Hoang Thức Tỉnh",
+    "giver_role_id": "tinhquan",
+    "required_character_level": 148,
+    "objective_type": "talk",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": null,
+    "mechanical_requirements": {
+      "npc": "thanhto"
+    },
+    "rewards": {
+      "exp": 1200000.0,
+      "gold": 300000.0,
+      "item_quantities": [
+        [
+          "baohiem",
+          5
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 47,
+    "title": "Cốt Hồng Hoang",
+    "giver_role_id": "thanhto",
+    "required_character_level": 151,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "hoangcot",
+    "target_count": 12,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 1500000.0,
+      "gold": 350000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          15
+        ],
+        [
+          "kimduoc",
+          6
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 48,
+    "title": "Hồng Hoang Thú Tổ",
+    "giver_role_id": "thanhto",
+    "required_character_level": 156,
+    "objective_type": "boss",
+    "target_creature_id": "b_hoang",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 2000000.0,
+      "gold": 400000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "armor",
+        "tier": 18,
+        "r": 3
+      }
+    }
+  },
+  {
+    "sequence_index": 49,
+    "title": "Rèn Thần Binh",
+    "giver_role_id": "thanhto",
+    "required_character_level": 160,
+    "objective_type": "forge",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": 15,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 1800000.0,
+      "gold": 400000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          15
+        ],
+        [
+          "baohiem",
+          6
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 50,
+    "title": "Thần Ma Chiến Trường",
+    "giver_role_id": "thanhto",
+    "required_character_level": 163,
+    "objective_type": "kill",
+    "target_creature_id": "thanmabinh",
+    "target_item_id": null,
+    "target_count": 40,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 2200000.0,
+      "gold": 450000.0,
+      "item_quantities": [
+        [
+          "gem_kim_5",
+          1
+        ],
+        [
+          "gem_hoa_5",
+          1
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 51,
+    "title": "Thần Huyết",
+    "giver_role_id": "thanhto",
+    "required_character_level": 168,
+    "objective_type": "collect",
+    "target_creature_id": null,
+    "target_item_id": "thanhuyet",
+    "target_count": 12,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 2400000.0,
+      "gold": 500000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          18
+        ],
+        [
+          "kimduoc",
+          8
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 52,
+    "title": "Thần Ma Chiến Tướng",
+    "giver_role_id": "thanhto",
+    "required_character_level": 172,
+    "objective_type": "boss",
+    "target_creature_id": "b_thanma",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 2800000.0,
+      "gold": 600000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 19,
+        "r": 4
+      }
+    }
+  },
+  {
+    "sequence_index": 53,
+    "title": "Cửu Thiên Huyền Nữ",
+    "giver_role_id": "thanhto",
+    "required_character_level": 182,
+    "objective_type": "boss",
+    "target_creature_id": "b_cuuthien",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 3200000.0,
+      "gold": 700000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "armor",
+        "tier": 19,
+        "r": 4
+      }
+    }
+  },
+  {
+    "sequence_index": 54,
+    "title": "Tổ Đội Anh Hùng",
+    "giver_role_id": "thanhto",
+    "required_character_level": 186,
+    "objective_type": "party",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": 3,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 2000000.0,
+      "gold": 500000.0,
+      "item_quantities": [
+        [
+          "hp4",
+          30
+        ],
+        [
+          "mp4",
+          30
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 55,
+    "title": "Hồng Mông Tổ Ma",
+    "giver_role_id": "thanhto",
+    "required_character_level": 190,
+    "objective_type": "boss",
+    "target_creature_id": "b_hongmong",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {
+      "title": 5
+    },
+    "rewards": {
+      "exp": 6000000.0,
+      "gold": 2000000.0,
+      "item_quantities": [],
+      "equipment_spec": {
+        "slot": "weapon",
+        "tier": 20,
+        "r": 5
+      }
+    }
+  },
+  {
+    "sequence_index": 56,
+    "title": "Thiên Ngoại Ma Binh",
+    "giver_role_id": "thanhto",
+    "required_character_level": 200,
+    "objective_type": "kill",
+    "target_creature_id": "thienngoaima",
+    "target_item_id": null,
+    "target_count": 40,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 2500000.0,
+      "gold": 600000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          6
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 57,
+    "title": "Thiên Ngoại Ma Hoàng",
+    "giver_role_id": "thanhto",
+    "required_character_level": 206,
+    "objective_type": "boss",
+    "target_creature_id": "b_thienngoai",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 4500000.0,
+      "gold": 900000.0,
+      "item_quantities": [
+        [
+          "baohiem",
+          4
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 58,
+    "title": "Oán Quỷ Luân Hồi",
+    "giver_role_id": "thanhto",
+    "required_character_level": 213,
+    "objective_type": "kill",
+    "target_creature_id": "luanhoiquy",
+    "target_item_id": null,
+    "target_count": 45,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 6000000.0,
+      "gold": 1100000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          8
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 59,
+    "title": "Luân Hồi Hải Đế",
+    "giver_role_id": "thanhto",
+    "required_character_level": 220,
+    "objective_type": "boss",
+    "target_creature_id": "b_luanhoi",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 9000000.0,
+      "gold": 1500000.0,
+      "item_quantities": [
+        [
+          "kimduoc",
+          6
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 60,
+    "title": "Kiếm Linh Hư Không",
+    "giver_role_id": "thanhto",
+    "required_character_level": 228,
+    "objective_type": "kill",
+    "target_creature_id": "hukhongkiem",
+    "target_item_id": null,
+    "target_count": 45,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 12000000.0,
+      "gold": 2000000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          10
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 61,
+    "title": "Thời Không Ma Chủ",
+    "giver_role_id": "thanhto",
+    "required_character_level": 234,
+    "objective_type": "boss",
+    "target_creature_id": "b_thoikhong",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 16000000.0,
+      "gold": 2600000.0,
+      "item_quantities": [
+        [
+          "baohiem",
+          6
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 62,
+    "title": "Tổ Đội Khởi Nguyên",
+    "giver_role_id": "thanhto",
+    "required_character_level": 240,
+    "objective_type": "party",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": 4,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 8000000.0,
+      "gold": 1500000.0,
+      "item_quantities": [],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 63,
+    "title": "Khởi Nguyên Thiên Đế",
+    "giver_role_id": "thanhto",
+    "required_character_level": 245,
+    "objective_type": "boss",
+    "target_creature_id": "b_khoinguyen",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {
+      "title": 6
+    },
+    "rewards": {
+      "exp": 30000000.0,
+      "gold": 5000000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          20
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 64,
+    "title": "Diệt Thế Ma Binh",
+    "giver_role_id": "thanhto",
+    "required_character_level": 250,
+    "objective_type": "kill",
+    "target_creature_id": "dietthema",
+    "target_item_id": null,
+    "target_count": 50,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 40000000.0,
+      "gold": 6000000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          20
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 65,
+    "title": "Diệt Thế Ma Quân",
+    "giver_role_id": "thanhto",
+    "required_character_level": 258,
+    "objective_type": "boss",
+    "target_creature_id": "b_dietthe",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 60000000.0,
+      "gold": 8000000.0,
+      "item_quantities": [
+        [
+          "baohiem",
+          8
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 66,
+    "title": "Cự Thú Hoang Cổ",
+    "giver_role_id": "thanhto",
+    "required_character_level": 266,
+    "objective_type": "kill",
+    "target_creature_id": "hoangcothu",
+    "target_item_id": null,
+    "target_count": 50,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 80000000.0,
+      "gold": 10000000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          25
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 67,
+    "title": "Hoang Cổ Thú Hoàng",
+    "giver_role_id": "thanhto",
+    "required_character_level": 274,
+    "objective_type": "boss",
+    "target_creature_id": "b_hoangco",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 110000000.0,
+      "gold": 13000000.0,
+      "item_quantities": [
+        [
+          "kimduoc",
+          10
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 68,
+    "title": "Kiếm Hồn Chung Yên",
+    "giver_role_id": "thanhto",
+    "required_character_level": 280,
+    "objective_type": "kill",
+    "target_creature_id": "chungyenkiem",
+    "target_item_id": null,
+    "target_count": 50,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 140000000.0,
+      "gold": 16000000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          30
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 69,
+    "title": "Chung Yên Tử Thần",
+    "giver_role_id": "thanhto",
+    "required_character_level": 286,
+    "objective_type": "boss",
+    "target_creature_id": "b_chungyen",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 180000000.0,
+      "gold": 20000000.0,
+      "item_quantities": [
+        [
+          "baohiem",
+          10
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 70,
+    "title": "Tổ Đội Hư Vô",
+    "giver_role_id": "thanhto",
+    "required_character_level": 292,
+    "objective_type": "party",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": 4,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 100000000.0,
+      "gold": 10000000.0,
+      "item_quantities": [],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 71,
+    "title": "Hư Vô Chi Chủ",
+    "giver_role_id": "thanhto",
+    "required_character_level": 296,
+    "objective_type": "boss",
+    "target_creature_id": "b_huvo",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {
+      "title": 7
+    },
+    "rewards": {
+      "exp": 400000000.0,
+      "gold": 50000000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          50
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 72,
+    "title": "Thiên Đạo Vệ Sĩ",
+    "giver_role_id": "thanhto",
+    "required_character_level": 300,
+    "objective_type": "kill",
+    "target_creature_id": "thiendaove",
+    "target_item_id": null,
+    "target_count": 60,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 148200000.0,
+      "gold": 10800000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          30
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 73,
+    "title": "Thiên Đạo Phán Quan",
+    "giver_role_id": "thanhto",
+    "required_character_level": 308,
+    "objective_type": "boss",
+    "target_creature_id": "b_thiendao",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 512000000.0,
+      "gold": 19920000.0,
+      "item_quantities": [
+        [
+          "baohiem",
+          10
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 74,
+    "title": "Long Xà Huyết Hải",
+    "giver_role_id": "thanhto",
+    "required_character_level": 316,
+    "objective_type": "kill",
+    "target_creature_id": "huyethaixa",
+    "target_item_id": null,
+    "target_count": 60,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 493900000.0,
+      "gold": 11980000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          35
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 75,
+    "title": "Huyết Hải Ma Long",
+    "giver_role_id": "thanhto",
+    "required_character_level": 324,
+    "objective_type": "boss",
+    "target_creature_id": "b_huyethai",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 1337000000.0,
+      "gold": 22040000.0,
+      "item_quantities": [
+        [
+          "kimduoc",
+          12
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 76,
+    "title": "Băng Lang Tịch Diệt",
+    "giver_role_id": "thanhto",
+    "required_character_level": 332,
+    "objective_type": "kill",
+    "target_creature_id": "tichdietlang",
+    "target_item_id": null,
+    "target_count": 60,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 1115500000.0,
+      "gold": 13230000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          40
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 77,
+    "title": "Tịch Diệt Băng Đế",
+    "giver_role_id": "thanhto",
+    "required_character_level": 340,
+    "objective_type": "boss",
+    "target_creature_id": "b_tichdiet",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 2734600000.0,
+      "gold": 24280000.0,
+      "item_quantities": [
+        [
+          "baohiem",
+          12
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 78,
+    "title": "Minh Sư Cửu U",
+    "giver_role_id": "thanhto",
+    "required_character_level": 347,
+    "objective_type": "kill",
+    "target_creature_id": "cuuusu",
+    "target_item_id": null,
+    "target_count": 60,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 2044200000.0,
+      "gold": 14450000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          45
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 79,
+    "title": "Cửu U Minh Vương",
+    "giver_role_id": "thanhto",
+    "required_character_level": 355,
+    "objective_type": "boss",
+    "target_creature_id": "b_cuuu",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 4747500000.0,
+      "gold": 26470000.0,
+      "item_quantities": [
+        [
+          "kimduoc",
+          15
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 80,
+    "title": "Kiếm Tiên Lôi Kiếp",
+    "giver_role_id": "thanhto",
+    "required_character_level": 362,
+    "objective_type": "kill",
+    "target_creature_id": "loikiepkiem",
+    "target_item_id": null,
+    "target_count": 60,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 3414800000.0,
+      "gold": 15730000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          50
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 81,
+    "title": "Thiên Kiếp Lôi Tổ",
+    "giver_role_id": "thanhto",
+    "required_character_level": 370,
+    "objective_type": "boss",
+    "target_creature_id": "b_loikiep",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 7643700000.0,
+      "gold": 28750000.0,
+      "item_quantities": [
+        [
+          "baohiem",
+          15
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 82,
+    "title": "Ma Thần Nguyên Sơ",
+    "giver_role_id": "thanhto",
+    "required_character_level": 377,
+    "objective_type": "kill",
+    "target_creature_id": "nguyensoma",
+    "target_item_id": null,
+    "target_count": 50,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 5349100000.0,
+      "gold": 17060000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          60
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 83,
+    "title": "Thôn Thiên Lang",
+    "giver_role_id": "thanhto",
+    "required_character_level": 385,
+    "objective_type": "boss",
+    "target_creature_id": "b_nguyenso",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 11652900000.0,
+      "gold": 31130000.0,
+      "item_quantities": [
+        [
+          "kimduoc",
+          20
+        ]
+      ],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 84,
+    "title": "Tổ Đội Vĩnh Kiếp",
+    "giver_role_id": "thanhto",
+    "required_character_level": 392,
+    "objective_type": "party",
+    "target_creature_id": null,
+    "target_item_id": null,
+    "target_count": 4,
+    "mechanical_requirements": {},
+    "rewards": {
+      "exp": 3993500000.0,
+      "gold": 9220000.0,
+      "item_quantities": [],
+      "equipment_spec": null
+    }
+  },
+  {
+    "sequence_index": 85,
+    "title": "Vĩnh Kiếp Thiên Tôn",
+    "giver_role_id": "thanhto",
+    "required_character_level": 396,
+    "objective_type": "boss",
+    "target_creature_id": "b_vinhkiep",
+    "target_item_id": null,
+    "target_count": 1,
+    "mechanical_requirements": {
+      "title": 8
+    },
+    "rewards": {
+      "exp": 26487000000.0,
+      "gold": 56450000.0,
+      "item_quantities": [
+        [
+          "luyen3",
+          100
+        ]
+      ],
+      "equipment_spec": null
+    }
+  }
+]

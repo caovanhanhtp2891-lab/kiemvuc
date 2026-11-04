@@ -1,0 +1,64 @@
+{
+  "scope": "Client-observed mechanical facts; not a server-side specification or a copy of the original engine.",
+  "max_character_level": 400,
+  "max_skill_level": 10,
+  "stat_points_per_level_up": 5,
+  "skill_points_per_level_up": 1,
+  "skill_damage_growth_per_skill_level_after_first": 0.12,
+  "ultimate_unlock_character_level": 120,
+  "ultimate_mana_cost": 150,
+  "ultimate_cooldown_seconds": 45,
+  "random_damage_factor_min": 0.9,
+  "random_damage_factor_max": 1.1,
+  "base_critical_damage_percent": 150,
+  "critical_chance_cap_percent": 75,
+  "dodge_cap_percent": 45,
+  "outgoing_defense_subtraction_factor": 0.5,
+  "incoming_defense_subtraction_factor": 0.7,
+  "boss_stun_duration_multiplier": 0.4,
+  "burn_attack_coefficient_per_tick": 0.22,
+  "burn_duration_seconds": 3,
+  "poison_attack_coefficient_per_tick": 0.18,
+  "poison_duration_seconds": 5,
+  "dot_tick_seconds": 1,
+  "inventory_slots": 150,
+  "storage_slots": 60,
+  "client_world_tile_size": 32,
+  "formulas": {
+    "xp_to_next": "round((55*L^1.85+45*L)*(1+max(0,L-200)*0.06)*(1+max(0,L-250)*0.08)*(1+max(0,L-300)*0.07)); progression stops at L=400",
+    "skill_damage_multiplier": "base_skill_multiplier * (1 + 0.12*(skill_level-1))",
+    "outgoing_hit": "round(max(1, ATK * effective_skill_multiplier * random(0.9,1.1) * critical_factor - applicable_enemy_defense*0.5)); guard and network rules may apply afterward",
+    "incoming_hit": "max(1, round(adjusted_enemy_attack*random(0.9,1.1) - applicable_player_defense*0.7)); dodge and shield are applied separately",
+    "max_hp": "round((100 + 16*L + 12*VIT + flat_HP_bonus)*(1+HP_percent_bonus/100))",
+    "max_mana": "round(40 + 6*L + 7*INT + flat_mana_bonus)",
+    "attack": "round((2.2*L + 2.4*primary_stat + 0.3*(STR+AGI+INT-primary_stat) + flat_attack_bonus)*(1+(attack_percent_bonus+temporary_attack_percent)/100))",
+    "physical_defense": "round((0.9*VIT + 0.6*L + flat_physical_defense_bonus + flat_defense_bonus)*defense_multiplier)",
+    "magic_defense": "round((0.5*INT + 0.4*VIT + 0.5*L + flat_magic_defense_bonus + flat_defense_bonus)*defense_multiplier)",
+    "critical_chance_percent": "min(75,5+0.25*AGI+critical_chance_bonuses)",
+    "dodge_percent": "min(45,0.15*AGI+dodge_bonuses)",
+    "attack_speed_factor": "1+0.004*AGI+temporary_attack_speed_percent/100",
+    "equipment_base_stat_enhancement_factor": "1+0.08*U+(0.10 if U>=12 else 0)+(0.15 if U>=15 else 0); crit and movement-speed stats use base+floor(U/4) instead"
+  },
+  "death_exp_loss_percent_by_level": [
+    {
+      "min": 1,
+      "max": 200,
+      "percent": 5
+    },
+    {
+      "min": 201,
+      "max": 250,
+      "percent": 10
+    },
+    {
+      "min": 251,
+      "max": 300,
+      "percent": 15
+    },
+    {
+      "min": 301,
+      "max": 400,
+      "percent": 20
+    }
+  ]
+}

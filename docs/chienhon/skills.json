@@ -1,0 +1,2207 @@
+[
+  {
+    "class_id": "kiem",
+    "class_name": "Kiếm Khách",
+    "slot": 1,
+    "skill_id": "k1",
+    "skill_name": "Liên Hoàn Kiếm",
+    "unlock_character_level": 1,
+    "mana_cost": 6,
+    "cooldown_seconds": 3,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.75,
+    "damage_multiplier_at_skill_level_10": 1.56,
+    "mechanical_parameters": {
+      "radius_world_units": 84,
+      "arc_radians": 1.7,
+      "hit_count": 3
+    }
+  },
+  {
+    "class_id": "kiem",
+    "class_name": "Kiếm Khách",
+    "slot": 2,
+    "skill_id": "k2",
+    "skill_name": "Xung Phong",
+    "unlock_character_level": 5,
+    "mana_cost": 10,
+    "cooldown_seconds": 6,
+    "mechanic_type": "dash",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.9,
+    "damage_multiplier_at_skill_level_10": 3.952,
+    "mechanical_parameters": {
+      "dash_distance_world_units": 170
+    }
+  },
+  {
+    "class_id": "kiem",
+    "class_name": "Kiếm Khách",
+    "slot": 3,
+    "skill_id": "k3",
+    "skill_name": "Kiếm Khí Hộ Thân",
+    "unlock_character_level": 10,
+    "mana_cost": 20,
+    "cooldown_seconds": 35,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "temporary_stat_bonuses": {
+        "atkP": 20,
+        "defP": 20
+      }
+    }
+  },
+  {
+    "class_id": "kiem",
+    "class_name": "Kiếm Khách",
+    "slot": 4,
+    "skill_id": "k4",
+    "skill_name": "Vạn Kiếm Quy Tông",
+    "unlock_character_level": 18,
+    "mana_cost": 26,
+    "cooldown_seconds": 12,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.72,
+    "damage_multiplier_at_skill_level_10": 1.4976,
+    "mechanical_parameters": {
+      "radius_world_units": 115,
+      "hit_count": 5,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "kiem",
+    "class_name": "Kiếm Khách",
+    "slot": 5,
+    "skill_id": "k5",
+    "skill_name": "Nhất Kiếm Đoạt Hồn",
+    "unlock_character_level": 26,
+    "mana_cost": 42,
+    "cooldown_seconds": 24,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 5.2,
+    "damage_multiplier_at_skill_level_10": 10.816,
+    "mechanical_parameters": {
+      "radius_world_units": 130,
+      "arc_radians": 0.9,
+      "hit_count": 1,
+      "stun_seconds": 1.5
+    }
+  },
+  {
+    "class_id": "kiem",
+    "class_name": "Kiếm Khách",
+    "slot": 6,
+    "skill_id": "k6",
+    "skill_name": "Kiếm Vũ Phong Bạo",
+    "unlock_character_level": 40,
+    "mana_cost": 55,
+    "cooldown_seconds": 16,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.05,
+    "damage_multiplier_at_skill_level_10": 2.184,
+    "mechanical_parameters": {
+      "radius_world_units": 140,
+      "hit_count": 4,
+      "slow_parameter": 2,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "kiem",
+    "class_name": "Kiếm Khách",
+    "slot": 7,
+    "skill_id": "k7",
+    "skill_name": "Thiên Kiếm Tru Ma",
+    "unlock_character_level": 55,
+    "mana_cost": 80,
+    "cooldown_seconds": 30,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 2.3,
+    "damage_multiplier_at_skill_level_10": 4.784,
+    "mechanical_parameters": {
+      "radius_world_units": 200,
+      "arc_radians": 2.4,
+      "hit_count": 3,
+      "stun_seconds": 1
+    }
+  },
+  {
+    "class_id": "kiem",
+    "class_name": "Kiếm Khách",
+    "slot": 8,
+    "skill_id": "kiem_ult",
+    "skill_name": "Kiếm Thánh Giáng Thế",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.7,
+    "damage_multiplier_at_skill_level_10": 3.536,
+    "mechanical_parameters": {
+      "radius_world_units": 210,
+      "hit_count": 6,
+      "stun_seconds": 1,
+      "duration_seconds": 8,
+      "target_anchor": "self",
+      "temporary_stat_bonuses": {
+        "atkP": 30
+      }
+    }
+  },
+  {
+    "class_id": "dao",
+    "class_name": "Bá Đao",
+    "slot": 1,
+    "skill_id": "d1",
+    "skill_name": "Hoành Tảo Thiên Quân",
+    "unlock_character_level": 1,
+    "mana_cost": 6,
+    "cooldown_seconds": 3,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.45,
+    "damage_multiplier_at_skill_level_10": 3.016,
+    "mechanical_parameters": {
+      "radius_world_units": 90,
+      "hit_count": 1,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "dao",
+    "class_name": "Bá Đao",
+    "slot": 2,
+    "skill_id": "d2",
+    "skill_name": "Chấn Địa",
+    "unlock_character_level": 5,
+    "mana_cost": 12,
+    "cooldown_seconds": 7,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.6,
+    "damage_multiplier_at_skill_level_10": 3.328,
+    "mechanical_parameters": {
+      "radius_world_units": 115,
+      "hit_count": 1,
+      "stun_seconds": 1.2,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "dao",
+    "class_name": "Bá Đao",
+    "slot": 3,
+    "skill_id": "d3",
+    "skill_name": "Thiết Bích",
+    "unlock_character_level": 10,
+    "mana_cost": 18,
+    "cooldown_seconds": 35,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "temporary_stat_bonuses": {
+        "defP": 45
+      }
+    }
+  },
+  {
+    "class_id": "dao",
+    "class_name": "Bá Đao",
+    "slot": 4,
+    "skill_id": "d4",
+    "skill_name": "Cuồng Nộ",
+    "unlock_character_level": 18,
+    "mana_cost": 22,
+    "cooldown_seconds": 30,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 15,
+      "temporary_stat_bonuses": {
+        "atkP": 30,
+        "aspd": 30
+      }
+    }
+  },
+  {
+    "class_id": "dao",
+    "class_name": "Bá Đao",
+    "slot": 5,
+    "skill_id": "d5",
+    "skill_name": "Bá Vương Trảm",
+    "unlock_character_level": 26,
+    "mana_cost": 40,
+    "cooldown_seconds": 22,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 4.6,
+    "damage_multiplier_at_skill_level_10": 9.568,
+    "mechanical_parameters": {
+      "radius_world_units": 160,
+      "arc_radians": 1.5,
+      "hit_count": 1,
+      "stun_seconds": 1
+    }
+  },
+  {
+    "class_id": "dao",
+    "class_name": "Bá Đao",
+    "slot": 6,
+    "skill_id": "d6",
+    "skill_name": "Loạn Đao Phong Ma",
+    "unlock_character_level": 40,
+    "mana_cost": 52,
+    "cooldown_seconds": 15,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.92,
+    "damage_multiplier_at_skill_level_10": 1.9136,
+    "mechanical_parameters": {
+      "radius_world_units": 145,
+      "hit_count": 6,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "dao",
+    "class_name": "Bá Đao",
+    "slot": 7,
+    "skill_id": "d7",
+    "skill_name": "Khai Thiên Trảm",
+    "unlock_character_level": 55,
+    "mana_cost": 78,
+    "cooldown_seconds": 28,
+    "mechanic_type": "dash",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 5.5,
+    "damage_multiplier_at_skill_level_10": 11.44,
+    "mechanical_parameters": {
+      "dash_distance_world_units": 280
+    }
+  },
+  {
+    "class_id": "dao",
+    "class_name": "Bá Đao",
+    "slot": 8,
+    "skill_id": "dao_ult",
+    "skill_name": "Bá Vương Phá Thiên",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 2.3,
+    "damage_multiplier_at_skill_level_10": 4.784,
+    "mechanical_parameters": {
+      "radius_world_units": 190,
+      "hit_count": 4,
+      "stun_seconds": 1.5,
+      "shield_parameter": 20,
+      "pulls_targets": true,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "cung",
+    "class_name": "Thần Xạ",
+    "slot": 1,
+    "skill_id": "c1",
+    "skill_name": "Song Tiễn",
+    "unlock_character_level": 1,
+    "mana_cost": 5,
+    "cooldown_seconds": 2.5,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.2,
+    "damage_multiplier_at_skill_level_10": 2.496,
+    "mechanical_parameters": {
+      "count_parameter": 2,
+      "spread_radians": 0.14,
+      "projectile_speed": 620,
+      "projectile_family_id": "arrow"
+    }
+  },
+  {
+    "class_id": "cung",
+    "class_name": "Thần Xạ",
+    "slot": 2,
+    "skill_id": "c2",
+    "skill_name": "Xuyên Vân Tiễn",
+    "unlock_character_level": 5,
+    "mana_cost": 10,
+    "cooldown_seconds": 5,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 2.4,
+    "damage_multiplier_at_skill_level_10": 4.992,
+    "mechanical_parameters": {
+      "count_parameter": 1,
+      "projectile_speed": 820,
+      "projectile_family_id": "bigarrow",
+      "piercing_flag": true
+    }
+  },
+  {
+    "class_id": "cung",
+    "class_name": "Thần Xạ",
+    "slot": 3,
+    "skill_id": "c3",
+    "skill_name": "Ưng Nhãn",
+    "unlock_character_level": 10,
+    "mana_cost": 18,
+    "cooldown_seconds": 35,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "temporary_stat_bonuses": {
+        "crit": 25,
+        "critD": 30
+      }
+    }
+  },
+  {
+    "class_id": "cung",
+    "class_name": "Thần Xạ",
+    "slot": 4,
+    "skill_id": "c4",
+    "skill_name": "Tiễn Vũ",
+    "unlock_character_level": 18,
+    "mana_cost": 26,
+    "cooldown_seconds": 11,
+    "mechanic_type": "rain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.78,
+    "damage_multiplier_at_skill_level_10": 1.6224,
+    "mechanical_parameters": {
+      "radius_world_units": 105,
+      "count_parameter": 14,
+      "projectile_family_id": "arrow"
+    }
+  },
+  {
+    "class_id": "cung",
+    "class_name": "Thần Xạ",
+    "slot": 5,
+    "skill_id": "c5",
+    "skill_name": "Phá Thiên Tiễn",
+    "unlock_character_level": 26,
+    "mana_cost": 40,
+    "cooldown_seconds": 22,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 5,
+    "damage_multiplier_at_skill_level_10": 10.4,
+    "mechanical_parameters": {
+      "stun_seconds": 0.6,
+      "count_parameter": 1,
+      "projectile_speed": 900,
+      "projectile_family_id": "giantarrow",
+      "piercing_flag": true,
+      "collision_width": 26
+    }
+  },
+  {
+    "class_id": "cung",
+    "class_name": "Thần Xạ",
+    "slot": 6,
+    "skill_id": "c6",
+    "skill_name": "Bạo Liệt Tiễn",
+    "unlock_character_level": 40,
+    "mana_cost": 52,
+    "cooldown_seconds": 14,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.6,
+    "damage_multiplier_at_skill_level_10": 3.328,
+    "mechanical_parameters": {
+      "count_parameter": 5,
+      "spread_radians": 0.16,
+      "projectile_speed": 720,
+      "projectile_family_id": "bigarrow",
+      "explosion_parameter": 44
+    }
+  },
+  {
+    "class_id": "cung",
+    "class_name": "Thần Xạ",
+    "slot": 7,
+    "skill_id": "c7",
+    "skill_name": "Thiên La Tiễn Trận",
+    "unlock_character_level": 55,
+    "mana_cost": 80,
+    "cooldown_seconds": 28,
+    "mechanic_type": "rain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.15,
+    "damage_multiplier_at_skill_level_10": 2.392,
+    "mechanical_parameters": {
+      "radius_world_units": 175,
+      "count_parameter": 26,
+      "projectile_family_id": "arrow"
+    }
+  },
+  {
+    "class_id": "cung",
+    "class_name": "Thần Xạ",
+    "slot": 8,
+    "skill_id": "cung_ult",
+    "skill_name": "Thiên Tiễn Lưu Tinh",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.15,
+    "damage_multiplier_at_skill_level_10": 2.392,
+    "mechanical_parameters": {
+      "radius_world_units": 230,
+      "hit_count": 8,
+      "slow_parameter": 3,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "phap",
+    "class_name": "Pháp Sư",
+    "slot": 1,
+    "skill_id": "p1",
+    "skill_name": "Hỏa Cầu",
+    "unlock_character_level": 1,
+    "mana_cost": 6,
+    "cooldown_seconds": 2.5,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.8,
+    "damage_multiplier_at_skill_level_10": 3.744,
+    "mechanical_parameters": {
+      "applies_burn": true,
+      "count_parameter": 1,
+      "projectile_speed": 440,
+      "projectile_family_id": "fire",
+      "explosion_parameter": 50
+    }
+  },
+  {
+    "class_id": "phap",
+    "class_name": "Pháp Sư",
+    "slot": 2,
+    "skill_id": "p2",
+    "skill_name": "Băng Trận",
+    "unlock_character_level": 5,
+    "mana_cost": 12,
+    "cooldown_seconds": 6,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.65,
+    "damage_multiplier_at_skill_level_10": 3.432,
+    "mechanical_parameters": {
+      "radius_world_units": 85,
+      "hit_count": 1,
+      "slow_parameter": 3,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "phap",
+    "class_name": "Pháp Sư",
+    "slot": 3,
+    "skill_id": "p3",
+    "skill_name": "Lôi Kích",
+    "unlock_character_level": 10,
+    "mana_cost": 18,
+    "cooldown_seconds": 8,
+    "mechanic_type": "chain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.8,
+    "damage_multiplier_at_skill_level_10": 3.744,
+    "mechanical_parameters": {
+      "stun_seconds": 0.6,
+      "count_parameter": 5
+    }
+  },
+  {
+    "class_id": "phap",
+    "class_name": "Pháp Sư",
+    "slot": 4,
+    "skill_id": "p4",
+    "skill_name": "Linh Quang Hộ Thể",
+    "unlock_character_level": 18,
+    "mana_cost": 25,
+    "cooldown_seconds": 35,
+    "mechanic_type": "shield",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "percentage_parameter": 40
+    }
+  },
+  {
+    "class_id": "phap",
+    "class_name": "Pháp Sư",
+    "slot": 5,
+    "skill_id": "p5",
+    "skill_name": "Thiên Hỏa Lưu Tinh",
+    "unlock_character_level": 26,
+    "mana_cost": 46,
+    "cooldown_seconds": 24,
+    "mechanic_type": "rain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.45,
+    "damage_multiplier_at_skill_level_10": 3.016,
+    "mechanical_parameters": {
+      "radius_world_units": 150,
+      "count_parameter": 12,
+      "projectile_family_id": "meteor",
+      "explosion_parameter": 42
+    }
+  },
+  {
+    "class_id": "phap",
+    "class_name": "Pháp Sư",
+    "slot": 6,
+    "skill_id": "p6",
+    "skill_name": "Hàn Băng Bạo",
+    "unlock_character_level": 40,
+    "mana_cost": 56,
+    "cooldown_seconds": 16,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 3.2,
+    "damage_multiplier_at_skill_level_10": 6.656,
+    "mechanical_parameters": {
+      "radius_world_units": 165,
+      "hit_count": 1,
+      "slow_parameter": 4,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "phap",
+    "class_name": "Pháp Sư",
+    "slot": 7,
+    "skill_id": "p7",
+    "skill_name": "Cửu Thiên Lôi Đình",
+    "unlock_character_level": 55,
+    "mana_cost": 84,
+    "cooldown_seconds": 28,
+    "mechanic_type": "chain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 3,
+    "damage_multiplier_at_skill_level_10": 6.24,
+    "mechanical_parameters": {
+      "stun_seconds": 1,
+      "count_parameter": 12
+    }
+  },
+  {
+    "class_id": "phap",
+    "class_name": "Pháp Sư",
+    "slot": 8,
+    "skill_id": "phap_ult",
+    "skill_name": "Diệt Thế Hoả Liên",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.55,
+    "damage_multiplier_at_skill_level_10": 3.224,
+    "mechanical_parameters": {
+      "radius_world_units": 215,
+      "hit_count": 6,
+      "applies_burn": true,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "bua",
+    "class_name": "Đạo Sĩ",
+    "slot": 1,
+    "skill_id": "b1",
+    "skill_name": "Phù Độc",
+    "unlock_character_level": 1,
+    "mana_cost": 5,
+    "cooldown_seconds": 2.5,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.3,
+    "damage_multiplier_at_skill_level_10": 2.704,
+    "mechanical_parameters": {
+      "applies_poison": true,
+      "count_parameter": 1,
+      "projectile_speed": 480,
+      "projectile_family_id": "tal"
+    }
+  },
+  {
+    "class_id": "bua",
+    "class_name": "Đạo Sĩ",
+    "slot": 2,
+    "skill_id": "b2",
+    "skill_name": "Hồi Xuân Thuật",
+    "unlock_character_level": 5,
+    "mana_cost": 14,
+    "cooldown_seconds": 12,
+    "mechanic_type": "heal",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "percentage_parameter": 25
+    }
+  },
+  {
+    "class_id": "bua",
+    "class_name": "Đạo Sĩ",
+    "slot": 3,
+    "skill_id": "b3",
+    "skill_name": "Triệu Hồi Linh Hồ",
+    "unlock_character_level": 10,
+    "mana_cost": 20,
+    "cooldown_seconds": 30,
+    "mechanic_type": "summon",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 30
+    }
+  },
+  {
+    "class_id": "bua",
+    "class_name": "Đạo Sĩ",
+    "slot": 4,
+    "skill_id": "b4",
+    "skill_name": "Định Thân Phù",
+    "unlock_character_level": 18,
+    "mana_cost": 22,
+    "cooldown_seconds": 12,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.25,
+    "damage_multiplier_at_skill_level_10": 2.6,
+    "mechanical_parameters": {
+      "radius_world_units": 95,
+      "hit_count": 1,
+      "stun_seconds": 2,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "bua",
+    "class_name": "Đạo Sĩ",
+    "slot": 5,
+    "skill_id": "b5",
+    "skill_name": "Ngũ Lôi Oanh Đỉnh",
+    "unlock_character_level": 26,
+    "mana_cost": 42,
+    "cooldown_seconds": 20,
+    "mechanic_type": "chain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 2.2,
+    "damage_multiplier_at_skill_level_10": 4.576,
+    "mechanical_parameters": {
+      "count_parameter": 8
+    }
+  },
+  {
+    "class_id": "bua",
+    "class_name": "Đạo Sĩ",
+    "slot": 6,
+    "skill_id": "b6",
+    "skill_name": "Vạn Độc Phù Trận",
+    "unlock_character_level": 40,
+    "mana_cost": 50,
+    "cooldown_seconds": 14,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.25,
+    "damage_multiplier_at_skill_level_10": 2.6,
+    "mechanical_parameters": {
+      "applies_poison": true,
+      "count_parameter": 7,
+      "spread_radians": 0.2,
+      "projectile_speed": 500,
+      "projectile_family_id": "tal"
+    }
+  },
+  {
+    "class_id": "bua",
+    "class_name": "Đạo Sĩ",
+    "slot": 7,
+    "skill_id": "b7",
+    "skill_name": "Thiên Sư Phong Ấn",
+    "unlock_character_level": 55,
+    "mana_cost": 78,
+    "cooldown_seconds": 26,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 2.1,
+    "damage_multiplier_at_skill_level_10": 4.368,
+    "mechanical_parameters": {
+      "radius_world_units": 160,
+      "hit_count": 3,
+      "stun_seconds": 1.5,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "bua",
+    "class_name": "Đạo Sĩ",
+    "slot": 8,
+    "skill_id": "bua_ult",
+    "skill_name": "Thái Thượng Hồi Xuân",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.05,
+    "damage_multiplier_at_skill_level_10": 2.184,
+    "mechanical_parameters": {
+      "radius_world_units": 190,
+      "hit_count": 4,
+      "heal_parameter": 40,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "thich",
+    "class_name": "Thích Khách",
+    "slot": 1,
+    "skill_id": "t1",
+    "skill_name": "Song Chủy Loạn Vũ",
+    "unlock_character_level": 1,
+    "mana_cost": 5,
+    "cooldown_seconds": 2.5,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.62,
+    "damage_multiplier_at_skill_level_10": 1.2896,
+    "mechanical_parameters": {
+      "radius_world_units": 72,
+      "arc_radians": 1.4,
+      "hit_count": 4
+    }
+  },
+  {
+    "class_id": "thich",
+    "class_name": "Thích Khách",
+    "slot": 2,
+    "skill_id": "t2",
+    "skill_name": "Ảnh Bộ",
+    "unlock_character_level": 5,
+    "mana_cost": 10,
+    "cooldown_seconds": 5,
+    "mechanic_type": "dash",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 2.1,
+    "damage_multiplier_at_skill_level_10": 4.368,
+    "mechanical_parameters": {
+      "dash_distance_world_units": 200
+    }
+  },
+  {
+    "class_id": "thich",
+    "class_name": "Thích Khách",
+    "slot": 3,
+    "skill_id": "t3",
+    "skill_name": "Ẩn Thân",
+    "unlock_character_level": 10,
+    "mana_cost": 18,
+    "cooldown_seconds": 35,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 15,
+      "temporary_stat_bonuses": {
+        "crit": 35,
+        "critD": 50,
+        "aspd": 20
+      }
+    }
+  },
+  {
+    "class_id": "thich",
+    "class_name": "Thích Khách",
+    "slot": 4,
+    "skill_id": "t4",
+    "skill_name": "Phi Đao Tam Liên",
+    "unlock_character_level": 18,
+    "mana_cost": 24,
+    "cooldown_seconds": 9,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.6,
+    "damage_multiplier_at_skill_level_10": 3.328,
+    "mechanical_parameters": {
+      "count_parameter": 3,
+      "spread_radians": 0.13,
+      "projectile_speed": 760,
+      "projectile_family_id": "knife",
+      "piercing_flag": true
+    }
+  },
+  {
+    "class_id": "thich",
+    "class_name": "Thích Khách",
+    "slot": 5,
+    "skill_id": "t5",
+    "skill_name": "Đoạt Mệnh Ám Sát",
+    "unlock_character_level": 26,
+    "mana_cost": 40,
+    "cooldown_seconds": 20,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 6.4,
+    "damage_multiplier_at_skill_level_10": 13.312,
+    "mechanical_parameters": {
+      "radius_world_units": 96,
+      "arc_radians": 0.7,
+      "hit_count": 1,
+      "stun_seconds": 0.8
+    }
+  },
+  {
+    "class_id": "thich",
+    "class_name": "Thích Khách",
+    "slot": 6,
+    "skill_id": "t6",
+    "skill_name": "Ảnh Sát Phong Bạo",
+    "unlock_character_level": 40,
+    "mana_cost": 50,
+    "cooldown_seconds": 14,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.88,
+    "damage_multiplier_at_skill_level_10": 1.8304,
+    "mechanical_parameters": {
+      "radius_world_units": 130,
+      "hit_count": 6,
+      "slow_parameter": 2,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "thich",
+    "class_name": "Thích Khách",
+    "slot": 7,
+    "skill_id": "t7",
+    "skill_name": "Vạn Ảnh Phân Thân",
+    "unlock_character_level": 55,
+    "mana_cost": 78,
+    "cooldown_seconds": 27,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.4,
+    "damage_multiplier_at_skill_level_10": 2.912,
+    "mechanical_parameters": {
+      "radius_world_units": 170,
+      "hit_count": 6,
+      "stun_seconds": 0.6,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "thich",
+    "class_name": "Thích Khách",
+    "slot": 8,
+    "skill_id": "thich_ult",
+    "skill_name": "Ảnh Sát Vô Hình",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.45,
+    "damage_multiplier_at_skill_level_10": 3.016,
+    "mechanical_parameters": {
+      "radius_world_units": 175,
+      "hit_count": 7,
+      "duration_seconds": 8,
+      "target_anchor": "target",
+      "temporary_stat_bonuses": {
+        "crit": 25
+      }
+    }
+  },
+  {
+    "class_id": "loi",
+    "class_name": "Lôi Chấn Hiệp",
+    "slot": 1,
+    "skill_id": "l1",
+    "skill_name": "Lôi Côn Trảm",
+    "unlock_character_level": 1,
+    "mana_cost": 6,
+    "cooldown_seconds": 3,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.95,
+    "damage_multiplier_at_skill_level_10": 1.976,
+    "mechanical_parameters": {
+      "radius_world_units": 86,
+      "arc_radians": 1.5,
+      "hit_count": 2
+    }
+  },
+  {
+    "class_id": "loi",
+    "class_name": "Lôi Chấn Hiệp",
+    "slot": 2,
+    "skill_id": "l2",
+    "skill_name": "Thiểm Điện Bộ",
+    "unlock_character_level": 5,
+    "mana_cost": 10,
+    "cooldown_seconds": 6,
+    "mechanic_type": "dash",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.9,
+    "damage_multiplier_at_skill_level_10": 3.952,
+    "mechanical_parameters": {
+      "dash_distance_world_units": 190
+    }
+  },
+  {
+    "class_id": "loi",
+    "class_name": "Lôi Chấn Hiệp",
+    "slot": 3,
+    "skill_id": "l3",
+    "skill_name": "Lôi Thể",
+    "unlock_character_level": 10,
+    "mana_cost": 18,
+    "cooldown_seconds": 35,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "temporary_stat_bonuses": {
+        "atkP": 22,
+        "aspd": 20
+      }
+    }
+  },
+  {
+    "class_id": "loi",
+    "class_name": "Lôi Chấn Hiệp",
+    "slot": 4,
+    "skill_id": "l4",
+    "skill_name": "Lôi Liên Kích",
+    "unlock_character_level": 18,
+    "mana_cost": 24,
+    "cooldown_seconds": 9,
+    "mechanic_type": "chain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.6,
+    "damage_multiplier_at_skill_level_10": 3.328,
+    "mechanical_parameters": {
+      "stun_seconds": 0.4,
+      "count_parameter": 6
+    }
+  },
+  {
+    "class_id": "loi",
+    "class_name": "Lôi Chấn Hiệp",
+    "slot": 5,
+    "skill_id": "l5",
+    "skill_name": "Thiên Lôi Giáng",
+    "unlock_character_level": 26,
+    "mana_cost": 42,
+    "cooldown_seconds": 22,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 4.8,
+    "damage_multiplier_at_skill_level_10": 9.984,
+    "mechanical_parameters": {
+      "radius_world_units": 110,
+      "hit_count": 1,
+      "stun_seconds": 1.2,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "loi",
+    "class_name": "Lôi Chấn Hiệp",
+    "slot": 6,
+    "skill_id": "l6",
+    "skill_name": "Lôi Vực",
+    "unlock_character_level": 40,
+    "mana_cost": 52,
+    "cooldown_seconds": 15,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.95,
+    "damage_multiplier_at_skill_level_10": 1.976,
+    "mechanical_parameters": {
+      "radius_world_units": 150,
+      "hit_count": 5,
+      "slow_parameter": 2,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "loi",
+    "class_name": "Lôi Chấn Hiệp",
+    "slot": 7,
+    "skill_id": "l7",
+    "skill_name": "Cửu Tiêu Thần Lôi",
+    "unlock_character_level": 55,
+    "mana_cost": 82,
+    "cooldown_seconds": 28,
+    "mechanic_type": "chain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 2.8,
+    "damage_multiplier_at_skill_level_10": 5.824,
+    "mechanical_parameters": {
+      "stun_seconds": 1,
+      "count_parameter": 14
+    }
+  },
+  {
+    "class_id": "loi",
+    "class_name": "Lôi Chấn Hiệp",
+    "slot": 8,
+    "skill_id": "loi_ult",
+    "skill_name": "Cửu Thiên Lôi Phạt",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.55,
+    "damage_multiplier_at_skill_level_10": 3.224,
+    "mechanical_parameters": {
+      "radius_world_units": 225,
+      "hit_count": 6,
+      "stun_seconds": 0.8,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "coquan",
+    "class_name": "Cơ Quan Sư",
+    "slot": 1,
+    "skill_id": "q1",
+    "skill_name": "Liên Nỗ",
+    "unlock_character_level": 1,
+    "mana_cost": 5,
+    "cooldown_seconds": 2.5,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.9,
+    "damage_multiplier_at_skill_level_10": 1.872,
+    "mechanical_parameters": {
+      "count_parameter": 3,
+      "spread_radians": 0.1,
+      "projectile_speed": 640,
+      "projectile_family_id": "arrow"
+    }
+  },
+  {
+    "class_id": "coquan",
+    "class_name": "Cơ Quan Sư",
+    "slot": 2,
+    "skill_id": "q2",
+    "skill_name": "Hỏa Dược Đạn",
+    "unlock_character_level": 5,
+    "mana_cost": 12,
+    "cooldown_seconds": 6,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 2.2,
+    "damage_multiplier_at_skill_level_10": 4.576,
+    "mechanical_parameters": {
+      "applies_burn": true,
+      "count_parameter": 1,
+      "projectile_speed": 520,
+      "projectile_family_id": "fire",
+      "explosion_parameter": 60
+    }
+  },
+  {
+    "class_id": "coquan",
+    "class_name": "Cơ Quan Sư",
+    "slot": 3,
+    "skill_id": "q3",
+    "skill_name": "Đồng Giáp Cơ Quan",
+    "unlock_character_level": 10,
+    "mana_cost": 20,
+    "cooldown_seconds": 35,
+    "mechanic_type": "shield",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "percentage_parameter": 35
+    }
+  },
+  {
+    "class_id": "coquan",
+    "class_name": "Cơ Quan Sư",
+    "slot": 4,
+    "skill_id": "q4",
+    "skill_name": "Địa Lôi Trận",
+    "unlock_character_level": 18,
+    "mana_cost": 26,
+    "cooldown_seconds": 11,
+    "mechanic_type": "rain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.9,
+    "damage_multiplier_at_skill_level_10": 1.872,
+    "mechanical_parameters": {
+      "radius_world_units": 110,
+      "count_parameter": 10,
+      "projectile_family_id": "meteor",
+      "explosion_parameter": 40
+    }
+  },
+  {
+    "class_id": "coquan",
+    "class_name": "Cơ Quan Sư",
+    "slot": 5,
+    "skill_id": "q5",
+    "skill_name": "Thần Cơ Pháo",
+    "unlock_character_level": 26,
+    "mana_cost": 42,
+    "cooldown_seconds": 22,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 5,
+    "damage_multiplier_at_skill_level_10": 10.4,
+    "mechanical_parameters": {
+      "stun_seconds": 0.6,
+      "count_parameter": 1,
+      "projectile_speed": 900,
+      "projectile_family_id": "giantarrow",
+      "piercing_flag": true,
+      "collision_width": 24
+    }
+  },
+  {
+    "class_id": "coquan",
+    "class_name": "Cơ Quan Sư",
+    "slot": 6,
+    "skill_id": "q6",
+    "skill_name": "Bánh Răng Phong Bạo",
+    "unlock_character_level": 40,
+    "mana_cost": 52,
+    "cooldown_seconds": 15,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.9,
+    "damage_multiplier_at_skill_level_10": 1.872,
+    "mechanical_parameters": {
+      "radius_world_units": 140,
+      "hit_count": 5,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "coquan",
+    "class_name": "Cơ Quan Sư",
+    "slot": 7,
+    "skill_id": "q7",
+    "skill_name": "Vạn Nỗ Tề Phát",
+    "unlock_character_level": 55,
+    "mana_cost": 80,
+    "cooldown_seconds": 28,
+    "mechanic_type": "rain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.1,
+    "damage_multiplier_at_skill_level_10": 2.288,
+    "mechanical_parameters": {
+      "radius_world_units": 180,
+      "count_parameter": 24,
+      "projectile_family_id": "arrow"
+    }
+  },
+  {
+    "class_id": "coquan",
+    "class_name": "Cơ Quan Sư",
+    "slot": 8,
+    "skill_id": "coquan_ult",
+    "skill_name": "Thiên Cơ Pháo Trận",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.05,
+    "damage_multiplier_at_skill_level_10": 2.184,
+    "mechanical_parameters": {
+      "radius_world_units": 205,
+      "hit_count": 8,
+      "slow_parameter": 2,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "anha",
+    "class_name": "Ảnh Nha Khách",
+    "slot": 1,
+    "skill_id": "a1",
+    "skill_name": "Nha Trảo Liên Hoàn",
+    "unlock_character_level": 1,
+    "mana_cost": 5,
+    "cooldown_seconds": 2.5,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.8,
+    "damage_multiplier_at_skill_level_10": 1.664,
+    "mechanical_parameters": {
+      "radius_world_units": 76,
+      "arc_radians": 1.6,
+      "hit_count": 3
+    }
+  },
+  {
+    "class_id": "anha",
+    "class_name": "Ảnh Nha Khách",
+    "slot": 2,
+    "skill_id": "a2",
+    "skill_name": "Hắc Vũ Khinh Công",
+    "unlock_character_level": 5,
+    "mana_cost": 10,
+    "cooldown_seconds": 5,
+    "mechanic_type": "dash",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.8,
+    "damage_multiplier_at_skill_level_10": 3.744,
+    "mechanical_parameters": {
+      "dash_distance_world_units": 210
+    }
+  },
+  {
+    "class_id": "anha",
+    "class_name": "Ảnh Nha Khách",
+    "slot": 3,
+    "skill_id": "a3",
+    "skill_name": "Nha Vũ Phi Tiêu",
+    "unlock_character_level": 10,
+    "mana_cost": 14,
+    "cooldown_seconds": 7,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.9,
+    "damage_multiplier_at_skill_level_10": 1.872,
+    "mechanical_parameters": {
+      "count_parameter": 5,
+      "spread_radians": 0.18,
+      "projectile_speed": 700,
+      "projectile_family_id": "knife"
+    }
+  },
+  {
+    "class_id": "anha",
+    "class_name": "Ảnh Nha Khách",
+    "slot": 4,
+    "skill_id": "a4",
+    "skill_name": "Báo Tử Ấn",
+    "unlock_character_level": 18,
+    "mana_cost": 22,
+    "cooldown_seconds": 32,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 18,
+      "temporary_stat_bonuses": {
+        "crit": 30,
+        "critD": 40
+      }
+    }
+  },
+  {
+    "class_id": "anha",
+    "class_name": "Ảnh Nha Khách",
+    "slot": 5,
+    "skill_id": "a5",
+    "skill_name": "Ảnh Nha Đoạt Hồn",
+    "unlock_character_level": 26,
+    "mana_cost": 40,
+    "cooldown_seconds": 20,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 5.4,
+    "damage_multiplier_at_skill_level_10": 11.232,
+    "mechanical_parameters": {
+      "radius_world_units": 110,
+      "arc_radians": 1,
+      "hit_count": 1,
+      "stun_seconds": 1
+    }
+  },
+  {
+    "class_id": "anha",
+    "class_name": "Ảnh Nha Khách",
+    "slot": 6,
+    "skill_id": "a6",
+    "skill_name": "Vạn Nha Phệ Thể",
+    "unlock_character_level": 40,
+    "mana_cost": 50,
+    "cooldown_seconds": 14,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.95,
+    "damage_multiplier_at_skill_level_10": 1.976,
+    "mechanical_parameters": {
+      "radius_world_units": 140,
+      "hit_count": 6,
+      "slow_parameter": 2,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "anha",
+    "class_name": "Ảnh Nha Khách",
+    "slot": 7,
+    "skill_id": "a7",
+    "skill_name": "Hắc Dực Thiên Tràng",
+    "unlock_character_level": 55,
+    "mana_cost": 78,
+    "cooldown_seconds": 27,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.7,
+    "damage_multiplier_at_skill_level_10": 3.536,
+    "mechanical_parameters": {
+      "radius_world_units": 175,
+      "hit_count": 4,
+      "stun_seconds": 0.8,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "anha",
+    "class_name": "Ảnh Nha Khách",
+    "slot": 8,
+    "skill_id": "anha_ult",
+    "skill_name": "Vạn Nha Phệ Hồn",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.35,
+    "damage_multiplier_at_skill_level_10": 2.808,
+    "mechanical_parameters": {
+      "radius_world_units": 185,
+      "hit_count": 6,
+      "target_anchor": "self",
+      "life_steal_parameter": 15
+    }
+  },
+  {
+    "class_id": "thuan",
+    "class_name": "Huyền Thuẫn Tướng",
+    "slot": 1,
+    "skill_id": "h1",
+    "skill_name": "Thuẫn Kích",
+    "unlock_character_level": 1,
+    "mana_cost": 6,
+    "cooldown_seconds": 3,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.5,
+    "damage_multiplier_at_skill_level_10": 3.12,
+    "mechanical_parameters": {
+      "radius_world_units": 76,
+      "arc_radians": 1.3,
+      "hit_count": 1,
+      "stun_seconds": 0.5
+    }
+  },
+  {
+    "class_id": "thuan",
+    "class_name": "Huyền Thuẫn Tướng",
+    "slot": 2,
+    "skill_id": "h2",
+    "skill_name": "Phá Trận Xung",
+    "unlock_character_level": 5,
+    "mana_cost": 10,
+    "cooldown_seconds": 6,
+    "mechanic_type": "dash",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.7,
+    "damage_multiplier_at_skill_level_10": 3.536,
+    "mechanical_parameters": {
+      "dash_distance_world_units": 160
+    }
+  },
+  {
+    "class_id": "thuan",
+    "class_name": "Huyền Thuẫn Tướng",
+    "slot": 3,
+    "skill_id": "h3",
+    "skill_name": "Kim Cương Thuẫn",
+    "unlock_character_level": 10,
+    "mana_cost": 20,
+    "cooldown_seconds": 35,
+    "mechanic_type": "shield",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "percentage_parameter": 50
+    }
+  },
+  {
+    "class_id": "thuan",
+    "class_name": "Huyền Thuẫn Tướng",
+    "slot": 4,
+    "skill_id": "h4",
+    "skill_name": "Hiệu Lệnh Tam Quân",
+    "unlock_character_level": 18,
+    "mana_cost": 22,
+    "cooldown_seconds": 32,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "temporary_stat_bonuses": {
+        "atkP": 25,
+        "defP": 30
+      }
+    }
+  },
+  {
+    "class_id": "thuan",
+    "class_name": "Huyền Thuẫn Tướng",
+    "slot": 5,
+    "skill_id": "h5",
+    "skill_name": "Thiết Thuẫn Chấn Sơn",
+    "unlock_character_level": 26,
+    "mana_cost": 40,
+    "cooldown_seconds": 22,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 3.6,
+    "damage_multiplier_at_skill_level_10": 7.488,
+    "mechanical_parameters": {
+      "radius_world_units": 130,
+      "hit_count": 1,
+      "stun_seconds": 1.5,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "thuan",
+    "class_name": "Huyền Thuẫn Tướng",
+    "slot": 6,
+    "skill_id": "h6",
+    "skill_name": "Trường Thương Đột Thứ",
+    "unlock_character_level": 40,
+    "mana_cost": 50,
+    "cooldown_seconds": 14,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.5,
+    "damage_multiplier_at_skill_level_10": 3.12,
+    "mechanical_parameters": {
+      "radius_world_units": 150,
+      "arc_radians": 0.6,
+      "hit_count": 3
+    }
+  },
+  {
+    "class_id": "thuan",
+    "class_name": "Huyền Thuẫn Tướng",
+    "slot": 7,
+    "skill_id": "h7",
+    "skill_name": "Bất Động Minh Vương",
+    "unlock_character_level": 55,
+    "mana_cost": 78,
+    "cooldown_seconds": 28,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 2.2,
+    "damage_multiplier_at_skill_level_10": 4.576,
+    "mechanical_parameters": {
+      "radius_world_units": 170,
+      "hit_count": 3,
+      "stun_seconds": 1.2,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "thuan",
+    "class_name": "Huyền Thuẫn Tướng",
+    "slot": 8,
+    "skill_id": "thuan_ult",
+    "skill_name": "Huyền Vũ Thần Thuẫn",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.5,
+    "damage_multiplier_at_skill_level_10": 3.12,
+    "mechanical_parameters": {
+      "radius_world_units": 185,
+      "hit_count": 3,
+      "stun_seconds": 2,
+      "shield_parameter": 40,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "camy",
+    "class_name": "Cẩm Y Vệ",
+    "slot": 1,
+    "skill_id": "y1",
+    "skill_name": "Tụ Tiễn",
+    "unlock_character_level": 1,
+    "mana_cost": 5,
+    "cooldown_seconds": 2.5,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.15,
+    "damage_multiplier_at_skill_level_10": 2.392,
+    "mechanical_parameters": {
+      "count_parameter": 2,
+      "spread_radians": 0.08,
+      "projectile_speed": 760,
+      "projectile_family_id": "arrow"
+    }
+  },
+  {
+    "class_id": "camy",
+    "class_name": "Cẩm Y Vệ",
+    "slot": 2,
+    "skill_id": "y2",
+    "skill_name": "Tú Xuân Đao",
+    "unlock_character_level": 5,
+    "mana_cost": 10,
+    "cooldown_seconds": 5,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.5,
+    "damage_multiplier_at_skill_level_10": 3.12,
+    "mechanical_parameters": {
+      "radius_world_units": 80,
+      "arc_radians": 1.5,
+      "hit_count": 2
+    }
+  },
+  {
+    "class_id": "camy",
+    "class_name": "Cẩm Y Vệ",
+    "slot": 3,
+    "skill_id": "y3",
+    "skill_name": "Mật Thám Nhãn",
+    "unlock_character_level": 10,
+    "mana_cost": 18,
+    "cooldown_seconds": 35,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "temporary_stat_bonuses": {
+        "crit": 25,
+        "critD": 35,
+        "aspd": 15
+      }
+    }
+  },
+  {
+    "class_id": "camy",
+    "class_name": "Cẩm Y Vệ",
+    "slot": 4,
+    "skill_id": "y4",
+    "skill_name": "Mai Hoa Châm",
+    "unlock_character_level": 18,
+    "mana_cost": 24,
+    "cooldown_seconds": 9,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.85,
+    "damage_multiplier_at_skill_level_10": 1.768,
+    "mechanical_parameters": {
+      "applies_poison": true,
+      "count_parameter": 6,
+      "spread_radians": 0.2,
+      "projectile_speed": 650,
+      "projectile_family_id": "knife"
+    }
+  },
+  {
+    "class_id": "camy",
+    "class_name": "Cẩm Y Vệ",
+    "slot": 5,
+    "skill_id": "y5",
+    "skill_name": "Truy Mệnh Nỗ",
+    "unlock_character_level": 26,
+    "mana_cost": 40,
+    "cooldown_seconds": 20,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 5.2,
+    "damage_multiplier_at_skill_level_10": 10.816,
+    "mechanical_parameters": {
+      "stun_seconds": 0.5,
+      "count_parameter": 1,
+      "projectile_speed": 950,
+      "projectile_family_id": "bigarrow",
+      "piercing_flag": true
+    }
+  },
+  {
+    "class_id": "camy",
+    "class_name": "Cẩm Y Vệ",
+    "slot": 6,
+    "skill_id": "y6",
+    "skill_name": "Thiên La Địa Võng",
+    "unlock_character_level": 40,
+    "mana_cost": 50,
+    "cooldown_seconds": 15,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 2.6,
+    "damage_multiplier_at_skill_level_10": 5.408,
+    "mechanical_parameters": {
+      "radius_world_units": 130,
+      "hit_count": 1,
+      "stun_seconds": 2,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "camy",
+    "class_name": "Cẩm Y Vệ",
+    "slot": 7,
+    "skill_id": "y7",
+    "skill_name": "Vạn Tiễn Truy Hồn",
+    "unlock_character_level": 55,
+    "mana_cost": 80,
+    "cooldown_seconds": 28,
+    "mechanic_type": "rain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.1,
+    "damage_multiplier_at_skill_level_10": 2.288,
+    "mechanical_parameters": {
+      "radius_world_units": 170,
+      "count_parameter": 24,
+      "projectile_family_id": "arrow"
+    }
+  },
+  {
+    "class_id": "camy",
+    "class_name": "Cẩm Y Vệ",
+    "slot": 8,
+    "skill_id": "camy_ult",
+    "skill_name": "Cẩm Y Tru Tà",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.35,
+    "damage_multiplier_at_skill_level_10": 2.808,
+    "mechanical_parameters": {
+      "radius_world_units": 200,
+      "hit_count": 7,
+      "duration_seconds": 8,
+      "slow_parameter": 2,
+      "target_anchor": "target",
+      "temporary_stat_bonuses": {
+        "atkP": 20
+      }
+    }
+  },
+  {
+    "class_id": "thuong",
+    "class_name": "Long Thương Tướng",
+    "slot": 1,
+    "skill_id": "tg1",
+    "skill_name": "Đột Thích",
+    "unlock_character_level": 1,
+    "mana_cost": 5,
+    "cooldown_seconds": 2.5,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.6,
+    "damage_multiplier_at_skill_level_10": 3.328,
+    "mechanical_parameters": {
+      "radius_world_units": 112,
+      "arc_radians": 0.5,
+      "hit_count": 1
+    }
+  },
+  {
+    "class_id": "thuong",
+    "class_name": "Long Thương Tướng",
+    "slot": 2,
+    "skill_id": "tg2",
+    "skill_name": "Hồi Mã Thương",
+    "unlock_character_level": 5,
+    "mana_cost": 10,
+    "cooldown_seconds": 5,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.05,
+    "damage_multiplier_at_skill_level_10": 2.184,
+    "mechanical_parameters": {
+      "radius_world_units": 96,
+      "arc_radians": 2.2,
+      "hit_count": 2
+    }
+  },
+  {
+    "class_id": "thuong",
+    "class_name": "Long Thương Tướng",
+    "slot": 3,
+    "skill_id": "tg3",
+    "skill_name": "Long Kỵ Xung Phong",
+    "unlock_character_level": 10,
+    "mana_cost": 16,
+    "cooldown_seconds": 7,
+    "mechanic_type": "dash",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 2,
+    "damage_multiplier_at_skill_level_10": 4.16,
+    "mechanical_parameters": {
+      "dash_distance_world_units": 220
+    }
+  },
+  {
+    "class_id": "thuong",
+    "class_name": "Long Thương Tướng",
+    "slot": 4,
+    "skill_id": "tg4",
+    "skill_name": "Thương Trận",
+    "unlock_character_level": 18,
+    "mana_cost": 22,
+    "cooldown_seconds": 34,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "temporary_stat_bonuses": {
+        "atkP": 22,
+        "defP": 22
+      }
+    }
+  },
+  {
+    "class_id": "thuong",
+    "class_name": "Long Thương Tướng",
+    "slot": 5,
+    "skill_id": "tg5",
+    "skill_name": "Bá Vương Quét",
+    "unlock_character_level": 26,
+    "mana_cost": 40,
+    "cooldown_seconds": 20,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.6,
+    "damage_multiplier_at_skill_level_10": 3.328,
+    "mechanical_parameters": {
+      "radius_world_units": 135,
+      "hit_count": 3,
+      "stun_seconds": 0.8,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "thuong",
+    "class_name": "Long Thương Tướng",
+    "slot": 6,
+    "skill_id": "tg6",
+    "skill_name": "Liên Hoàn Thích",
+    "unlock_character_level": 40,
+    "mana_cost": 50,
+    "cooldown_seconds": 14,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.15,
+    "damage_multiplier_at_skill_level_10": 2.392,
+    "mechanical_parameters": {
+      "radius_world_units": 175,
+      "arc_radians": 0.5,
+      "hit_count": 5
+    }
+  },
+  {
+    "class_id": "thuong",
+    "class_name": "Long Thương Tướng",
+    "slot": 7,
+    "skill_id": "tg7",
+    "skill_name": "Phá Quân Ý",
+    "unlock_character_level": 55,
+    "mana_cost": 70,
+    "cooldown_seconds": 34,
+    "mechanic_type": "shield",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 18,
+      "percentage_parameter": 45
+    }
+  },
+  {
+    "class_id": "thuong",
+    "class_name": "Long Thương Tướng",
+    "slot": 8,
+    "skill_id": "thuong_ult",
+    "skill_name": "Long Hống Phá Thiên",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.6,
+    "damage_multiplier_at_skill_level_10": 3.328,
+    "mechanical_parameters": {
+      "radius_world_units": 220,
+      "hit_count": 6,
+      "applies_burn": true,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "cam",
+    "class_name": "Thiên Âm Cầm Sư",
+    "slot": 1,
+    "skill_id": "cs1",
+    "skill_name": "Âm Ba",
+    "unlock_character_level": 1,
+    "mana_cost": 5,
+    "cooldown_seconds": 2.5,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.25,
+    "damage_multiplier_at_skill_level_10": 2.6,
+    "mechanical_parameters": {
+      "count_parameter": 1,
+      "projectile_speed": 620,
+      "projectile_family_id": "orb",
+      "piercing_flag": true
+    }
+  },
+  {
+    "class_id": "cam",
+    "class_name": "Thiên Âm Cầm Sư",
+    "slot": 2,
+    "skill_id": "cs2",
+    "skill_name": "Thanh Tâm Khúc",
+    "unlock_character_level": 5,
+    "mana_cost": 14,
+    "cooldown_seconds": 16,
+    "mechanic_type": "heal",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "percentage_parameter": 22
+    }
+  },
+  {
+    "class_id": "cam",
+    "class_name": "Thiên Âm Cầm Sư",
+    "slot": 3,
+    "skill_id": "cs3",
+    "skill_name": "Loạn Hồn Khúc",
+    "unlock_character_level": 10,
+    "mana_cost": 16,
+    "cooldown_seconds": 9,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.8,
+    "damage_multiplier_at_skill_level_10": 1.664,
+    "mechanical_parameters": {
+      "radius_world_units": 125,
+      "hit_count": 3,
+      "slow_parameter": 2.5,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "cam",
+    "class_name": "Thiên Âm Cầm Sư",
+    "slot": 4,
+    "skill_id": "cs4",
+    "skill_name": "Phượng Minh",
+    "unlock_character_level": 18,
+    "mana_cost": 22,
+    "cooldown_seconds": 8,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.15,
+    "damage_multiplier_at_skill_level_10": 2.392,
+    "mechanical_parameters": {
+      "count_parameter": 3,
+      "spread_radians": 0.22,
+      "projectile_speed": 640,
+      "projectile_family_id": "orb"
+    }
+  },
+  {
+    "class_id": "cam",
+    "class_name": "Thiên Âm Cầm Sư",
+    "slot": 5,
+    "skill_id": "cs5",
+    "skill_name": "Hộ Tâm Huyền",
+    "unlock_character_level": 26,
+    "mana_cost": 36,
+    "cooldown_seconds": 30,
+    "mechanic_type": "shield",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 18,
+      "percentage_parameter": 40
+    }
+  },
+  {
+    "class_id": "cam",
+    "class_name": "Thiên Âm Cầm Sư",
+    "slot": 6,
+    "skill_id": "cs6",
+    "skill_name": "Thập Diện Mai Phục",
+    "unlock_character_level": 40,
+    "mana_cost": 50,
+    "cooldown_seconds": 15,
+    "mechanic_type": "rain",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.05,
+    "damage_multiplier_at_skill_level_10": 2.184,
+    "mechanical_parameters": {
+      "radius_world_units": 160,
+      "count_parameter": 20,
+      "projectile_family_id": "arrow"
+    }
+  },
+  {
+    "class_id": "cam",
+    "class_name": "Thiên Âm Cầm Sư",
+    "slot": 7,
+    "skill_id": "cs7",
+    "skill_name": "Tĩnh Dạ Tư",
+    "unlock_character_level": 55,
+    "mana_cost": 70,
+    "cooldown_seconds": 32,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 20,
+      "temporary_stat_bonuses": {
+        "atkP": 20,
+        "aspd": 25
+      }
+    }
+  },
+  {
+    "class_id": "cam",
+    "class_name": "Thiên Âm Cầm Sư",
+    "slot": 8,
+    "skill_id": "cam_ult",
+    "skill_name": "Thiên Ma Cầm Âm",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.2,
+    "damage_multiplier_at_skill_level_10": 2.496,
+    "mechanical_parameters": {
+      "radius_world_units": 240,
+      "hit_count": 6,
+      "stun_seconds": 1.5,
+      "heal_parameter": 30,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "liem",
+    "class_name": "U Minh Liêm Sư",
+    "slot": 1,
+    "skill_id": "ls1",
+    "skill_name": "Câu Hồn Xích",
+    "unlock_character_level": 1,
+    "mana_cost": 5,
+    "cooldown_seconds": 2.5,
+    "mechanic_type": "proj",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.3,
+    "damage_multiplier_at_skill_level_10": 2.704,
+    "mechanical_parameters": {
+      "stun_seconds": 0.3,
+      "count_parameter": 1,
+      "projectile_speed": 720,
+      "projectile_family_id": "knife"
+    }
+  },
+  {
+    "class_id": "liem",
+    "class_name": "U Minh Liêm Sư",
+    "slot": 2,
+    "skill_id": "ls2",
+    "skill_name": "Huyết Liêm Trảm",
+    "unlock_character_level": 5,
+    "mana_cost": 10,
+    "cooldown_seconds": 5,
+    "mechanic_type": "cone",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.1,
+    "damage_multiplier_at_skill_level_10": 2.288,
+    "mechanical_parameters": {
+      "radius_world_units": 92,
+      "arc_radians": 1.9,
+      "hit_count": 2
+    }
+  },
+  {
+    "class_id": "liem",
+    "class_name": "U Minh Liêm Sư",
+    "slot": 3,
+    "skill_id": "ls3",
+    "skill_name": "Quỷ Bộ",
+    "unlock_character_level": 10,
+    "mana_cost": 14,
+    "cooldown_seconds": 7,
+    "mechanic_type": "dash",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.7,
+    "damage_multiplier_at_skill_level_10": 3.536,
+    "mechanical_parameters": {
+      "dash_distance_world_units": 200
+    }
+  },
+  {
+    "class_id": "liem",
+    "class_name": "U Minh Liêm Sư",
+    "slot": 4,
+    "skill_id": "ls4",
+    "skill_name": "Hồn Xích Trận",
+    "unlock_character_level": 18,
+    "mana_cost": 24,
+    "cooldown_seconds": 14,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1,
+    "damage_multiplier_at_skill_level_10": 2.08,
+    "mechanical_parameters": {
+      "radius_world_units": 120,
+      "hit_count": 2,
+      "stun_seconds": 2,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "liem",
+    "class_name": "U Minh Liêm Sư",
+    "slot": 5,
+    "skill_id": "ls5",
+    "skill_name": "Phệ Hồn",
+    "unlock_character_level": 26,
+    "mana_cost": 36,
+    "cooldown_seconds": 32,
+    "mechanic_type": "buff",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": null,
+    "damage_multiplier_at_skill_level_10": null,
+    "mechanical_parameters": {
+      "duration_seconds": 16,
+      "temporary_stat_bonuses": {
+        "crit": 25,
+        "critD": 40
+      }
+    }
+  },
+  {
+    "class_id": "liem",
+    "class_name": "U Minh Liêm Sư",
+    "slot": 6,
+    "skill_id": "ls6",
+    "skill_name": "U Minh Triều",
+    "unlock_character_level": 40,
+    "mana_cost": 50,
+    "cooldown_seconds": 14,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 1.1,
+    "damage_multiplier_at_skill_level_10": 2.288,
+    "mechanical_parameters": {
+      "radius_world_units": 150,
+      "hit_count": 4,
+      "target_anchor": "self"
+    }
+  },
+  {
+    "class_id": "liem",
+    "class_name": "U Minh Liêm Sư",
+    "slot": 7,
+    "skill_id": "ls7",
+    "skill_name": "Bách Quỷ Dạ Hành",
+    "unlock_character_level": 55,
+    "mana_cost": 76,
+    "cooldown_seconds": 27,
+    "mechanic_type": "circle",
+    "ultimate": false,
+    "damage_multiplier_at_skill_level_1": 0.95,
+    "damage_multiplier_at_skill_level_10": 1.976,
+    "mechanical_parameters": {
+      "radius_world_units": 165,
+      "hit_count": 6,
+      "slow_parameter": 2,
+      "target_anchor": "target"
+    }
+  },
+  {
+    "class_id": "liem",
+    "class_name": "U Minh Liêm Sư",
+    "slot": 8,
+    "skill_id": "liem_ult",
+    "skill_name": "Diêm La Thẩm Phán",
+    "unlock_character_level": 120,
+    "mana_cost": 150,
+    "cooldown_seconds": 45,
+    "mechanic_type": "ult",
+    "ultimate": true,
+    "damage_multiplier_at_skill_level_1": 1.5,
+    "damage_multiplier_at_skill_level_10": 3.12,
+    "mechanical_parameters": {
+      "radius_world_units": 210,
+      "hit_count": 5,
+      "target_anchor": "self",
+      "life_steal_parameter": 20
+    }
+  }
+]
