@@ -1,74 +1,86 @@
-# Kiếm Vực — Giang Hồ Khởi Sự
+# Kiếm Vực — Giang Hồ Mở Rộng
 
-Webgame nhập vai kiếm hiệp chơi đơn, viết bằng JavaScript, CSS và Canvas 2D. Đây là bản mẫu chơi được; toàn bộ mã, hình vẽ trong game và biểu tượng được tạo mới.
+Webgame kiếm hiệp chơi đơn bằng JavaScript và Canvas 2D. Bản v2 tích hợp thông số tham chiếu vào engine viết độc lập, kèm hình vẽ, biểu tượng, địa hình và hiệu ứng mới.
 
-[Bộ tham chiếu thông số Chiến Hồn](docs/chienhon/README.md) gồm bảng môn phái, kỹ năng, cấp độ, bản đồ, quái, nhiệm vụ và NPC. Đây là tài liệu phân tích riêng; các tính năng đó chưa được tích hợp vào bản mẫu Kiếm Vực dưới đây.
+**Chơi ngay:** https://caovanhanhtp2891-lab.github.io/kiemvuc/
 
-![Màn chơi Kiếm Vực](docs/kiem-vuc-gameplay.png)
+Chọn **Bắt đầu từ Lv1** để chơi hành trình, hoặc **Thử toàn bộ Lv400** để kiểm tra mọi phái, kỹ năng và bản đồ. Khi đang chơi, nút **Thử Lv400** nằm trên thanh đầu trang. Chế độ thử không ghi đè hành trình chính; dùng **Đổi phái**, **Bù nhìn**, rồi **Về hành trình** để quay lại.
+
+## Nội dung đã tích hợp
+
+| Hệ thống | Bản v2 |
+| --- | --- |
+| Môn phái | 14 phái, chỉ số gốc, thuộc tính chính, tầm và nhịp đánh, vũ khí vẽ riêng |
+| Võ học | 112 chiêu, 8 mỗi phái; học theo cấp, nâng tối đa Lv10; nội lực và hồi chiêu riêng |
+| Cấp nhân vật | 1–400, đường cong EXP, 5 điểm tiềm năng và 1 điểm kỹ năng mỗi cấp |
+| Bản đồ | 48 vùng, trong đó 9 thành trấn, kích thước và danh sách sinh quái theo dữ liệu |
+| Quái và boss | 146 mẫu, gồm 39 boss; chỉ số nền, tái sinh, AI, hộ thể và đòn báo trước |
+| Nhiệm vụ | 86 nhiệm vụ nối tiếp; diệt quái, boss, thu thập, gặp NPC, học chiêu, rèn đồ, tổ đội |
+| NPC | 15 vai trò, hiện trong thành trấn; có menu dịch vụ và dẫn đường |
+| Trang bị | 10 vị trí, 35 bậc, 6 phẩm chất; mặc/tháo, bán, phân giải, kho, cường hóa +15 |
+| Ngọc | 5 loại, 5 cấp; đục tối đa 3 lỗ, khảm/tháo và hợp 3 viên |
+| Đồng hành | 8 thú cưng tăng chỉ số, cho ăn; 10 thú cưỡi tăng tốc; 4 thế lực |
+| Hoạt động | Tổ đội tối đa 4 NPC, đấu trường NPC, phó bản 3 đợt quái + boss, truy nã |
+| Tự động | Tìm quái, dùng kỹ năng và thuốc, nhặt đồ, ưu tiên mục tiêu nhiệm vụ/boss |
+| Tiến trình | Tự lưu, nhập/xuất JSON, chuyển bản lưu v1, thưởng vắng mặt tối đa 8 giờ |
+
+Các chiêu xử lý chém quạt, lướt, đạn, mưa đạn, vùng sát thương, liên hoàn, hồi phục, khiên, tăng chỉ số, triệu hồi và tuyệt kỹ. Những tham số choáng, đốt, độc, hút máu, đẩy, kéo và làm chậm được áp dụng trong chiến đấu. Buff hết hạn sẽ trả chỉ số về nền.
+
+[Bộ dữ liệu tham chiếu](docs/chienhon/README.md) ghi nguồn, công thức và giới hạn quan sát. [Ghi chú triển khai v2](docs/implementation-v2.md) mô tả cách thử và những phần chưa có.
 
 ## Chạy trên Windows
 
-Cài Python nếu máy chưa có, mở PowerShell trong thư mục dự án và chạy:
+Mở PowerShell trong thư mục dự án:
 
 ```powershell
 cd dist
 py -m http.server 8080
 ```
 
-Sau đó mở **http://localhost:8080** bằng Chrome, Edge hoặc Firefox. Nếu máy dùng lệnh `python`, thay `py` bằng `python`.
-
-Game không cần cài thư viện, không cần API key và không cần tài khoản. Tiến trình được lưu trên trình duyệt và địa chỉ đang chơi. Chuyển sang trình duyệt, thiết bị hoặc địa chỉ khác sẽ dùng bộ dữ liệu riêng.
-
-## Tính năng hiện có
-
-- 3 môn phái: Kiếm khách, Linh pháp, Thần xạ; đòn thường cận chiến hoặc tầm xa.
-- 3 vùng luyện công mở theo cấp, quái tái sinh và thủ lĩnh riêng ở mỗi vùng.
-- 4 kỹ năng có nội lực và thời gian hồi chiêu.
-- Tự tìm quái, chiến đấu, dùng kỹ năng, nhặt đồ và dùng bình hồi máu.
-- Kinh nghiệm, lên cấp, nhiệm vụ, cửa hàng bình hồi phục và quà mỗi ngày.
-- Trang bị ở 3 vị trí, 4 phẩm chất; mặc, tháo, bán và cường hóa tối đa +20.
-- Bản đồ thu nhỏ, camera theo nhân vật, hiệu ứng và âm thanh chiến đấu.
-- Tự lưu mỗi 5 giây; thưởng luyện công vắng mặt tối đa 8 giờ.
+Mở http://localhost:8080 bằng Chrome, Edge hoặc Firefox. Có thể dùng `python` thay `py`. Không cần thư viện, API key hay tài khoản. Không mở HTML bằng `file://` để tránh khác biệt về lưu trữ của trình duyệt.
 
 ## Điều khiển
 
 | Phím / thao tác | Chức năng |
 | --- | --- |
-| WASD / phím mũi tên | Di chuyển và tắt tự đánh |
-| Nhấp hoặc chạm mặt đất | Di chuyển đến vị trí |
-| Nhấp hoặc chạm quái | Tiếp cận và đánh mục tiêu |
+| WASD / mũi tên | Di chuyển, tắt tự đánh |
+| Nhấp / chạm đất | Đi đến vị trí |
+| Nhấp / chạm quái | Chọn mục tiêu, tiếp cận và đánh |
 | Space | Đánh thường |
-| 1–4 | Dùng kỹ năng |
-| Q | Dùng bình hồi 60% sinh lực tối đa |
+| 1–8 | Thi triển kỹ năng |
+| Q / E | Dùng thuốc máu / nội lực phù hợp cấp |
 | T | Bật/tắt tự đánh |
-| B / C / K / M / J | Túi đồ / nhân vật / võ học / bản đồ / nhiệm vụ |
+| B / C / K / M / J / P | Túi / nhân vật / võ học / bản đồ / nhiệm vụ / thú |
 | Esc | Đóng menu |
 
-Trên điện thoại, chạm để di chuyển và dùng thanh kỹ năng. Mở menu sẽ tạm dừng chiến đấu.
+Menu tạm dừng chiến đấu. Các nút trên màn hình hỗ trợ thao tác chạm. Tab chạy nền tiếp tục cập nhật tự đánh khi trình duyệt cho phép; trình duyệt hoặc hệ điều hành có thể treo tab nên không bảo đảm chạy liên tục khi máy ngủ.
 
-## Cấu trúc mã nguồn
+## Cấu trúc và kiểm tra
 
 ```text
 dist/
-  index.html    Giao diện và thanh thông tin
-  style.css     Bố cục, hộp thoại và giao diện thích ứng
-  game.js       Luật chơi, điều khiển, lưu tiến trình và đồ họa Canvas
+  content.js   Dữ liệu 14 phái, kỹ năng, bản đồ, quái, nhiệm vụ, vật phẩm
+  rules.js     Luật số liệu, chỉ số, XP, sát thương, thưởng, rèn, bản lưu
+  game.js      Engine, AI, giao diện, NPC, hoạt ảnh, đồ họa và âm thanh
+  index.html   Giao diện gốc
+  style.css    Giao diện thích ứng
+tests/
+  rules.test.js
 docs/
-  kiem-vuc-gameplay.png
+  chienhon/    JSON/CSV và phân tích tham chiếu
 ```
 
-Có thể đưa nội dung `dist/` lên dịch vụ lưu trữ web tĩnh. Font Google là tùy chọn, đã có font dự phòng trên máy.
-
-## Kiểm tra
-
-Kiểm tra cú pháp bằng Node.js:
-
-```shell
+```sh
+node --check dist/content.js
+node --check dist/rules.js
 node --check dist/game.js
+node --test tests/rules.test.js
 ```
 
-Đã kiểm tra trực tiếp: tạo nhân vật, tự đánh, hạ boss, nhận trang bị, lên cấp, nhận thưởng nhiệm vụ, cường hóa, mặc trang bị, mở vùng thứ hai, chuyển bản đồ và khôi phục tiến trình sau khi tải lại trang.
+12 bài kiểm tra tự động bao phủ đủ 86 điều kiện và phần thưởng nhiệm vụ, tham chiếu bản đồ/quái, sát thương, EXP, trang bị/ngọc, rèn, chuyển bản lưu và túi đầy. Đã thử trực tiếp thi triển đủ 112 chiêu qua 14 phái, đi bản đồ cuối Lv400, tự đánh, nhiệm vụ boss, trả thưởng, cường hóa, đục lỗ và khảm ngọc. GitHub Actions kiểm tra cú pháp và luật chơi trước khi triển khai thư mục `dist/` lên Pages.
 
-## Phạm vi bản mẫu
+## Phạm vi
 
-Phiên bản hiện tại chơi đơn, chưa có máy chủ nhiều người, tài khoản đồng bộ, PK hoặc bang hội. Dữ liệu dùng localStorage; xóa dữ liệu trình duyệt sẽ xóa tiến trình. Thưởng vắng mặt được tính theo đồng hồ thiết bị. Ba vùng hiện dùng chung bố cục địa hình với màu sắc, quái, cấp và phần thưởng khác nhau. Bốn kỹ năng đang mở sẵn cho cả ba môn phái để thử nghiệm.
+Đây là bản game chơi đơn tự viết dựa trên các thông số công khai đã quan sát, **không phải toàn bộ mã nguồn hoặc bản sao y nguyên Chiến Hồn**. Engine, đồ họa Canvas, lời hướng dẫn và xử lý hoạt động được viết mới; không kèm sprite/âm thanh/mã vẽ gốc. Cách bố trí cảnh, hoạt ảnh, AI, phụ bản và một số công thức bổ sung là triển khai riêng, không bảo đảm hành vi giống máy chủ gốc.
+
+Chưa có máy chủ tài khoản, đồng bộ nhiều thiết bị, người chơi online, PK thật, chat, bang hội, bảng xếp hạng hay boss thế giới. Tổ đội và đấu trường sử dụng NPC. Bản lưu nằm trong localStorage của đúng trình duyệt và địa chỉ; nên xuất JSON trước khi xóa dữ liệu trình duyệt. Chuyển từ v1 giữ tên, cấp, tiền, trang bị tương ứng; chuỗi nhiệm vụ v2 bắt đầu lại vì cấu trúc đã thay đổi.

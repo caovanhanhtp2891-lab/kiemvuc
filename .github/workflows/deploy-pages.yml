@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'dist/**'
+      - 'tests/**'
       - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
@@ -30,7 +31,11 @@ jobs:
         with:
           persist-credentials: false
       - name: Validate game JavaScript
-        run: node --check dist/game.js
+        run: |
+          node --check dist/content.js
+          node --check dist/rules.js
+          node --check dist/game.js
+          node --test tests/rules.test.js
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload playable game

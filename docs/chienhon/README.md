@@ -2,7 +2,7 @@
 
 Bộ tham chiếu này ghi lại các thông số công khai quan sát được ngày **04/11/2026** để phục vụ phân tích và phát triển một bản game tự viết. Dữ liệu được tổ chức lại theo lược đồ JSON/CSV mới, cùng phần giải thích và công thức được diễn đạt lại.
 
-Đây **không phải toàn bộ mã nguồn Chiến Hồn**. Bộ tệp không chứa HTML/JavaScript/CSS gốc, mã vẽ gốc, ảnh/sprite gốc, lời thoại NPC hay nội dung kể chuyện của nhiệm vụ. Máy chủ, cơ sở dữ liệu và dữ liệu tài khoản không được truy cập. Những bảng này cũng **chưa được tích hợp vào bản Kiếm Vực đang chơi được** trong thư mục `dist/`.
+Đây **không phải toàn bộ mã nguồn Chiến Hồn**. Bộ tệp không chứa HTML/JavaScript/CSS gốc, mã vẽ gốc, ảnh/sprite gốc, lời thoại NPC hay nội dung kể chuyện của nhiệm vụ. Máy chủ, cơ sở dữ liệu và dữ liệu tài khoản không được truy cập. Các bảng đã được chuyển sang `dist/content.js` và tích hợp vào engine Kiếm Vực v2 tự viết. Xem [phạm vi triển khai](../implementation-v2.md); việc tích hợp không biến engine này thành mã nguồn gốc hoặc bảo đảm hành vi giống máy chủ gốc.
 
 ## Đã xác định được những gì?
 
@@ -89,9 +89,9 @@ Các yêu cầu HEAD kiểm tra những URL ảnh được khai báo đều tr�
 
 Nhạc và tiếng chiến đấu có phần được tổng hợp bằng Web Audio. Một tính năng nghe truyện riêng có sử dụng dịch vụ máy chủ; không thu thập luồng âm thanh đó.
 
-## Phần nào còn thiếu để làm một game đầy đủ?
+## Engine Kiếm Vực và phần máy chủ còn thiếu
 
-Các bảng thông số không thay thế được engine. Muốn triển khai lại cần tự viết phần thi triển từng loại kỹ năng, AI, điều hướng, hoạt ảnh, xử lý nhiệm vụ, sinh trang bị và lưu tiến trình. Các tính năng nhiều người còn cần máy chủ tài khoản, đồng bộ trạng thái, xác thực chiến đấu, tổ đội, bang hội, chat, xếp hạng và boss thế giới.
+Các bảng thông số không thay thế được engine. Kiếm Vực v2 đã viết độc lập phần thi triển kỹ năng, AI, điều hướng đơn giản, hoạt ảnh Canvas, xử lý 86 nhiệm vụ, sinh trang bị và lưu tiến trình. Các tính năng nhiều người còn cần máy chủ tài khoản, đồng bộ trạng thái, xác thực chiến đấu, tổ đội, bang hội, chat, xếp hạng và boss thế giới.
 
 Website công khai không cung cấp mã máy chủ hay cơ sở dữ liệu. Bản client còn dựa vào dịch vụ online và kiểm tra môi trường chạy, nên lưu một trang HTML không tạo thành một bản game độc lập hoàn chỉnh. Bộ tham chiếu không sửa hoặc vượt các kiểm tra đó.
 
