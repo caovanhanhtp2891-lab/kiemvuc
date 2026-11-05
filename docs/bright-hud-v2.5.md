@@ -35,3 +35,11 @@ Các hình chữ nhật được so sánh: thanh trên, nhân vật, ngân lư�
 ![Máy tính](kiem-vuc-v2.5-desktop.png)
 
 ![Điện thoại](kiem-vuc-v2.5-mobile.png)
+
+## Xác nhận trên GitHub Pages
+
+Mã triển khai: `c1fbdc9f5b94de25fac08346a18ae29591335343`. GitHub Actions run `41953526274` hoàn thành thành công, gồm xác thực JavaScript và triển khai Pages. Tám tệp công khai đã trả HTTP 200 và SHA-256 khớp bản đã kiểm tra: [kết quả đối chiếu](live-assets-v2.5.json).
+
+Đã tải lại URL công khai, thấy nhãn **v2.5 · GIANG HỒ PIXEL**, mở Menu → Sổ tay và bật/tắt thu gọn thành công. Đo bố cục công khai 1363 × 936 không có va chạm giữa các bảng chính, không tràn ngang hoặc vượt viewport.
+
+![Bản đang chạy trên GitHub Pages](kiem-vuc-v2.5-live.png)

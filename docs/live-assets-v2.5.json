@@ -1,0 +1,50 @@
+[
+  {
+    "file": "index.html",
+    "status": 200,
+    "bytes": 9627,
+    "matches_local": true
+  },
+  {
+    "file": "hud.css",
+    "status": 200,
+    "bytes": 27923,
+    "matches_local": true
+  },
+  {
+    "file": "game.js",
+    "status": 200,
+    "bytes": 103558,
+    "matches_local": true
+  },
+  {
+    "file": "pixel-art.js",
+    "status": 200,
+    "bytes": 36935,
+    "matches_local": true
+  },
+  {
+    "file": "effects.html",
+    "status": 200,
+    "bytes": 3044,
+    "matches_local": true
+  },
+  {
+    "file": "school-fx.js",
+    "status": 200,
+    "bytes": 36043,
+    "matches_local": true
+  },
+  {
+    "file": "rules.js",
+    "status": 200,
+    "bytes": 14246,
+    "matches_local": true
+  },
+  {
+    "file": "content.js",
+    "status": 200,
+    "bytes": 192246,
+    "matches_local": true
+  }
+]
