@@ -1,10 +1,14 @@
 # Kiếm Vực — Giang Hồ Pixel
 
-Webgame kiếm hiệp chơi đơn bằng JavaScript và Canvas 2D. Bản v2.4 tích hợp thông số tham chiếu vào engine viết độc lập, kèm hình vẽ, biểu tượng, địa hình và hiệu ứng mới.
+Webgame kiếm hiệp chơi đơn bằng JavaScript và Canvas 2D. Bản v2.5 tích hợp thông số tham chiếu vào engine viết độc lập, kèm hình vẽ, biểu tượng, địa hình và hiệu ứng mới.
 
 **Chơi ngay:** https://caovanhanhtp2891-lab.github.io/kiemvuc/
 
 **Đồ giám hiệu ứng:** https://caovanhanhtp2891-lab.github.io/kiemvuc/effects.html
+
+Bản **v2.5** làm sáng bảng màu pixel của cảnh vật và thiết kế lại HUD theo từng vùng. Thanh kỹ năng có hàng riêng; màn hình nhỏ dùng **Menu** và thanh 4 × 2; nút cạnh Menu thu gọn bảng phụ. Đã thử 8 kích thước viewport và tạo nhân vật trên màn hình 360 × 640. Xem [thiết kế và kiểm tra v2.5](docs/bright-hud-v2.5.md).
+
+![Cảnh sáng và HUD v2.5](docs/kiem-vuc-v2.5-desktop.png)
 
 Bản **v2.4** có 14 bộ hình và chuyển động riêng, 8 bố cục cho mỗi phái; biểu tượng, đạn và trúng đòn giữ đúng chiêu đã tung. Hiệu ứng lên cấp dựng theo các lớp công khai quan sát từ Chiến Hồn: cột vàng, vòng nở, hạt bay lên, bảng cấp và tia xoay. Xem [thiết kế và kiểm tra v2.4](docs/school-effects-v2.4.md).
 

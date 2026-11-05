@@ -7,53 +7,41 @@
   <meta name="description" content="Kiếm Vực — bước vào giang hồ, luyện kiếm, săn thủ lĩnh và tìm trang bị. Webgame kiếm hiệp chơi đơn lưu tự động.">
   <title>Kiếm Vực — Giang Hồ Pixel</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230c2525'/%3E%3Cpath d='M16 48 45 12l7-1-1 7-29 36zm-1-13 16 13' stroke='%23e5c48a' stroke-width='4' fill='none'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=2.4.0">
+  <link rel="stylesheet" href="style.css?v=2.5.0">
+  <link rel="stylesheet" href="hud.css?v=2.5.0">
 </head>
 <body>
   <main id="game" aria-label="Game Kiếm Vực">
     <canvas id="world" aria-label="Thế giới kiếm hiệp. Nhấp để di chuyển hoặc chọn quái, dùng WASD và phím 1 đến 8 để chiến đấu."></canvas>
     <div class="vignette" aria-hidden="true"></div>
-    <header class="topbar">
+    <div class="hud-layout">
+<header class="topbar">
       <a class="brand" href="#" aria-label="Kiếm Vực — mở hướng dẫn" id="brandLink"><span class="brand-mark" data-icon="swords"></span><span>KIẾM VỰC<small>GIANG HỒ PIXEL</small></span></a>
-      <div class="chapter"><span class="tiny-line"></span><span>CHƯƠNG I<small>14 phái · 112 chiêu · 48 bản đồ.</small></span></div>
-      <div class="top-actions"><button id="trialShortcut" class="trial-shortcut" data-demo-start>Thử Lv400</button><div class="solo"><i></i> CHƠI ĐƠN <span>·</span> TỰ ĐỘNG LƯU</div><button class="icon-btn" id="soundBtn" aria-label="Bật âm thanh" title="Bật âm thanh" data-icon="soundOff"></button><button class="icon-btn" id="settingsBtn" aria-label="Cài đặt" title="Cài đặt" data-icon="settings"></button></div>
-    </header>
 
-    <section class="player-panel glass" aria-label="Thông tin nhân vật">
+      <div class="top-actions"><button id="menuToggle" class="menu-toggle" data-open="menu"><span data-icon="bag"></span> Menu</button><button id="hudFocus" class="icon-btn" aria-label="Thu gọn giao diện" title="Thu gọn giao diện" aria-pressed="false" data-icon="expand"></button><button id="trialShortcut" class="trial-shortcut" data-demo-start>Thử Lv400</button><div class="solo"><i></i> CHƠI ĐƠN <span>·</span> TỰ ĐỘNG LƯU</div><button class="icon-btn" id="soundBtn" aria-label="Bật âm thanh" title="Bật âm thanh" data-icon="soundOff"></button><button class="icon-btn" id="settingsBtn" aria-label="Cài đặt" title="Cài đặt" data-icon="settings"></button></div>
+    </header>
+<aside class="hud-left"><section class="player-panel glass" aria-label="Thông tin nhân vật">
       <button class="portrait" data-open="character" aria-label="Mở nhân vật"><canvas id="portrait" width="96" height="96"></canvas><span id="levelBadge">1</span></button>
       <div class="player-bars"><div class="player-heading"><strong id="heroName">Vô Danh</strong><span id="heroClass">Kiếm khách</span></div><div class="bar hp"><div id="hpFill"></div><span id="hpLabel">150 / 150</span></div><div class="bar mp"><div id="mpFill"></div><span id="mpLabel">100 / 100</span></div><div class="power"><span data-icon="flame"></span> Lực chiến <b id="powerLabel">128</b></div></div>
-    </section>
-
-    <section id="bossHud" class="boss-hud" aria-label="Sinh lực thủ lĩnh" hidden><div><span data-icon="crown"></span><b id="bossName">Sơn Lâm Quỷ Vương</b><span id="bossLevel">Lv. 5</span></div><div class="boss-track"><i id="bossFill"></i><span id="bossHp"></span></div></section>
-
-    <aside class="right-rail">
+    </section><nav class="side-nav glass" aria-label="Chức năng game"><button data-open="character" title="Nhân vật (C)"><span data-icon="user"></span><span>Nhân vật</span><kbd>C</kbd></button><button data-open="inventory" title="Túi đồ (B)"><span data-icon="bag"></span><span>Túi đồ</span><i id="bagDot" class="notif" hidden></i><kbd>B</kbd></button><button data-open="skills" title="Võ học (K)"><span data-icon="spark"></span><span>Võ học</span><kbd>K</kbd></button><button data-open="map" title="Bản đồ (M)"><span data-icon="map"></span><span>Bản đồ</span><kbd>M</kbd></button><button data-open="quests" title="Nhiệm vụ (J)"><span data-icon="scroll"></span><span>Nhiệm vụ</span><kbd>J</kbd></button><span class="nav-divider"></span><button data-open="services" title="Dịch vụ NPC"><span data-icon="compass"></span><span>Dịch vụ NPC</span></button><button data-open="companions" title="Thú và đồng đội"><span data-icon="charm"></span><span>Thú</span></button><button data-open="party" title="Tổ đội NPC"><span data-icon="user"></span><span>Tổ đội NPC</span></button><button data-open="help" title="Hướng dẫn"><span data-icon="help"></span><span>Hướng dẫn</span></button></nav><button class="activity-shortcut" data-open="activities" title="Sổ tay hành hiệp (H)"><span data-icon="crown"></span><span>Sổ tay<small>Hằng ngày · Thành tựu</small></span><b id="activityCount" hidden></b></button><section class="event-log glass" aria-label="Nhật ký hành trình"><div class="log-title"><span data-icon="feather"></span> NHẬT KÝ GIANG HỒ <span id="saveStatus">Đã lưu</span></div><div id="logEntries" class="log-entries"></div></section></aside>
+<section id="playArea" class="hud-center" aria-label="Thông tin chiến đấu"><section id="bossHud" class="boss-hud" aria-label="Sinh lực thủ lĩnh" hidden><div><span data-icon="crown"></span><b id="bossName">Sơn Lâm Quỷ Vương</b><span id="bossLevel">Lv. 5</span></div><div class="boss-track"><i id="bossFill"></i><span id="bossHp"></span></div></section><div id="targetInfo" class="target-info" hidden></div><div id="castBanner" class="cast-banner" hidden></div><div id="combatMeter" class="combat-meter" hidden><span>BÙ NHÌN · SÁT THƯƠNG THỰC</span><div><b id="combatDps">0</b> DPS <small>Tổng <strong id="combatDamage">0</strong></small><button id="resetMeter" title="Đặt lại thống kê">↺</button></div></div><div id="announcement" class="announcement" role="status" hidden></div><div id="activeStatus" role="status" class="active-status"></div><div id="toasts" class="toasts" aria-live="polite"></div></section>
+<aside class="right-rail">
       <div class="currency glass"><span class="coin">◈</span><strong id="goldLabel">200</strong><span>ngân lượng</span><button class="icon-btn" data-open="shop" title="Dược quán" aria-label="Mua bình hồi phục" data-icon="plus"></button></div>
       <button class="map-panel glass" data-open="map" aria-label="Mở bản đồ"><div class="map-title"><span data-icon="compass"></span><strong id="zoneName">Thanh Phong Cốc</strong><span data-icon="expand"></span></div><canvas id="minimap" width="360" height="200" aria-label="Bản đồ thu nhỏ"></canvas><div class="map-footer"><span><i></i> Vùng luyện công</span><span id="zoneLevel">Cấp 1–5</span></div></button>
       <section class="quest-panel glass"><div class="section-label"><span data-icon="scroll"></span> HÀNH TRÌNH <button class="mini-btn" data-open="quests" aria-label="Xem nhiệm vụ" data-icon="chevron"></button></div><button class="quest-summary" data-open="quests"><small>CHÍNH TUYẾN</small><h2 id="questTitle">Bước chân đầu tiên</h2><p id="questDescription">Dẹp loạn bầy sói trong cốc.</p><div class="quest-progress"><i id="questFill"></i></div><div class="quest-detail"><span id="questCount">Sói hoang · 0/5</span><span id="questReward">+150 ngân lượng</span></div></button><button id="questClaim" class="claim-btn" hidden>Nhận thưởng <span data-icon="arrow"></span></button></section>
       <button id="bossChallenge" class="boss-challenge"><span class="boss-icon" data-icon="skull"></span><span>THỬ THÁCH THỦ LĨNH<small id="bossChallengeLabel">Sơn Lâm Quỷ Vương</small></span><span data-icon="arrow"></span></button>
     </aside>
-
-    <nav class="side-nav glass" aria-label="Chức năng game"><button data-open="character" title="Nhân vật (C)"><span data-icon="user"></span><span>Nhân vật</span><kbd>C</kbd></button><button data-open="inventory" title="Túi đồ (B)"><span data-icon="bag"></span><span>Túi đồ</span><i id="bagDot" class="notif" hidden></i><kbd>B</kbd></button><button data-open="skills" title="Võ học (K)"><span data-icon="spark"></span><span>Võ học</span><kbd>K</kbd></button><button data-open="map" title="Bản đồ (M)"><span data-icon="map"></span><span>Bản đồ</span><kbd>M</kbd></button><button data-open="quests" title="Nhiệm vụ (J)"><span data-icon="scroll"></span><span>Nhiệm vụ</span><kbd>J</kbd></button><span class="nav-divider"></span><button data-open="services" title="Dịch vụ NPC"><span data-icon="compass"></span><span>Dịch vụ NPC</span></button><button data-open="companions" title="Thú và đồng đội"><span data-icon="charm"></span><span>Thú</span></button><button data-open="party" title="Tổ đội NPC"><span data-icon="user"></span><span>Tổ đội NPC</span></button><button data-open="help" title="Hướng dẫn"><span data-icon="help"></span><span>Hướng dẫn</span></button></nav>
-
-    <button class="activity-shortcut" data-open="activities" title="Sổ tay hành hiệp (H)"><span data-icon="crown"></span><span>Sổ tay<small>Hằng ngày · Thành tựu</small></span><b id="activityCount" hidden></b></button>
-    <button class="auto-settings-shortcut" data-open="auto" aria-label="Thiết lập tự đánh (O)" title="Thiết lập tự đánh (O)"><span data-icon="settings"></span></button>
-    <div id="levelBanner" class="level-celebration" role="status" aria-live="polite" hidden><canvas id="levelRays" width="320" height="320" aria-hidden="true"></canvas><b>LÊN CẤP</b><em id="levelNumber"></em><small id="levelReward"></small></div><div id="castBanner" class="cast-banner" hidden></div><div id="combatMeter" class="combat-meter" hidden><span>BÙ NHÌN · SÁT THƯƠNG THỰC</span><div><b id="combatDps">0</b> DPS <small>Tổng <strong id="combatDamage">0</strong></small><button id="resetMeter" title="Đặt lại thống kê">↺</button></div></div>
-    <div id="targetInfo" class="target-info" hidden></div>
-    <div id="announcement" class="announcement" role="status" hidden></div>
-    <div id="activeStatus" role="status" class="active-status"></div><div id="toasts" class="toasts" aria-live="polite"></div>
-    <div class="scene-caption"><span id="sceneCoords">THANH PHONG CỐC</span><i></i><span id="positionLabel">640, 620</span></div>
-
-    <section class="event-log glass" aria-label="Nhật ký hành trình"><div class="log-title"><span data-icon="feather"></span> NHẬT KÝ GIANG HỒ <span id="saveStatus">Đã lưu</span></div><div id="logEntries" class="log-entries"></div></section>
-
-    <div class="bottom-controls"><div class="controls-hint"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> di chuyển</span><span><span data-icon="mouse"></span> nhấp để chọn mục tiêu</span></div><div class="combat-bar glass"><button id="attackBtn" class="attack-button" aria-label="Đánh thường (Space)"><span data-icon="sword"></span><kbd>SPACE</kbd></button><div class="combat-divider"></div><div id="skillBar" class="skill-bar"></div><div class="combat-divider"></div><button id="potionBtn" class="potion-button" aria-label="Hồi máu (Q)"><span data-icon="potion"></span><kbd>Q</kbd><b id="potionCount">5</b></button><button id="manaBtn" class="potion-button mana-button" aria-label="Hồi nội lực (E)"><span data-icon="potion"></span><kbd>E</kbd><b id="manaCount">8</b></button><button id="autoBtn" class="auto-button" aria-pressed="false"><span data-icon="autoplay"></span><span>TỰ ĐÁNH<small id="autoLabel">Đang tắt · phím T</small></span></button></div></div>
-    <footer class="experience"><div id="xpFill"></div><span id="xpLabel">Cấp 1 · 0 / 80 EXP</span></footer>
-    <div id="demoBadge" class="demo-badge" hidden>THỬ LV400 · KHÔNG GHI ĐÈ HÀNH TRÌNH <button data-open="classes">Đổi phái</button><button data-spawn-dummy>Bù nhìn</button><button id="previewLevel">Xem lên cấp</button><button id="leaveDemo">Về hành trình</button></div><input id="saveImport" type="file" accept="application/json,.json" hidden><div id="modalRoot"></div>
-  </main>
-  <script src="content.js?v=2.4.0"></script>
-  <script src="rules.js?v=2.4.0"></script>
-  <script src="progression.js?v=2.4.0"></script>
-  <script src="school-fx.js?v=2.4.0"></script>
-  <script src="pixel-art.js?v=2.4.0"></script>
-  <script src="game.js?v=2.4.0"></script>
+<section class="hud-bottom" aria-label="Điều khiển chiến đấu"><div id="demoBadge" class="demo-badge" hidden>THỬ LV400 · KHÔNG GHI ĐÈ HÀNH TRÌNH <button data-open="classes">Đổi phái</button><button data-spawn-dummy>Bù nhìn</button><button id="previewLevel">Xem lên cấp</button><button id="leaveDemo">Về hành trình</button></div><div class="dock-heading"><div class="scene-caption"><span id="sceneCoords">THANH PHONG CỐC</span><i></i><span id="positionLabel">640, 620</span></div><div class="controls-hint"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> di chuyển</span><span><span data-icon="mouse"></span> nhấp để chọn mục tiêu</span></div></div><div class="bottom-controls"><div class="combat-bar glass"><button id="attackBtn" class="attack-button" aria-label="Đánh thường (Space)"><span data-icon="sword"></span><kbd>SPACE</kbd></button><div id="skillBar" class="skill-bar"></div><button id="potionBtn" class="potion-button" aria-label="Hồi máu (Q)"><span data-icon="potion"></span><kbd>Q</kbd><b id="potionCount">5</b></button><button id="manaBtn" class="potion-button mana-button" aria-label="Hồi nội lực (E)"><span data-icon="potion"></span><kbd>E</kbd><b id="manaCount">8</b></button><div class="auto-controls"><button id="autoBtn" class="auto-button" aria-pressed="false"><span data-icon="autoplay"></span><span>TỰ ĐÁNH<small id="autoLabel">Đang tắt · phím T</small></span></button><button class="auto-settings-shortcut" data-open="auto" aria-label="Thiết lập tự đánh (O)" title="Thiết lập tự đánh (O)"><span data-icon="settings"></span></button></div></div></div></section>
+<footer class="experience"><div id="xpFill"></div><span id="xpLabel">Cấp 1 · 0 / 80 EXP</span></footer>
+</div>
+<div id="levelBanner" class="level-celebration" role="status" aria-live="polite" hidden><canvas id="levelRays" width="320" height="320" aria-hidden="true"></canvas><b>LÊN CẤP</b><em id="levelNumber"></em><small id="levelReward"></small></div>
+<input id="saveImport" type="file" accept="application/json,.json" hidden><div id="modalRoot"></div>
+</main>
+  <script src="content.js?v=2.5.0"></script>
+  <script src="rules.js?v=2.5.0"></script>
+  <script src="progression.js?v=2.5.0"></script>
+  <script src="school-fx.js?v=2.5.0"></script>
+  <script src="pixel-art.js?v=2.5.0"></script>
+  <script src="game.js?v=2.5.0"></script>
 </body>
 </html>

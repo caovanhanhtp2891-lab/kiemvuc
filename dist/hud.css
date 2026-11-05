@@ -1,0 +1,356 @@
+/* v2.5 — HUD participates in one layout. The canvas remains the input surface. */
+#game{--hud-ink:#f4f2db;--hud-muted:#b4c7bd;--hud-gold:#eed08c;--hud-line:#8da58a57;font-family:'Segoe UI',Tahoma,Arial,sans-serif;color:var(--hud-ink)}
+#game .vignette{background:none;box-shadow:inset 0 0 70px #203c3426;pointer-events:none}
+#game .hud-layout{position:absolute;inset:0;z-index:3;display:grid;grid-template-columns:224px minmax(0,1fr) 244px;grid-template-rows:56px minmax(0,1fr) auto 14px;gap:12px;padding:12px 16px 8px;pointer-events:none;overflow:hidden}
+#game .hud-layout *{box-sizing:border-box}
+#game .glass{background:linear-gradient(145deg,#173a3df5,#122b34f0);border:1px solid var(--hud-line);border-radius:6px!important;box-shadow:0 3px 12px #183a3830,inset 0 1px #ffffff10;backdrop-filter:none}
+#game .topbar,#game .player-panel,#game .side-nav,#game .right-rail,#game .activity-shortcut,#game .event-log,#game .bottom-controls,#game .scene-caption,#game .controls-hint,#game .demo-badge,#game .experience,#game .auto-settings-shortcut,#game .boss-hud,#game .target-info,#game .cast-banner,#game .combat-meter,#game .announcement,#game .active-status,#game .toasts{position:relative;inset:auto;transform:none;width:auto;max-width:100%;min-width:0;margin:0}
+#game .topbar{grid-column:1/-1;grid-row:1;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 14px;border:1px solid #8da58a66;border-radius:6px;background:linear-gradient(90deg,#16353df5,#17313aed);pointer-events:auto;gap:12px}
+#game .brand{gap:9px;letter-spacing:3px;font-size:21px;flex:none;color:#ffe2a4;text-shadow:0 2px #092a32}
+#game .brand small{font-family:'Segoe UI',Tahoma,sans-serif;font-size:9px;letter-spacing:2.4px;color:#bdd4c8;margin-top:3px}
+#game .brand-mark{width:32px;height:32px;border:0;background:transparent}
+#game .brand-mark svg{width:28px;height:28px}
+#game .top-actions{gap:8px;align-items:center;min-width:0}
+#game .solo{font:11px 'Segoe UI',sans-serif;letter-spacing:.5px;color:#c0d0bc;white-space:nowrap;padding:0 10px}
+#game .icon-btn,#game .menu-toggle,#game .trial-shortcut{height:34px;min-width:34px;border:1px solid #91b5a057;border-radius:4px;background:#244b50;color:#ecdfb5;cursor:pointer}
+#game .icon-btn svg{width:17px;height:17px}
+#game .menu-toggle{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:700;padding:0 12px}
+#game .menu-toggle svg{width:17px;height:17px}
+#game .trial-shortcut{font-size:11px;padding:0 10px;color:#ffe1a2;border-color:#ba9b556b}
+#game button:hover{filter:brightness(1.12)}
+#game button:focus-visible,#game a:focus-visible{outline:2px solid #ffe2a1;outline-offset:3px}
+#game .hud-left,#game .right-rail{grid-row:2;display:flex;flex-direction:column;gap:10px;min-height:0;overflow:auto;scrollbar-width:thin;scrollbar-color:#7d9b83 transparent;align-self:stretch;padding:1px}
+#game .hud-left{grid-column:1}
+#game .right-rail{grid-column:3;pointer-events:none}
+#game .hud-left>* ,#game .right-rail>*{flex-shrink:0;pointer-events:auto}
+#game .player-panel{display:flex;align-items:center;gap:9px;padding:10px;height:105px}
+#game .portrait{width:52px;height:70px;flex:0 0 52px;background:linear-gradient(#36606a,#234647);border:1px solid #b7a475;border-radius:4px;position:relative}
+#game #portrait{width:52px;height:62px;image-rendering:pixelated}
+#game #levelBadge{position:absolute;bottom:-5px;left:10px;right:10px;min-width:28px;width:auto;padding:2px;border:1px solid #cbb06c;background:#214445;color:#ffe4a8;font-size:11px;border-radius:3px}
+#game .player-bars{flex:1;min-width:0}
+#game .player-heading{display:flex;align-items:flex-start;flex-direction:column;gap:1px;margin-bottom:5px}
+#game #heroName{font:700 13px 'Segoe UI',sans-serif;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#fff3cb}
+#game #heroClass{font-size:10px;color:#b3d8ca;white-space:nowrap}
+#game .bar{height:13px;margin-top:4px;border-color:#729b8b66;border-radius:2px;overflow:hidden;background:#0e2833}
+#game .bar span{font:9px 'Segoe UI',sans-serif;line-height:11px;text-shadow:0 1px 2px #081d27}
+#game .hp>div{background:linear-gradient(#f08a70,#cc4e54)}
+#game .mp>div{background:linear-gradient(#74c8de,#3c81c7)}
+#game .power{font-size:9px;margin-top:5px;color:#b8cbbd;display:flex;gap:4px;align-items:center}
+#game .power b{font-size:11px;color:#f4d38a;margin-left:auto}
+#game .power svg{width:12px;height:12px}
+#game .side-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;padding:7px;height:auto}
+#game .side-nav button{display:flex;align-items:center;gap:7px;min-width:0;width:auto;min-height:42px;height:auto;padding:7px 6px;background:#24474b75;border:1px solid #83a58c28;border-radius:3px;color:#d2e0ce;font:11px 'Segoe UI',sans-serif;position:relative}
+#game .side-nav button>span:nth-child(2){display:block;white-space:normal;text-align:left}
+#game .side-nav button svg{width:18px;height:18px;color:#e1c483;flex:none}
+#game .side-nav kbd{display:none}
+#game .nav-divider{display:none}
+#game .side-nav button:last-child{grid-column:1/-1}
+#game .activity-shortcut{display:flex;gap:10px;align-items:center;min-height:54px;max-height:none;padding:9px 12px;background:#25494aeF;border:1px solid #b6a36b77;border-radius:5px;color:#ffe0a1;text-align:left}
+#game .activity-shortcut>span:first-child{width:24px}
+#game .activity-shortcut svg{width:22px;height:22px}
+#game .activity-shortcut small{display:block;margin-top:3px;font-size:10px;color:#bad2bd}
+#game .activity-shortcut b{position:static;margin-left:auto}
+#game .event-log{margin-top:auto;padding:10px;max-height:126px;height:auto;overflow:hidden}
+#game .log-title{font-size:9px;letter-spacing:.5px;gap:5px;color:#d2c399}
+#game .log-title svg{width:12px;height:12px}
+#game #saveStatus{font-size:9px;color:#a4d2b2;white-space:nowrap}
+#game .log-entries{font-size:10px;line-height:1.55;margin-top:6px;color:#bacdbf}
+#game .log-entries time{font-size:9px;color:#82a999}
+#game .currency{display:flex;gap:8px;align-items:center;padding:8px 11px;height:42px}
+#game .currency strong{font:700 16px 'Segoe UI',sans-serif;color:#ffe0a2}
+#game .currency>span:last-of-type{font-size:10px;color:#b6c6b6}
+#game .currency .icon-btn{margin-left:auto;width:24px;height:24px;min-width:24px}
+#game .coin{font-size:22px;color:#ffd883}
+#game .map-panel{display:block;padding:10px;text-align:left;height:auto}
+#game .map-title{display:flex;align-items:center;gap:6px;font-size:11px;color:#f7e9bd}
+#game .map-title strong{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600}
+#game .map-title svg{width:14px;height:14px;color:#d6c58b}
+#game #minimap{width:100%;height:112px;margin-top:9px;display:block;border:1px solid #a0b7984d;border-radius:3px;background:#305b4f;image-rendering:pixelated}
+#game .map-footer{font-size:9px;color:#bbd1bd;margin-top:7px;display:flex;justify-content:space-between;gap:4px}
+#game .quest-panel{padding:12px}
+#game .section-label{font-size:10px;letter-spacing:1px;color:#f0d99e}
+#game .quest-summary{padding:12px 0 0;display:block;text-align:left;width:100%;color:inherit}
+#game .quest-summary small{font-size:8px;letter-spacing:1px;color:#b9bd91}
+#game .quest-summary h2{font:700 16px 'Segoe UI',sans-serif;line-height:1.35;color:#f8edc8;margin:6px 0}
+#game .quest-summary p{font-size:11px;line-height:1.6;color:#c0d4c5;margin:6px 0 12px}
+#game .quest-detail{font-size:9px;line-height:1.6;gap:6px;display:flex;flex-wrap:wrap;justify-content:space-between;color:#bdd1bb}
+#game .quest-progress{height:4px;margin-bottom:8px;border-radius:2px;background:#0d2b31}
+#game .quest-progress i{background:#bcd48d}
+#game .boss-challenge{min-height:60px;height:auto;padding:11px;gap:9px;border:1px solid #c4a96c88;border-radius:5px;background:linear-gradient(100deg,#68533bf2,#344847f2);color:#f8d99c;font:10px 'Segoe UI',sans-serif}
+#game .boss-challenge small{font-size:11px;line-height:1.5;margin-top:4px;color:#e3e4c5}
+#game .boss-icon{width:25px;height:25px}
+#game .hud-center{grid-column:2;grid-row:2;min-width:0;min-height:0;display:flex;flex-direction:column;align-items:center;gap:7px;overflow:hidden;padding:4px 8px;pointer-events:none}
+#game .hud-center>*{flex-shrink:0;max-width:100%}
+#game .boss-hud{width:440px;padding:8px 12px;background:#17353ded;border:1px solid #d4b67788;border-radius:5px;box-shadow:0 3px 12px #203b3930}
+#game .boss-hud>div:first-child{display:flex;align-items:center;gap:7px;font-size:12px;color:#ffe0a3;margin-bottom:6px}
+#game .boss-hud svg{width:16px;height:16px}
+#game #bossName{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1;min-width:0}
+#game #bossLevel{font-size:10px;white-space:nowrap;color:#d9dcc5}
+#game .boss-track{height:12px;background:#412c36;border-radius:2px;overflow:hidden}
+#game .boss-track i{background:linear-gradient(#ef9b7e,#c15c62)}
+#game #bossHp{font:9px 'Segoe UI',sans-serif;line-height:12px}
+#game .target-info,#game .cast-banner,#game .active-status{background:#1a3c43e8;color:#f3edc9;border:1px solid #bdd5a85c;border-radius:4px;padding:5px 12px;font:11px 'Segoe UI',sans-serif;text-align:center;line-height:1.4}
+#game .cast-banner{color:#ffe6a9;border-color:#d5b76b88;font-size:12px;letter-spacing:.3px;min-height:0}
+#game .active-status:empty{display:none}
+#game .combat-meter{width:230px;padding:7px 12px;background:#19333cea;border:1px solid #98ba9c66;border-radius:4px;color:#e3e6cb;pointer-events:auto}
+#game .combat-meter>span{font:8px 'Segoe UI',sans-serif;letter-spacing:.8px}
+#game .combat-meter>div{font-size:10px;margin-top:3px}
+#game .combat-meter b{font-size:17px;color:#ffdfa0}
+#game .combat-meter small{font-size:10px}
+#game .announcement{padding:8px 16px;max-width:420px;background:#17383dE8;border:1px solid #cdb47e88;border-radius:4px;color:#ffe4a6;font:700 17px 'Segoe UI',sans-serif;text-shadow:0 1px #173037;text-align:center;line-height:1.35;animation:none;overflow-wrap:anywhere}
+#game .announcement small{display:block;font-size:10px;color:#c9dbc6;font-weight:400;letter-spacing:.3px;margin-top:4px}
+#game .toasts{display:flex;align-items:center;flex-direction:column;gap:5px;max-width:380px}
+#game .toast{font:11px 'Segoe UI',sans-serif;line-height:1.4;padding:7px 11px;background:#214443f2;border:1px solid #c2d39b88;border-radius:4px;color:#fff0c2;box-shadow:0 2px 8px #233f3833;animation:toast-in .15s ease-out;overflow-wrap:anywhere}
+#game .toast.error{background:#593d40f2;border-color:#e3a399}
+#game .hud-bottom{grid-row:3;grid-column:1/-1;min-width:0;display:flex;flex-direction:column;gap:7px;align-items:center;pointer-events:none}
+#game .dock-heading{display:flex;justify-content:space-between;gap:12px;align-items:center;width:100%;padding:0 3px;min-height:16px;text-shadow:0 1px 3px #15352a,0 1px 5px #15352a}
+#game .scene-caption{font:10px 'Segoe UI',sans-serif;letter-spacing:1px;color:#fff6d3;display:flex;align-items:center;gap:8px}
+#game .scene-caption i{background:#fff0ae}
+#game .controls-hint{display:flex;align-items:center;gap:16px;color:#fff5d1;font-size:10px}
+#game .controls-hint kbd{font:9px 'Segoe UI',sans-serif;background:#163d3dd9;border:1px solid #b7d69f88;color:#f8e9bb}
+#game .controls-hint svg{width:13px;height:13px}
+#game .bottom-controls{display:flex;justify-content:center;pointer-events:auto;width:100%}
+#game .combat-bar{display:flex;gap:7px;align-items:center;padding:9px;height:auto;max-width:100%;border-color:#c4b47d99}
+#game .skill-bar{display:grid;grid-template-columns:repeat(8,64px);gap:5px;min-width:0}
+#game .skill-btn{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:3px;width:64px;height:72px;padding:4px 3px 3px;border:1px solid #8bb6aa80;border-radius:4px;background:linear-gradient(#356166,#213d4a);overflow:hidden;color:#f2edce;isolation:isolate}
+#game .skill-btn .skill-pixel{position:relative;inset:auto;transform:none;width:36px;height:36px;flex-shrink:0;image-rendering:pixelated}
+#game .skill-btn small{position:relative;inset:auto;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;line-height:1.17;font:10px 'Segoe UI',sans-serif;line-height:1.17;width:100%;height:22px;flex-shrink:0;text-align:center;letter-spacing:0;color:#f6ecc9;text-shadow:0 1px #162c35;z-index:2}
+#game .skill-btn kbd{position:absolute;top:2px;left:3px;bottom:auto;right:auto;z-index:4;font:9px 'Segoe UI',sans-serif;color:#fff0c2;background:#183841c7;border:0;padding:0 2px;min-width:8px}
+#game .skill-lock{position:absolute;top:16px;bottom:auto;left:0;right:0;font:10px 'Segoe UI',sans-serif;color:#ffe0a2;text-align:center;z-index:4}
+#game .cooldown-number{position:absolute;inset:8px 0 auto;text-align:center;font:700 23px 'Segoe UI',sans-serif;color:#fff0bc;z-index:5;pointer-events:none}
+#game .cooldown-shade{position:absolute;inset:0;background:#0e243cbd;transform-origin:bottom;pointer-events:none;z-index:3}
+#game .attack-button{height:72px;width:58px;flex:none;padding:7px;border:1px solid #d8be7b99;border-radius:4px;background:linear-gradient(#42605c,#2d4147);display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px;color:#f5d59b}
+#game .attack-button svg{width:28px;height:28px}
+#game .attack-button kbd{position:static;font:8px 'Segoe UI',sans-serif}
+#game .potion-button{position:relative;height:62px;width:40px;flex:none;border-radius:4px;background:#4e4547;border:1px solid #d4938288;display:flex;align-items:center;justify-content:center;padding:5px}
+#game .potion-button svg{width:23px;height:28px}
+#game .potion-button kbd{position:absolute;top:3px;left:4px;bottom:auto;font:9px 'Segoe UI',sans-serif;color:#f8ddc7}
+#game .potion-button b{position:absolute;bottom:3px;right:4px;font:10px 'Segoe UI',sans-serif;color:#f8eed3}
+#game .mana-button{background:#304e62;border-color:#88bfd2aa}
+#game .auto-controls{display:flex;flex-direction:column;gap:4px;width:115px;flex:none;align-self:stretch}
+#game .auto-button{height:auto;flex:1;width:100%;display:flex;align-items:center;justify-content:center;gap:6px;background:#2b514b;border:1px solid #9cbb8c77;border-radius:4px;padding:5px;color:#e7e9bd}
+#game .auto-button svg{width:18px;height:18px}
+#game .auto-button>span:last-child{font:700 10px 'Segoe UI',sans-serif;text-align:left}
+#game .auto-button small{display:block;font:8px 'Segoe UI',sans-serif;line-height:1.4;margin-top:2px;color:#b6cfc0}
+#game .auto-button[aria-pressed=true]{background:#3c755b;border-color:#d1dd8f;color:#fff6c7;box-shadow:inset 0 0 10px #d8e78a22}
+#game .auto-settings-shortcut{display:flex;align-items:center;justify-content:center;height:22px;border:1px solid #8aac9566;border-radius:3px;background:#234448;color:#c4d5b4;width:100%;font-size:9px;pointer-events:auto}
+#game .auto-settings-shortcut:after{content:'Thiết lập';margin-left:5px}
+#game .auto-settings-shortcut svg{width:12px;height:12px}
+#game .demo-badge{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:6px;padding:6px 10px;background:#203f44f2;border:1px solid #d6bc7f88;border-radius:4px;font:9px 'Segoe UI',sans-serif;color:#f5dfa8;letter-spacing:.3px;pointer-events:auto}
+#game .demo-badge button{padding:4px 8px;min-height:25px;font:10px 'Segoe UI',sans-serif;background:#3b5d59;border:1px solid #9bb58777;border-radius:3px;color:#ffedbe;white-space:nowrap}
+#game .experience{grid-column:1/-1;grid-row:4;height:14px;background:#19353be8;border:1px solid #88a58466;border-radius:2px;overflow:hidden;pointer-events:none}
+#game .experience>div{background:linear-gradient(90deg,#89b96c,#e3d58f);height:100%}
+#game .experience>span{font:9px 'Segoe UI',sans-serif;line-height:12px;color:#fff8d4;text-shadow:0 1px 2px #132c32}
+#game.focus-mode .side-nav,#game.focus-mode .activity-shortcut,#game.focus-mode .event-log,#game.focus-mode .quest-panel,#game.focus-mode .boss-challenge{display:none}
+#game .feature-menu{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+#game .feature-menu button{display:flex;align-items:center;gap:10px;min-height:72px;padding:11px;border:1px solid #69958666;background:#1b3e41;border-radius:5px;color:#f5e8be;text-align:left}
+#game .feature-menu button>span{width:26px;flex:none;color:#dfc582}
+#game .feature-menu svg{width:25px;height:25px}
+#game .feature-menu strong{font:600 13px 'Segoe UI',sans-serif;flex:1;min-width:0}
+#game .feature-menu small{display:block;font:10px 'Segoe UI',sans-serif;line-height:1.5;color:#adc9ba;margin-top:5px}
+#game .feature-menu kbd{font-size:10px;color:#b9ccae}
+#game .menu-extras{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;padding-top:14px;border-top:1px solid #63887b66}
+#game .menu-extras>*{text-decoration:none;display:flex;align-items:center;justify-content:center}
+#game .modal{border-radius:8px!important;border-color:#8da58a88;box-shadow:0 20px 90px #102f35a8}
+#game .modal-header{background:#1c3c40}
+#game .modal-body{font-family:'Segoe UI',Tahoma,sans-serif;font-size:13px;line-height:1.55}
+#game .modal-header h2{font-family:'Segoe UI',Tahoma,sans-serif;font-size:22px;color:#f4e4bb}
+#game .primary-btn,#game .secondary-btn{font-family:'Segoe UI',Tahoma,sans-serif;min-height:36px;font-size:12px;line-height:1.3}
+@media(max-width:1150px){
+ #game .hud-layout{grid-template-columns:194px minmax(0,1fr) 216px;padding:10px;gap:9px}
+ #game .skill-bar{grid-template-columns:repeat(8,55px);gap:4px}
+ #game .skill-btn{width:55px;height:68px}
+ #game .skill-btn .skill-pixel{width:32px;height:32px}
+ #game .attack-button{width:49px;height:68px}
+ #game .combat-bar{gap:5px;padding:7px}
+ #game .auto-controls{width:102px}
+ #game .solo{font-size:9px;padding:0 4px}
+ #game .player-panel{padding:8px;gap:6px}
+ #game .portrait{width:44px;flex-basis:44px}
+ #game #portrait{width:44px}
+ #game .controls-hint{gap:8px;font-size:9px}
+}
+@media(max-width:900px){
+ #game .hud-layout{grid-template-columns:minmax(0,1fr) 160px;grid-template-rows:48px 95px minmax(0,1fr) auto 14px;gap:8px;padding:8px}
+ #game .topbar{height:48px;padding:0 10px}
+ #game .brand{font-size:18px}
+ #game .solo{display:none}
+ #game .hud-left{grid-row:2;grid-column:1;max-width:260px;overflow:visible;padding:0}
+ #game .player-panel{height:95px}
+ #game .side-nav,#game .activity-shortcut,#game .event-log{display:none}
+ #game .right-rail{grid-column:2;grid-row:2;gap:5px;padding:0;overflow:visible}
+ #game .currency{height:33px;padding:4px 8px;gap:5px}
+ #game .currency strong{font-size:13px}
+ #game .currency>span:last-of-type{display:none}
+ #game .map-panel{padding:8px;min-height:52px}
+ #game #minimap,#game .quest-panel,#game .boss-challenge{display:none}
+ #game .map-footer{margin-top:4px;font-size:8px}
+ #game .map-footer>span:first-child{display:none}
+ #game .map-title{font-size:10px}
+ #game .map-title>span:last-child{display:none}
+ #game .hud-center{grid-column:1/-1;grid-row:3;padding:0 8px}
+ #game .hud-bottom{grid-row:4}
+ #game .experience{grid-row:5}
+ #game .skill-bar{grid-template-columns:repeat(8,48px)}
+ #game .skill-btn{width:48px;height:66px}
+ #game .auto-controls{width:89px}
+ #game .potion-button{width:35px;height:60px}
+ #game .controls-hint{display:none}
+ #game .dock-heading{justify-content:center}
+ #game .feature-menu{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:700px){
+ #game .hud-layout{grid-template-columns:minmax(0,1fr) 120px;grid-template-rows:44px 80px minmax(0,1fr) auto 12px;gap:7px;padding:7px 7px max(7px,env(safe-area-inset-bottom))}
+ #game .topbar{height:44px;padding:0 8px;gap:7px}
+ #game .brand{font-size:16px;letter-spacing:2px;gap:5px}
+ #game .brand small{font-size:7px;letter-spacing:1.5px}
+ #game .brand-mark{width:22px;height:26px}
+ #game .brand-mark svg{width:22px;height:22px}
+ #game .top-actions{gap:4px}
+ #game .topbar .icon-btn{width:29px;height:29px;min-width:29px}
+ #game #soundBtn,#game .trial-shortcut{display:none}
+ #game .menu-toggle{height:29px;min-width:54px;padding:0 7px;font-size:10px;gap:4px}
+ #game .menu-toggle svg{width:13px;height:13px}
+ #game .hud-left{max-width:280px;overflow:visible}
+ #game .player-panel{height:80px;padding:7px;gap:7px}
+ #game .portrait{height:57px;width:39px;flex-basis:39px}
+ #game #portrait{height:50px;width:39px}
+ #game #levelBadge{left:5px;right:5px;font-size:9px;padding:1px}
+ #game #heroName{font-size:11px}
+ #game #heroClass{font-size:9px}
+ #game .player-heading{margin-bottom:2px}
+ #game .bar{height:11px;margin-top:3px}
+ #game .bar span{font-size:8px;line-height:9px}
+ #game .power{margin-top:3px;font-size:8px}
+ #game .power b{font-size:9px}
+ #game .power svg{width:9px;height:9px}
+ #game .right-rail{gap:4px}
+ #game .currency{height:28px;padding:2px 6px}
+ #game .currency strong{font-size:11px}
+ #game .coin{font-size:17px}
+ #game .currency .icon-btn{width:21px;min-width:21px;height:21px}
+ #game .currency .icon-btn svg{width:12px;height:12px}
+ #game .map-panel{padding:6px;min-height:48px}
+ #game .map-title{font-size:9px;gap:4px}
+ #game .map-title svg{width:11px;height:11px}
+ #game .map-footer{font-size:8px}
+ #game .hud-center{gap:5px;padding:0 4px}
+ #game .boss-hud{padding:6px 9px;width:340px}
+ #game .boss-hud>div:first-child{font-size:10px;margin-bottom:4px}
+ #game .boss-track{height:10px}
+ #game #bossHp{line-height:10px;font-size:8px}
+ #game .cast-banner,#game .target-info,#game .active-status{font-size:10px;padding:4px 8px}
+ #game .announcement{font-size:14px;padding:6px 10px}
+ #game .announcement small{font-size:9px}
+ #game .combat-meter{padding:5px 10px}
+ #game .combat-meter b{font-size:14px}
+ #game .toast{font-size:10px;padding:5px 8px}
+ #game .hud-bottom{gap:5px}
+ #game .scene-caption{font-size:8px;letter-spacing:.5px}
+ #game .dock-heading{min-height:12px}
+ #game .combat-bar{width:100%;display:grid;grid-template-columns:40px minmax(0,1fr) 34px 53px;grid-template-rows:58px 58px;gap:6px;padding:7px;align-items:stretch;border-radius:5px!important}
+ #game .attack-button{grid-column:1;grid-row:1/3;width:100%;height:100%;gap:8px;padding:3px}
+ #game .attack-button svg{width:25px;height:25px}
+ #game .attack-button kbd{font-size:7px}
+ #game .skill-bar{grid-column:2;grid-row:1/3;grid-template-columns:repeat(4,minmax(0,1fr));grid-template-rows:repeat(2,58px);gap:6px}
+ #game .skill-btn{height:58px;width:100%;min-width:0;gap:1px;padding:3px 1px 1px}
+ #game .skill-btn .skill-pixel{width:27px;height:27px}
+ #game .skill-btn small{font-size:8px;line-height:1.12;height:18px}
+ #game .skill-btn kbd{font-size:8px;left:2px;top:1px;padding:0 1px}
+ #game .skill-lock{font-size:8px;top:12px}
+ #game .cooldown-number{font-size:18px;top:5px}
+ #game #potionBtn{grid-column:3;grid-row:1;width:100%;height:58px}
+ #game #manaBtn{grid-column:3;grid-row:2;width:100%;height:58px}
+ #game .potion-button svg{width:21px;height:25px}
+ #game .auto-controls{grid-column:4;grid-row:1/3;width:100%;gap:6px}
+ #game .auto-button{flex:1;flex-direction:column;gap:5px;padding:3px}
+ #game .auto-button>span:last-child{font-size:8px;text-align:center;line-height:1.3}
+ #game .auto-button small{font-size:7px;line-height:1.3}
+ #game .auto-settings-shortcut{height:30px;flex:none}
+ #game .auto-settings-shortcut:after{display:none}
+ #game .auto-settings-shortcut svg{height:15px;width:15px}
+ #game .demo-badge{font-size:7px;gap:4px;padding:4px;letter-spacing:0}
+ #game .demo-badge button{font-size:8px;min-height:23px;padding:3px 5px}
+ #game .experience{height:12px}
+ #game .experience>span{font-size:8px;line-height:10px}
+ #game .feature-menu{gap:7px}
+ #game .feature-menu button{min-height:65px;padding:8px;gap:7px}
+ #game .feature-menu strong{font-size:11px}
+ #game .feature-menu small{font-size:9px;margin-top:3px}
+ #game .feature-menu button>span{width:20px}
+ #game .feature-menu svg{width:20px;height:20px}
+ #game .feature-menu kbd{display:none}
+ #game .menu-extras{gap:7px}
+ #game .menu-extras>*{flex:1;min-width:130px;font-size:10px}
+}
+@media(max-height:620px) and (orientation:landscape){
+ #game .hud-layout{grid-template-columns:minmax(0,1fr) 160px;grid-template-rows:40px 75px minmax(0,1fr) auto 12px;gap:5px;padding:6px 8px}
+ #game .topbar{height:40px;padding:0 9px}
+ #game .brand{font-size:17px}
+ #game .brand small{font-size:7px}
+ #game .solo{display:none}
+ #game .hud-left{grid-column:1;grid-row:2;max-width:245px;overflow:visible}
+ #game .player-panel{height:75px;padding:5px 8px;gap:7px}
+ #game .portrait{height:55px;width:40px;flex-basis:40px}
+ #game #portrait{width:40px;height:49px}
+ #game .player-heading{margin-bottom:1px}
+ #game #heroClass{font-size:9px}
+ #game .bar{height:11px;margin-top:2px}
+ #game .bar span{font-size:8px;line-height:9px}
+ #game .power{margin-top:2px}
+ #game .side-nav,#game .activity-shortcut,#game .event-log,#game .quest-panel,#game .boss-challenge,#game #minimap{display:none}
+ #game .right-rail{grid-column:2;grid-row:2;gap:4px;padding:0;overflow:visible}
+ #game .currency{height:27px;padding:2px 7px}
+ #game .currency>span:last-of-type{display:none}
+ #game .map-panel{padding:5px 7px;min-height:42px}
+ #game .map-footer{margin-top:3px;font-size:8px}
+ #game .map-footer>span:first-child{display:none}
+ #game .hud-center{grid-column:1/-1;grid-row:3;gap:4px;padding:0 10px}
+ #game .boss-hud{width:330px;padding:4px 9px}
+ #game .boss-hud>div:first-child{font-size:10px;margin-bottom:3px}
+ #game .boss-track{height:10px}
+ #game #bossHp{font-size:8px;line-height:10px}
+ #game .target-info{font-size:9px;padding:3px 8px}
+ #game .combat-meter,#game .cast-banner,#game .active-status{display:none}
+ #game .announcement{font-size:12px;padding:4px 10px}
+ #game .announcement small{display:none}
+ #game .toast{font-size:9px;padding:4px 8px}
+ #game .hud-bottom{grid-row:4;gap:4px}
+ #game .experience{grid-row:5;height:12px}
+ #game .dock-heading{display:none}
+ #game .combat-bar{display:flex;gap:4px;padding:5px;width:auto;height:auto;align-items:stretch}
+ #game .skill-bar{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));grid-template-rows:55px;gap:4px;width:min(54vw,480px)}
+ #game .skill-btn{height:55px;width:100%;padding:3px 1px;gap:1px}
+ #game .skill-btn .skill-pixel{width:29px;height:29px}
+ #game .skill-btn small{font-size:7px;line-height:1.15;height:17px}
+ #game .attack-button{width:40px;height:55px;gap:4px;padding:4px}
+ #game .attack-button svg{width:24px;height:24px}
+ #game .attack-button kbd{font-size:7px}
+ #game .potion-button,#game #potionBtn,#game #manaBtn{width:30px;height:55px}
+ #game .auto-controls{width:71px;gap:3px}
+ #game .auto-button{flex-direction:row;padding:3px;gap:3px}
+ #game .auto-button svg{width:14px;height:14px}
+ #game .auto-button>span:last-child{font-size:8px}
+ #game .auto-button small{font-size:6px}
+ #game .auto-settings-shortcut{height:17px}
+ #game .auto-settings-shortcut:after{display:none}
+ #game .auto-settings-shortcut svg{width:11px;height:11px}
+ #game .demo-badge{font-size:7px;padding:3px 6px;gap:5px}
+ #game .demo-badge button{font-size:8px;min-height:20px;padding:2px 6px}
+}
+@media(prefers-reduced-motion:reduce){#game .toast{animation:none}}
+
+/* Reset legacy fixed title heights so compact map cards stay inside their row. */
+#game .map-title,#game .map-footer{height:auto;min-height:0;line-height:1.3}
+#game .map-title{padding:0;background:none}
+#game .map-title>span{display:flex;align-items:center;justify-content:center;width:14px;height:14px;flex-shrink:0}
+#game .map-footer{padding:0;background:none}
+#game .target-info{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(max-height:620px) and (orientation:landscape){#game .toasts .toast:not(:last-child){display:none}}
+/* Keep skill names readable while the icon is locked or cooling down. */
+#game .skill-btn small,#game .skill-btn kbd{z-index:6}
+#game .modal:not(.creation-modal){display:flex;flex-direction:column;overflow:hidden}
+#game .modal:not(.creation-modal) .modal-header{flex-shrink:0}
+#game .modal:not(.creation-modal) .modal-body{min-height:0;overflow:auto;overscroll-behavior:contain}
+#game .hud-left,#game .right-rail{pointer-events:auto;overscroll-behavior:contain}
+#game.focus-mode .hud-left,#game.focus-mode .right-rail{pointer-events:none}

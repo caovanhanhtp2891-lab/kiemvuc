@@ -1,0 +1,410 @@
+[
+  {
+    "height": 768,
+    "modal": false,
+    "outside": [],
+    "overlaps": [],
+    "playHeight": 523,
+    "scroll": 1363,
+    "skills": [
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      }
+    ],
+    "width": 1363
+  },
+  {
+    "height": 768,
+    "modal": false,
+    "outside": [],
+    "overlaps": [],
+    "playHeight": 534.625,
+    "scroll": 1024,
+    "skills": [
+      {
+        "h": 68,
+        "labelHeight": 22,
+        "w": 55
+      },
+      {
+        "h": 68,
+        "labelHeight": 22,
+        "w": 55
+      },
+      {
+        "h": 68,
+        "labelHeight": 22,
+        "w": 55
+      },
+      {
+        "h": 68,
+        "labelHeight": 22,
+        "w": 55
+      },
+      {
+        "h": 68,
+        "labelHeight": 22,
+        "w": 55
+      },
+      {
+        "h": 68,
+        "labelHeight": 22,
+        "w": 55
+      },
+      {
+        "h": 68,
+        "labelHeight": 22,
+        "w": 55
+      },
+      {
+        "h": 68,
+        "labelHeight": 22,
+        "w": 55
+      }
+    ],
+    "width": 1024
+  },
+  {
+    "height": 1024,
+    "modal": false,
+    "outside": [],
+    "overlaps": [],
+    "playHeight": 695.625,
+    "scroll": 768,
+    "skills": [
+      {
+        "h": 66,
+        "labelHeight": 22,
+        "w": 48
+      },
+      {
+        "h": 66,
+        "labelHeight": 22,
+        "w": 48
+      },
+      {
+        "h": 66,
+        "labelHeight": 22,
+        "w": 48
+      },
+      {
+        "h": 66,
+        "labelHeight": 22,
+        "w": 48
+      },
+      {
+        "h": 66,
+        "labelHeight": 22,
+        "w": 48
+      },
+      {
+        "h": 66,
+        "labelHeight": 22,
+        "w": 48
+      },
+      {
+        "h": 66,
+        "labelHeight": 22,
+        "w": 48
+      },
+      {
+        "h": 66,
+        "labelHeight": 22,
+        "w": 48
+      }
+    ],
+    "width": 768
+  },
+  {
+    "height": 844,
+    "modal": false,
+    "outside": [],
+    "overlaps": [],
+    "playHeight": 511,
+    "scroll": 390,
+    "skills": [
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 49.25
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 49.25
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 49.25
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 49.25
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 49.25
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 49.25
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 49.25
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 49.25
+      }
+    ],
+    "width": 390
+  },
+  {
+    "height": 640,
+    "modal": false,
+    "outside": [],
+    "overlaps": [],
+    "playHeight": 307,
+    "scroll": 360,
+    "skills": [
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 41.75
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 41.75
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 41.75
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 41.75
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 41.75
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 41.75
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 41.75
+      },
+      {
+        "h": 58,
+        "labelHeight": 18,
+        "w": 41.75
+      }
+    ],
+    "width": 360
+  },
+  {
+    "height": 390,
+    "modal": false,
+    "outside": [],
+    "overlaps": [],
+    "playHeight": 164,
+    "scroll": 844,
+    "skills": [
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 53.46875
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 53.46875
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 53.46875
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 53.46875
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 53.46875
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 53.46875
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 53.46875
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 53.46875
+      }
+    ],
+    "width": 844
+  },
+  {
+    "height": 375,
+    "modal": false,
+    "outside": [],
+    "overlaps": [],
+    "playHeight": 148.015625,
+    "scroll": 667,
+    "skills": [
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 41.515625
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 41.515625
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 41.53125
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 41.515625
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 41.515625
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 41.53125
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 41.515625
+      },
+      {
+        "h": 55,
+        "labelHeight": 17,
+        "w": 41.53125
+      }
+    ],
+    "width": 667
+  },
+  {
+    "height": 1080,
+    "modal": false,
+    "outside": [],
+    "overlaps": [],
+    "playHeight": 835,
+    "scroll": 1920,
+    "skills": [
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      },
+      {
+        "h": 72,
+        "labelHeight": 22,
+        "w": 64
+      }
+    ],
+    "width": 1920
+  }
+]
