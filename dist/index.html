@@ -7,7 +7,7 @@
   <meta name="description" content="Kiếm Vực — bước vào giang hồ, luyện kiếm, săn thủ lĩnh và tìm trang bị. Webgame kiếm hiệp chơi đơn lưu tự động.">
   <title>Kiếm Vực — Giang Hồ Pixel</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230c2525'/%3E%3Cpath d='M16 48 45 12l7-1-1 7-29 36zm-1-13 16 13' stroke='%23e5c48a' stroke-width='4' fill='none'/%3E%3C/svg%3E">
-  <link rel="stylesheet" href="style.css?v=2.2.0">
+  <link rel="stylesheet" href="style.css?v=2.3.0">
 </head>
 <body>
   <main id="game" aria-label="Game Kiếm Vực">
@@ -35,6 +35,9 @@
 
     <nav class="side-nav glass" aria-label="Chức năng game"><button data-open="character" title="Nhân vật (C)"><span data-icon="user"></span><span>Nhân vật</span><kbd>C</kbd></button><button data-open="inventory" title="Túi đồ (B)"><span data-icon="bag"></span><span>Túi đồ</span><i id="bagDot" class="notif" hidden></i><kbd>B</kbd></button><button data-open="skills" title="Võ học (K)"><span data-icon="spark"></span><span>Võ học</span><kbd>K</kbd></button><button data-open="map" title="Bản đồ (M)"><span data-icon="map"></span><span>Bản đồ</span><kbd>M</kbd></button><button data-open="quests" title="Nhiệm vụ (J)"><span data-icon="scroll"></span><span>Nhiệm vụ</span><kbd>J</kbd></button><span class="nav-divider"></span><button data-open="services" title="Dịch vụ NPC"><span data-icon="compass"></span><span>Dịch vụ NPC</span></button><button data-open="companions" title="Thú và đồng đội"><span data-icon="charm"></span><span>Thú</span></button><button data-open="party" title="Tổ đội NPC"><span data-icon="user"></span><span>Tổ đội NPC</span></button><button data-open="help" title="Hướng dẫn"><span data-icon="help"></span><span>Hướng dẫn</span></button></nav>
 
+    <button class="activity-shortcut" data-open="activities" title="Sổ tay hành hiệp (H)"><span data-icon="crown"></span><span>Sổ tay<small>Hằng ngày · Thành tựu</small></span><b id="activityCount" hidden></b></button>
+    <button class="auto-settings-shortcut" data-open="auto" aria-label="Thiết lập tự đánh (O)" title="Thiết lập tự đánh (O)"><span data-icon="settings"></span></button>
+    <div id="castBanner" class="cast-banner" hidden></div><div id="combatMeter" class="combat-meter" hidden><span>BÙ NHÌN · SÁT THƯƠNG THỰC</span><div><b id="combatDps">0</b> DPS <small>Tổng <strong id="combatDamage">0</strong></small><button id="resetMeter" title="Đặt lại thống kê">↺</button></div></div>
     <div id="targetInfo" class="target-info" hidden></div>
     <div id="announcement" class="announcement" role="status" hidden></div>
     <div id="activeStatus" role="status" class="active-status"></div><div id="toasts" class="toasts" aria-live="polite"></div>
@@ -46,9 +49,10 @@
     <footer class="experience"><div id="xpFill"></div><span id="xpLabel">Cấp 1 · 0 / 80 EXP</span></footer>
     <div id="demoBadge" class="demo-badge" hidden>THỬ LV400 · KHÔNG GHI ĐÈ HÀNH TRÌNH <button data-open="classes">Đổi phái</button><button data-spawn-dummy>Bù nhìn</button><button id="leaveDemo">Về hành trình</button></div><input id="saveImport" type="file" accept="application/json,.json" hidden><div id="modalRoot"></div>
   </main>
-  <script src="content.js?v=2.2.0"></script>
-  <script src="rules.js?v=2.2.0"></script>
-  <script src="pixel-art.js?v=2.2.0"></script>
-  <script src="game.js?v=2.2.0"></script>
+  <script src="content.js?v=2.3.0"></script>
+  <script src="rules.js?v=2.3.0"></script>
+  <script src="progression.js?v=2.3.0"></script>
+  <script src="pixel-art.js?v=2.3.0"></script>
+  <script src="game.js?v=2.3.0"></script>
 </body>
 </html>

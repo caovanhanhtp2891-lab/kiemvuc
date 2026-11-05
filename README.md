@@ -1,14 +1,16 @@
 # Kiếm Vực — Giang Hồ Pixel
 
-Webgame kiếm hiệp chơi đơn bằng JavaScript và Canvas 2D. Bản v2.2 tích hợp thông số tham chiếu vào engine viết độc lập, kèm hình vẽ, biểu tượng, địa hình và hiệu ứng mới.
+Webgame kiếm hiệp chơi đơn bằng JavaScript và Canvas 2D. Bản v2.3 tích hợp thông số tham chiếu vào engine viết độc lập, kèm hình vẽ, biểu tượng, địa hình và hiệu ứng mới.
 
 **Chơi ngay:** https://caovanhanhtp2891-lab.github.io/kiemvuc/
 
 Chọn **Tạo nhân vật · Lv1** để chơi hành trình, hoặc **Thử toàn bộ Lv400** để kiểm tra mọi phái, kỹ năng và bản đồ. Khi đang chơi, nút **Thử Lv400** nằm trên thanh đầu trang. Chế độ thử không ghi đè hành trình chính; dùng **Đổi phái**, **Bù nhìn**, rồi **Về hành trình** để quay lại.
 
-![Tạo nhân vật với 14 phái pixel](docs/kiem-vuc-v2.2-creation.png)
+![Pixel+ v2.3 — nhân vật, cảnh vật và hiệu ứng](docs/kiem-vuc-v2.3-combat.png)
 
-![Màn chơi pixel](docs/kiem-vuc-v2.2-pixel.png)
+![Sổ tay hành hiệp](docs/kiem-vuc-v2.3-hub.png)
+
+Bản **v2.3 Pixel+** vẽ lại 14 nhân vật với dáng, giáp và phụ kiện riêng, nâng nền cảnh và hiệu ứng theo hệ. Thêm điểm danh 7 ngày, 5 hoạt động hằng ngày, 19 thành tựu, sổ quái 146 loài, tùy chỉnh tự đánh và thống kê sát thương/DPS khi luyện bù nhìn. Nhấn **H** mở sổ tay, **O** mở thiết lập tự đánh. Xem [ghi chú v2.3](docs/pixel-plus-v2.3.md).
 
 Bản **v2.2** sửa màn hình tạo nhân vật, giữ nút tạo cố định, hỗ trợ Enter và chuyển sang bộ đồ họa pixel: 14 sprite nhân vật, 112 biểu tượng kỹ năng, quái/NPC/thú/bản đồ và hiệu ứng. Xem [ghi chú v2.2](docs/pixel-v2.2.md).
 
@@ -30,6 +32,7 @@ Bản **v2.1** trước đó sửa đường lướt/đạn, tác dụng và c�
 | Đồng hành | 8 thú cưng tăng chỉ số, cho ăn; 10 thú cưỡi tăng tốc; 4 thế lực |
 | Hoạt động | Tổ đội tối đa 4 NPC, đấu trường NPC, phó bản 3 đợt quái + boss, truy nã |
 | Tự động | Tìm quái, dùng kỹ năng và thuốc, nhặt đồ, ưu tiên mục tiêu nhiệm vụ/boss |
+| Sổ tay v2.3 | Điểm danh 7 ngày, 5 hoạt động mỗi ngày, 19 thành tựu nhận thưởng một lần; sổ quái và dẫn đường |
 | Tiến trình | Tự lưu, nhập/xuất JSON, chuyển bản lưu v1, thưởng vắng mặt tối đa 8 giờ |
 
 Các chiêu xử lý chém quạt, lướt, đạn, mưa đạn, vùng sát thương, liên hoàn, hồi phục, khiên, tăng chỉ số, triệu hồi và tuyệt kỹ. Những tham số choáng, đốt, độc, hút máu, đẩy, kéo và làm chậm được áp dụng trong chiến đấu. Buff hết hạn sẽ trả chỉ số về nền.
@@ -58,6 +61,7 @@ Mở http://localhost:8080 bằng Chrome, Edge hoặc Firefox. Có thể dùng `
 | 1–8 | Thi triển kỹ năng |
 | Q / E | Dùng thuốc máu / nội lực phù hợp cấp |
 | T | Bật/tắt tự đánh |
+| H / O | Sổ tay hành hiệp / thiết lập tự đánh |
 | B / C / K / M / J / P | Túi / nhân vật / võ học / bản đồ / nhiệm vụ / thú |
 | Esc | Đóng menu |
 
@@ -69,6 +73,7 @@ Menu tạm dừng chiến đấu. Các nút trên màn hình hỗ trợ thao tá
 dist/
   content.js   Dữ liệu 14 phái, kỹ năng, bản đồ, quái, nhiệm vụ, vật phẩm
   rules.js     Luật số liệu, chỉ số, XP, sát thương, thưởng, rèn, bản lưu
+  progression.js Điểm danh, hoạt động, thành tựu, sổ quái, cấu hình tự đánh
   pixel-art.js Sprite pixel, biểu tượng và hiệu ứng raster
   game.js      Engine, AI, giao diện, NPC, hoạt ảnh, đồ họa và âm thanh
   index.html   Giao diện gốc
@@ -82,12 +87,13 @@ docs/
 ```sh
 node --check dist/content.js
 node --check dist/rules.js
+node --check dist/progression.js
 node --check dist/pixel-art.js
 node --check dist/game.js
 node --test tests/*.test.js
 ```
 
-35 bài kiểm tra tự động bao phủ đủ 86 điều kiện và phần thưởng nhiệm vụ, tham chiếu bản đồ/quái, sát thương, EXP, trang bị/ngọc, rèn, chuyển bản lưu và túi đầy. Có thêm mô phỏng tác dụng thật của từng chiêu trong đủ 112 chiêu, tự đánh 120 giây ở cấp 1 cho 14 phái, 86 luồng dẫn đường, phó bản, đấu trường và tự hồi sinh. Đã thử trực tiếp thi triển đủ 112 chiêu qua 14 phái, đi bản đồ cuối Lv400, tự đánh, nhiệm vụ boss, trả thưởng, cường hóa, đục lỗ và khảm ngọc. GitHub Actions kiểm tra cú pháp và luật chơi trước khi triển khai thư mục `dist/` lên Pages.
+49 bài kiểm tra tự động bao phủ đủ 86 điều kiện và phần thưởng nhiệm vụ, tham chiếu bản đồ/quái, sát thương, EXP, trang bị/ngọc, rèn, chuyển bản lưu và túi đầy. Có thêm mô phỏng tác dụng thật của từng chiêu trong đủ 112 chiêu, tự đánh 120 giây ở cấp 1 cho 14 phái, 86 luồng dẫn đường, phó bản, đấu trường và tự hồi sinh. Đã thử trực tiếp thi triển đủ 112 chiêu qua 14 phái, đi bản đồ cuối Lv400, tự đánh, nhiệm vụ boss, trả thưởng, cường hóa, đục lỗ và khảm ngọc. GitHub Actions kiểm tra cú pháp và luật chơi trước khi triển khai thư mục `dist/` lên Pages.
 
 ## Phạm vi
 
