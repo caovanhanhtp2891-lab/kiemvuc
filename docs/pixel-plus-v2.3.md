@@ -35,6 +35,7 @@ Ngày tính theo múi giờ Việt Nam, phụ thuộc đồng hồ thiết bị.
 - Đã tạo nhân vật thật trong bản preview, hạ quái và thấy số lần trong sổ; nhận điểm danh và thành tựu; tải lại vẫn giữ ngưỡng HP 70%, ô chiêu 8 bị tắt và phần thưởng đã nhận.
 - Viewport 390×740: nút tạo nằm trong khung, tâm nút trỏ đúng `startBtn`; tạo **Pixel Mobile 23 / U Minh Liêm Sư / Lv1** thành công. Sổ tay và tự đánh mở được.
 - Sổ tay: khung 390×740 nằm ở `[8,382,8,732]`; khung 844×390 nằm ở `[18,826,22.25,353.75]`. Cả hai cuộn được trong cửa sổ. Đã sửa nút tự đánh bị lớp điều khiển che và cửa sổ bị lệch ở khung thấp.
+- GitHub Pages đã triển khai `d104a11` thành công. Trên trang công khai: tạo **Pixel Plus 23 / Pháp Sư / Lv1**, nhận điểm danh lên **730 ngân**, tải lại vẫn giữ đúng nhân vật, tiền và trạng thái đã nhận. Không ghi nhận lỗi JavaScript của game trong lượt xác nhận này.
 - Các lượt viewport không thay thế thử Cốc Cốc hoặc điện thoại thật.
 
 ![Đồ họa và khiên Pixel+](kiem-vuc-v2.3-combat.png)
