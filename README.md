@@ -1,8 +1,14 @@
 # Kiếm Vực — Giang Hồ Pixel
 
-Webgame kiếm hiệp chơi đơn bằng JavaScript và Canvas 2D. Bản v2.3 tích hợp thông số tham chiếu vào engine viết độc lập, kèm hình vẽ, biểu tượng, địa hình và hiệu ứng mới.
+Webgame kiếm hiệp chơi đơn bằng JavaScript và Canvas 2D. Bản v2.4 tích hợp thông số tham chiếu vào engine viết độc lập, kèm hình vẽ, biểu tượng, địa hình và hiệu ứng mới.
 
 **Chơi ngay:** https://caovanhanhtp2891-lab.github.io/kiemvuc/
+
+**Đồ giám hiệu ứng:** https://caovanhanhtp2891-lab.github.io/kiemvuc/effects.html
+
+Bản **v2.4** có 14 bộ hình và chuyển động riêng, 8 bố cục cho mỗi phái; biểu tượng, đạn và trúng đòn giữ đúng chiêu đã tung. Hiệu ứng lên cấp dựng theo các lớp công khai quan sát từ Chiến Hồn: cột vàng, vòng nở, hạt bay lên, bảng cấp và tia xoay. Xem [thiết kế và kiểm tra v2.4](docs/school-effects-v2.4.md).
+
+![14 bộ tuyệt kỹ Pixel](docs/kiem-vuc-v2.4-schools.png)
 
 Chọn **Tạo nhân vật · Lv1** để chơi hành trình, hoặc **Thử toàn bộ Lv400** để kiểm tra mọi phái, kỹ năng và bản đồ. Khi đang chơi, nút **Thử Lv400** nằm trên thanh đầu trang. Chế độ thử không ghi đè hành trình chính; dùng **Đổi phái**, **Bù nhìn**, rồi **Về hành trình** để quay lại.
 
@@ -74,7 +80,9 @@ dist/
   content.js   Dữ liệu 14 phái, kỹ năng, bản đồ, quái, nhiệm vụ, vật phẩm
   rules.js     Luật số liệu, chỉ số, XP, sát thương, thưởng, rèn, bản lưu
   progression.js Điểm danh, hoạt động, thành tựu, sổ quái, cấu hình tự đánh
+  school-fx.js 14 bộ hình riêng, 112 bố cục chiêu và hiệu ứng lên cấp
   pixel-art.js Sprite pixel, biểu tượng và hiệu ứng raster
+  effects.html / effects-book.js Đồ giám hiệu ứng có dừng hình và so sánh
   game.js      Engine, AI, giao diện, NPC, hoạt ảnh, đồ họa và âm thanh
   index.html   Giao diện gốc
   style.css    Giao diện thích ứng
@@ -88,12 +96,14 @@ docs/
 node --check dist/content.js
 node --check dist/rules.js
 node --check dist/progression.js
+node --check dist/school-fx.js
+node --check dist/effects-book.js
 node --check dist/pixel-art.js
 node --check dist/game.js
 node --test tests/*.test.js
 ```
 
-49 bài kiểm tra tự động bao phủ đủ 86 điều kiện và phần thưởng nhiệm vụ, tham chiếu bản đồ/quái, sát thương, EXP, trang bị/ngọc, rèn, chuyển bản lưu và túi đầy. Có thêm mô phỏng tác dụng thật của từng chiêu trong đủ 112 chiêu, tự đánh 120 giây ở cấp 1 cho 14 phái, 86 luồng dẫn đường, phó bản, đấu trường và tự hồi sinh. Đã thử trực tiếp thi triển đủ 112 chiêu qua 14 phái, đi bản đồ cuối Lv400, tự đánh, nhiệm vụ boss, trả thưởng, cường hóa, đục lỗ và khảm ngọc. GitHub Actions kiểm tra cú pháp và luật chơi trước khi triển khai thư mục `dist/` lên Pages.
+59 bài kiểm tra tự động bao phủ đủ 86 điều kiện và phần thưởng nhiệm vụ, tham chiếu bản đồ/quái, sát thương, EXP, trang bị/ngọc, rèn, chuyển bản lưu và túi đầy. Có thêm mô phỏng tác dụng thật của từng chiêu trong đủ 112 chiêu, tự đánh 120 giây ở cấp 1 cho 14 phái, 86 luồng dẫn đường, phó bản, đấu trường và tự hồi sinh. Đã thử trực tiếp thi triển đủ 112 chiêu qua 14 phái, đi bản đồ cuối Lv400, tự đánh, nhiệm vụ boss, trả thưởng, cường hóa, đục lỗ và khảm ngọc. GitHub Actions kiểm tra cú pháp và luật chơi trước khi triển khai thư mục `dist/` lên Pages.
 
 ## Phạm vi
 

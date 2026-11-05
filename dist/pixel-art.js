@@ -2,6 +2,7 @@
 (function (root) {
 'use strict';
 function createPixelArt(data, document) {
+ const FX=(typeof module!=='undefined'&&module.exports?require('./school-fx.js'):root.KV_SCHOOLFX).createSchoolFX(data);
  const cache=new Map(),INK='#101c27',WHITE='#fff3c4';
  const colors=['#79d9e4','#f49565','#99df9b','#b9a2f4','#8de1d0','#a0b7e4','#ffda72','#87c5e6','#c19ae6','#83bcbf','#d5ad79','#e8998c','#f0b5d9','#b5a0ed'];
  const classes=Object.fromEntries(data.classes.map((c,i)=>[c.class_id,{...c,pixelColor:colors[i]}]));
@@ -84,25 +85,7 @@ function createPixelArt(data, document) {
   else if(name==='help'){p.line(6,4,13,4,c,2);p.line(13,4,15,8,c,2);p.line(15,8,10,12,c,2);p.rect(9,15,3,3,l);}
   else{p.block(4,2,12,16,'#54775e');p.rect(6,5,8,1,c);p.rect(6,8,7,1,c);p.rect(6,11,8,1,c);p.rect(6,14,5,1,l);}
  });}
- function baseSkillSprite(sk){const cls=classes[sk.class_id],base=cls?.pixelColor||'#9ac4ce';return cached('skill:'+sk.skill_id,24,24,p=>{const dark=shade(base,-95),mid=shade(base,-45);p.rect(0,0,24,24,INK);p.rect(1,1,22,22,dark);p.line(1,1,22,1,sk.ultimate?'#f4d47c':mid);p.line(1,1,1,22,base);p.line(2,22,22,22,'#080f1d');
-  for(let y=3;y<21;y+=3)for(let x=3;x<21;x+=3)if((x+y+sk.slot)%2)p.dot(x,y,mid);
-  const t=sk.mechanic_type;
-  if(t==='heal'){p.rect(9,5,6,15,'#6ed8a4');p.rect(5,9,14,6,'#6ed8a4');p.rect(10,6,2,12,WHITE);p.rect(6,10,12,2,WHITE);}
-  else if(t==='shield'){p.poly([[5,5],[12,2],[19,5],[18,15],[12,21],[6,15]],base,INK);p.poly([[8,7],[12,5],[16,7],[15,14],[12,17],[9,14]],'#273949');p.line(12,8,12,14,WHITE);p.line(10,11,14,11,WHITE);}
-  else if(t==='summon'){p.ellipse(12,15,5,4,base);for(const x of [5,10,15,19])p.ellipse(x,7+(x%3),2,3,WHITE);p.star(19,19,base);}
-  else if(t==='buff'){p.poly([[12,2],[16,9],[13,9],[18,16],[12,21],[5,16],[8,9],[9,12]],base,INK);p.poly([[12,9],[14,16],[10,18],[9,15]],WHITE);}
-  else if(t==='rain'&&sk.mechanical_parameters?.projectile_family_id==='meteor'){for(let n=0;n<3;n++){const x=5+n*6,y=11+n%2*6;p.line(x-3,y-8,x,y-2,'#e7b974',2);p.ellipse(x,y,3,3,'#bd7d69');p.ellipse(x,y-1,2,2,'#f2c374');p.dot(x,y-2,WHITE);}}
-  else if(t==='rain'){for(let n=0;n<4;n++){const x=4+n*5,y=3+n%2*3;p.line(x+2,y,x-1,y+11,base,2);p.poly([[x-1,y+15],[x-3,y+9],[x+2,y+10]],WHITE);}p.line(3,21,20,21,base);}
-  else if(t==='chain'){p.line(4,7,10,12,base,2);p.line(10,12,16,5,base,2);p.line(16,5,20,17,base,2);for(const [x,y] of [[4,7],[10,12],[16,5],[20,17]])p.star(x,y,WHITE);}
-  else if(t==='dash'){for(let j=0;j<3;j++)p.line(3,8+j*4,10+j*3,8+j*4,base,2);p.poly([[13,4],[21,12],[13,20],[15,12]],WHITE);}
-  else if(t==='circle'||t==='ult'){for(let n=0;n<16;n++){const a=n*Math.PI/8;p.rect(11+Math.cos(a)*8,11+Math.sin(a)*6,2,2,base);}p.star(12,10,WHITE);if(t==='ult')for(const x of [5,12,18]){p.line(x,4,x,15,WHITE);p.line(x-2,12,x,16,base);}}
-  else if(t==='proj'&&['fire','orb','tal','knife'].includes(sk.mechanical_parameters?.projectile_family_id)){const family=sk.mechanical_parameters.projectile_family_id;if(family==='fire'){p.poly([[12,3],[13,9],[18,6],[19,15],[14,21],[6,19],[4,13],[8,15],[7,8]],'#e4a16f',INK);p.poly([[12,9],[15,16],[11,18],[8,15]],WHITE);}else if(family==='orb'){p.ellipse(13,12,7,7,base);p.ellipse(13,11,4,4,WHITE);p.line(2,18,7,14,base,2);p.star(19,4,base);}else if(family==='tal'){p.poly([[8,3],[19,7],[15,21],[4,17]],'#e8d9aa',INK);p.line(10,7,14,15,'#c47c80',2);p.line(8,12,15,12,'#c47c80');}else{for(let j=0;j<3;j++)p.poly([[5+j*5,20],[4+j*5,9],[9+j*5,3],[8+j*5,16]],WHITE,INK);}}
-  else if(t==='proj'){for(let j=0;j<3;j++){p.line(3,17-j*5,18,7-j*2,base,2);p.poly([[21,4+j*4],[15,4+j*4],[18,10+j*2]],WHITE);}}
-  else{p.line(5,19,18,4,INK,4);p.line(6,18,19,4,base,3);p.line(7,17,19,5,WHITE);p.line(3,14,10,21,'#dab86c',2);p.line(11,17,21,12,base);p.line(15,8,21,6,base);}
-  // Class and slot marks are part of the raster icon, not an SVG overlay.
-  const ci=data.classes.findIndex(c=>c.class_id===sk.class_id);for(let bit=0;bit<4;bit++)if(ci&(1<<bit))p.dot(3+bit*2,2,WHITE);for(let n=0;n<sk.slot;n++)p.dot(2+n*2,22,sk.ultimate?'#f5cd69':base);
- });}
- function skillSprite(sk){const base=classes[sk.class_id]?.pixelColor||'#9ac4ce';return cached('skill23:'+sk.skill_id,32,32,p=>{p.rect(0,0,32,32,'#081723');p.rect(1,1,30,30,shade(base,-90));p.line(1,1,30,1,sk.ultimate?'#ffe1a1':shade(base,10));p.line(1,1,1,30,base);p.line(2,30,30,30,'#0b152b');p.line(30,2,30,30,'#152237');p.blit(baseSkillSprite(sk),4,4,24,24);for(const [x,y] of [[2,2],[28,2],[2,28],[28,28]]){p.rect(x,y,2,2,sk.ultimate?'#efce87':base);}if(sk.ultimate){p.dot(15,1,'#fff7d3');p.dot(1,15,'#fff7d3');}});}
+ function skillSprite(sk){return cached('skill24:'+sk.skill_id,32,32,p=>FX.paintIcon(p,sk));}
  function skillIcon(sk){return asImage(skillSprite(sk),'pixel-icon skill-pixel',32);}
  const familyColors={slime:'#83cb82',wolf:'#91afb6',boar:'#a98f76',qilin:'#d6b777',bird:'#a6c8c5',bat:'#a58ab6',golem:'#819bac',titan:'#a2998b',ghost:'#a7b0db',ninja:'#829fa4',demon:'#be8291',reaper:'#9d8db7',snake:'#8fc08a',hydra:'#79b6b2',dragon:'#83c5b2',mushroom:'#cd8f9f',frog:'#8cbd83',spider:'#ae8c9f',scorpion:'#d2a67b',treant:'#83ad73'};
  function creatureSprite(family,frame=0,custom){const col=custom||familyColors[family]||'#a3b4b4',dark=shade(col,-48),light=shade(col,30),step=[0,1,0,-1][frame%4];return cached(`beast:${family}:${frame}:${col}`,40,40,p=>{
@@ -173,6 +156,7 @@ function createPixelArt(data, document) {
  function runeCircle(c,x,y,r,t,col){ring(c,x,y,r,r*.52,col);ring(c,x,y,r*.82,r*.43,col,true);for(let j=0;j<8;j++){const a=j*Math.PI/4+t*.35,xx=x+Math.cos(a)*r,yy=y+Math.sin(a)*r*.52;worldLine(c,xx-3,yy-3,xx+3,yy+3,col);worldLine(c,xx-3,yy+3,xx+3,yy-3,col);}for(let j=0;j<4;j++){const a=j*Math.PI/2-t*.25,b=a+Math.PI/2;worldLine(c,x+Math.cos(a)*r*.6,y+Math.sin(a)*r*.31,x+Math.cos(b)*r*.6,y+Math.sin(b)*r*.31,col);}}
  function shard(c,x,y,size,col){worldLine(c,x,y-size,x+size*.4,y,col,3);worldLine(c,x+size*.4,y,x,y+size*.25,col,3);worldLine(c,x,y+size*.25,x-size*.4,y,col,3);worldLine(c,x-size*.4,y,x,y-size,col,3);worldLine(c,x,y-size*.7,x,y,col,2);}
  function effect(c,e,hero){
+  if(e.kind==='level'){FX.level(c,e,hero);return;}if(e.visual&&FX.draw(c,e,hero))return;
   const t=Math.min(1,1-e.life/e.max),style=e.style||schools[e.classId]||'ice',pal=fxPal[style]||fxPal.ice,col=e.color||pal[1],bright=pal[2],x=e.kind==='shield'?hero.x:e.x,y=(e.kind==='shield'?hero.y:e.y)-20;
   c.save();c.globalAlpha=Math.min(1,e.life/.16);
   if(e.kind==='click'){ring(c,x,y+20,10+t*18,5+t*9,'#e6dbab',true);worldStar(c,x,y+20,'#a8dfba');}
@@ -210,14 +194,14 @@ function createPixelArt(data, document) {
   if(e.stun>0)for(let j=0;j<3;j++){const a=time*4+j*Math.PI*2/3;worldStar(c,e.x+Math.cos(a)*16,e.y-(e.boss?115:70)+Math.sin(a)*5,'#ffe5a0');}
   if(e.slow>time){ring(c,e.x,e.y,24,10,'#99ddec',true);for(let j=0;j<3;j++)shard(c,e.x-15+j*14,e.y,7,'#c2f4f3');}
  }
- function projectile(c,p){const angle=Math.round(Math.atan2(p.vy,p.vx)/(Math.PI/4)),col=p.color||'#b0d1bc',family=p.family||'arrow';const img=cached(`projectile:${family}:${angle}:${col}`,24,24,q=>{
+ function projectile(c,p){if(p.visual&&FX.projectile(c,p))return;const angle=Math.round(Math.atan2(p.vy,p.vx)/(Math.PI/4)),col=p.color||'#b0d1bc',family=p.family||'arrow';const img=cached(`projectile:${family}:${angle}:${col}`,24,24,q=>{
   if(['fire','meteor','orb'].includes(family)){q.ellipse(13,12,family==='meteor'?7:6,6,INK);q.ellipse(13,12,family==='meteor'?6:5,5,shade(col,-45));q.ellipse(14,11,4,4,col);q.ellipse(15,10,2,2,WHITE);for(let j=0;j<3;j++){const a=angle*Math.PI/4;q.rect(12-Math.cos(a)*(11-j*3),12-Math.sin(a)*(11-j*3),3,2,j%2?col:shade(col,-25));}}
   else if(family==='tal'){q.block(8,6,8,12,'#e4d2a0');q.line(11,8,14,13,'#bb7468');q.line(12,11,10,15,'#bb7468');}
   else{const a=angle*Math.PI/4,cs=Math.cos(a),sn=Math.sin(a),rot=(x,y)=>[12+Math.round(x*cs-y*sn),12+Math.round(x*sn+y*cs)],v=rot(-9,0),w=rot(8,0);q.line(...v,...w,col,family==='giantarrow'?3:1);const tip=rot(10,0),l=rot(4,-3),r=rot(4,3);q.poly([tip,l,r],WHITE,INK);}
  });drawSprite(c,img,p.x,p.y-24,2,1,'center');}
  function loot(c,l,time){const col=['#b2c3b9','#83c9a0','#7ebce1','#c4a0e4','#ecc574','#e9a9cc'][l.item?.rarity||0],img=cached('loot:'+(l.kind==='gold'?'gold':l.item?.rarity),14,18,p=>{if(l.kind==='gold'){p.ellipse(7,12,6,4,INK);p.ellipse(7,11,5,3,'#c89b56');p.ellipse(7,9,5,3,'#f2d184');p.line(6,8,6,11,'#a57b49');}else{p.poly([[7,1],[12,7],[10,13],[7,16],[2,11],[1,7]],col,INK);p.line(7,3,4,8,WHITE);p.line(4,8,7,13,shade(col,-40));}});drawSprite(c,img,l.x,l.y+Math.floor(Math.sin(time*3)*2)*2,1.5);if(l.kind==='item'){c.globalAlpha=.5;worldLine(c,l.x,l.y-45,l.x,l.y-20,col,2);c.globalAlpha=1;}}
  function creaturePortrait(family){return asImage(creatureSprite(family),'codex-sprite',64);}
- return {fxColor:(id,style)=>fxPal[style||schools[id]||'ice'][1],aura,creaturePortrait,icon:name=>asImage(uiSprite(name)),skillIcon,skillSprite,classPortrait,hero,creature,npc,companion,decor,ground,effect,projectile,loot,ring,worldStar,cache};
+ return {schoolFX:FX,visualFor:FX.visual,basicVisual:FX.basic,fxColor:(id,style)=>fxPal[style||schools[id]||'ice'][1],aura,creaturePortrait,icon:name=>asImage(uiSprite(name)),skillIcon,skillSprite,classPortrait,hero,creature,npc,companion,decor,ground,effect,projectile,loot,ring,worldStar,cache};
 }
 const api={createPixelArt};if(typeof module!=='undefined'&&module.exports)module.exports=api;else root.KV_PIXEL=api;
 })(globalThis);

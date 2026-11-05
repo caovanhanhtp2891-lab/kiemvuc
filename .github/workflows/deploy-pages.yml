@@ -35,6 +35,8 @@ jobs:
           node --check dist/content.js
           node --check dist/rules.js
           node --check dist/progression.js
+          node --check dist/school-fx.js
+          node --check dist/effects-book.js
           node --check dist/pixel-art.js
           node --check dist/game.js
           node --test tests/*.test.js
