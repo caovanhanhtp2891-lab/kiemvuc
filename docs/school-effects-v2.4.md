@@ -58,6 +58,7 @@ Các lớp đã đối chiếu và dựng lại bằng mã Pixel độc lập:
 
 ## Kiểm tra
 
+- GitHub Pages đã triển khai `f5407e0` thành công. Đã mở bản công khai, xác nhận nhãn v2.4, liên kết từ Võ học, mô tả hình từng chiêu, bảng so sánh 14 phái và bảng lên cấp; không có lỗi JavaScript của ứng dụng trong lượt xác nhận.
 - **59/59 kiểm tra Node đạt**. Giữ toàn bộ kiểm tra luật/engine trước đó, gồm tác dụng thực của 112 chiêu.
 - Kiểm tra đủ 112 mô tả chiêu, 8 bố cục/phái; vẽ ở ba thời điểm không có tọa độ không hợp lệ.
 - Bỏ qua màu khi băm hình học: đủ 14 tuyệt kỹ khác nhau; 8 bố cục của từng phái khác nhau ở hai thời điểm.
